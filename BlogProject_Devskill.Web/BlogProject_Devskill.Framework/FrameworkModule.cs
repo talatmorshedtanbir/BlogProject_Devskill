@@ -1,6 +1,7 @@
 ﻿using Autofac;
 using BlogProject_Devskill.Framework.Contexts;
 using BlogProject_Devskill.Framework.Repositories;
+using BlogProject_Devskill.Framework.Repositories.BlogCategoryRepos;
 using BlogProject_Devskill.Framework.Repositories.CategoryRepos;
 using BlogProject_Devskill.Framework.Services;
 using BlogProject_Devskill.Framework.Services.CategoryServices;
@@ -45,6 +46,8 @@ namespace BlogProject_Devskill.Framework
             .InstancePerLifetimeScope();
             builder.RegisterType<CategoryRepository>().As<ICategoryRepository>()
            .InstancePerLifetimeScope();
+            builder.RegisterType<BlogCategoryRepository>().As<IBlogCategoryRepository>()
+          .InstancePerLifetimeScope();
 
 
             builder.RegisterType<PostService>().As<IPostService>()

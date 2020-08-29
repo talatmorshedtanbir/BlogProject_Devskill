@@ -51,17 +51,17 @@ namespace BlogProject_Devskill.Framework.Services.BlogServices
                 {
                     Post.Add(post);
                 }
-                else
-                {
-                    if (!string.IsNullOrEmpty(post.Categories))
-                    {
-                        var cats = post.Categories.ToLower().Split(',');
-                        if (cats.Contains(category.ToLower()))
-                        {
-                            Post.Add(post);
-                        }
-                    }
-                }
+                //else
+                //{
+                //    if (!string.IsNullOrEmpty(post.Categories))
+                //    {
+                //        var cats = post.Categories.ToLower().Split(',');
+                //        if (cats.Contains(category.ToLower()))
+                //        {
+                //            Post.Add(post);
+                //        }
+                //    }
+                //}
             }
             pager.Configure(posts.Count);
             var items = new List<BlogPost>();

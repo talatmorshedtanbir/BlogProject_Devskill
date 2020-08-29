@@ -144,6 +144,20 @@ namespace BlogProject_Devskill.Membership.Services
             return user;
         }
 
+        public ApplicationUser GetById(Guid id)
+        {
+            var query = _userManager.Users.Include(u => u.UserRoles).ThenInclude(ur => ur.Role).AsQueryable();
+
+            var user = query.FirstOrDefault(u => u.Id == id);
+
+            if (user == null)
+            {
+                throw new NotFoundException(nameof(ApplicationUser), id);
+            }
+
+            return user;
+        }
+
         public async Task<ApplicationUser> GetByUserNameAsync(string userName)
         {
             var query = _userManager.Users.Include(u => u.UserRoles).ThenInclude(ur => ur.Role).AsQueryable();

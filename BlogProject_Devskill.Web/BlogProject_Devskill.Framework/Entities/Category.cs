@@ -9,5 +9,11 @@ namespace BlogProject_Devskill.Framework.Entities
     {
         public string Name { get; set; }
         public int PostCount { get; set; }
+        public bool IsChecked { get; set; }
+        public IList<BlogCategory> BlogCategories { get; set; }
+        public Category()
+        {
+            this.BlogCategories = new List<BlogCategory>();
+        }
     }
 }

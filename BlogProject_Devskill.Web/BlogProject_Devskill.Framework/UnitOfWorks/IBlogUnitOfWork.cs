@@ -8,6 +8,6 @@ namespace BlogProject_Devskill.Framework.UnitOfWorks
 {
     public interface IBlogUnitOfWork : IUnitOfWork
     {
-        ICategoryRepository CategoryRepository { get; set; }
+        //ICategoryRepository CategoryRepository { get; set; }
     }
 }

@@ -33,7 +33,13 @@ namespace BlogProject_Devskill.Framework.Contexts
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
+            modelBuilder.Entity<BlogCategory>(blogCategory =>
+            {
+                blogCategory.HasKey(ur => new { ur.CategoryId, ur.BlogPostId });
+            });
         }
         public DbSet<Category> Categories { get; set; }
+        public DbSet<BlogPost> BlogPosts { get; set; }
+        public DbSet<BlogCategory> BlogCategories { get; set; }
     }
 }
