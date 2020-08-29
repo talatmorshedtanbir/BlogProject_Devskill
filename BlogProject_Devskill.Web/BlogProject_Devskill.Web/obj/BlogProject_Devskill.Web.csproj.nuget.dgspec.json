@@ -1,0 +1,360 @@
+{
+  "format": 1,
+  "restore": {
+    "H:\\ASP COURSE\\Personal Project\\BlogProject_Devskill\\BlogProject_Devskill.Web\\BlogProject_Devskill.Web\\BlogProject_Devskill.Web.csproj": {}
+  },
+  "projects": {
+    "H:\\ASP COURSE\\Personal Project\\BlogProject_Devskill\\BlogProject_Devskill.Web\\BlogProject_Devskill.Data\\BlogProject_Devskill.Data.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "H:\\ASP COURSE\\Personal Project\\BlogProject_Devskill\\BlogProject_Devskill.Web\\BlogProject_Devskill.Data\\BlogProject_Devskill.Data.csproj",
+        "projectName": "BlogProject_Devskill.Data",
+        "projectPath": "H:\\ASP COURSE\\Personal Project\\BlogProject_Devskill\\BlogProject_Devskill.Web\\BlogProject_Devskill.Data\\BlogProject_Devskill.Data.csproj",
+        "packagesPath": "C:\\Users\\Tanbir\\.nuget\\packages\\",
+        "outputPath": "H:\\ASP COURSE\\Personal Project\\BlogProject_Devskill\\BlogProject_Devskill.Web\\BlogProject_Devskill.Data\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Tanbir\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[3.1.7, )"
+            },
+            "Microsoft.EntityFrameworkCore.Relational": {
+              "target": "Package",
+              "version": "[3.1.7, )"
+            },
+            "System.Data.SqlClient": {
+              "target": "Package",
+              "version": "[4.8.2, )"
+            },
+            "System.Linq.Dynamic.Core": {
+              "target": "Package",
+              "version": "[1.2.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.302\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "H:\\ASP COURSE\\Personal Project\\BlogProject_Devskill\\BlogProject_Devskill.Web\\BlogProject_Devskill.Framework\\BlogProject_Devskill.Framework.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "H:\\ASP COURSE\\Personal Project\\BlogProject_Devskill\\BlogProject_Devskill.Web\\BlogProject_Devskill.Framework\\BlogProject_Devskill.Framework.csproj",
+        "projectName": "BlogProject_Devskill.Framework",
+        "projectPath": "H:\\ASP COURSE\\Personal Project\\BlogProject_Devskill\\BlogProject_Devskill.Web\\BlogProject_Devskill.Framework\\BlogProject_Devskill.Framework.csproj",
+        "packagesPath": "C:\\Users\\Tanbir\\.nuget\\packages\\",
+        "outputPath": "H:\\ASP COURSE\\Personal Project\\BlogProject_Devskill\\BlogProject_Devskill.Web\\BlogProject_Devskill.Framework\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Tanbir\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "H:\\ASP COURSE\\Personal Project\\BlogProject_Devskill\\BlogProject_Devskill.Web\\BlogProject_Devskill.Data\\BlogProject_Devskill.Data.csproj": {
+                "projectPath": "H:\\ASP COURSE\\Personal Project\\BlogProject_Devskill\\BlogProject_Devskill.Web\\BlogProject_Devskill.Data\\BlogProject_Devskill.Data.csproj"
+              },
+              "H:\\ASP COURSE\\Personal Project\\BlogProject_Devskill\\BlogProject_Devskill.Web\\BlogProject_Devskill.Membership\\BlogProject_Devskill.Membership.csproj": {
+                "projectPath": "H:\\ASP COURSE\\Personal Project\\BlogProject_Devskill\\BlogProject_Devskill.Web\\BlogProject_Devskill.Membership\\BlogProject_Devskill.Membership.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "Autofac": {
+              "target": "Package",
+              "version": "[5.2.0, )"
+            },
+            "Microsoft.AspNetCore.Http": {
+              "target": "Package",
+              "version": "[2.2.2, )"
+            },
+            "Microsoft.AspNetCore.Http.Extensions": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.AspNetCore.Http.Features": {
+              "target": "Package",
+              "version": "[3.1.7, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[3.1.7, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[3.1.7, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.302\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "H:\\ASP COURSE\\Personal Project\\BlogProject_Devskill\\BlogProject_Devskill.Web\\BlogProject_Devskill.Membership\\BlogProject_Devskill.Membership.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "H:\\ASP COURSE\\Personal Project\\BlogProject_Devskill\\BlogProject_Devskill.Web\\BlogProject_Devskill.Membership\\BlogProject_Devskill.Membership.csproj",
+        "projectName": "BlogProject_Devskill.Membership",
+        "projectPath": "H:\\ASP COURSE\\Personal Project\\BlogProject_Devskill\\BlogProject_Devskill.Web\\BlogProject_Devskill.Membership\\BlogProject_Devskill.Membership.csproj",
+        "packagesPath": "C:\\Users\\Tanbir\\.nuget\\packages\\",
+        "outputPath": "H:\\ASP COURSE\\Personal Project\\BlogProject_Devskill\\BlogProject_Devskill.Web\\BlogProject_Devskill.Membership\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Tanbir\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "H:\\ASP COURSE\\Personal Project\\BlogProject_Devskill\\BlogProject_Devskill.Web\\BlogProject_Devskill.Data\\BlogProject_Devskill.Data.csproj": {
+                "projectPath": "H:\\ASP COURSE\\Personal Project\\BlogProject_Devskill\\BlogProject_Devskill.Web\\BlogProject_Devskill.Data\\BlogProject_Devskill.Data.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[3.1.5, )"
+            },
+            "Microsoft.AspNetCore.Identity.UI": {
+              "target": "Package",
+              "version": "[3.1.5, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[3.1.7, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.302\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "H:\\ASP COURSE\\Personal Project\\BlogProject_Devskill\\BlogProject_Devskill.Web\\BlogProject_Devskill.Web\\BlogProject_Devskill.Web.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "H:\\ASP COURSE\\Personal Project\\BlogProject_Devskill\\BlogProject_Devskill.Web\\BlogProject_Devskill.Web\\BlogProject_Devskill.Web.csproj",
+        "projectName": "BlogProject_Devskill.Web",
+        "projectPath": "H:\\ASP COURSE\\Personal Project\\BlogProject_Devskill\\BlogProject_Devskill.Web\\BlogProject_Devskill.Web\\BlogProject_Devskill.Web.csproj",
+        "packagesPath": "C:\\Users\\Tanbir\\.nuget\\packages\\",
+        "outputPath": "H:\\ASP COURSE\\Personal Project\\BlogProject_Devskill\\BlogProject_Devskill.Web\\BlogProject_Devskill.Web\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Tanbir\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "H:\\ASP COURSE\\Personal Project\\BlogProject_Devskill\\BlogProject_Devskill.Web\\BlogProject_Devskill.Data\\BlogProject_Devskill.Data.csproj": {
+                "projectPath": "H:\\ASP COURSE\\Personal Project\\BlogProject_Devskill\\BlogProject_Devskill.Web\\BlogProject_Devskill.Data\\BlogProject_Devskill.Data.csproj"
+              },
+              "H:\\ASP COURSE\\Personal Project\\BlogProject_Devskill\\BlogProject_Devskill.Web\\BlogProject_Devskill.Framework\\BlogProject_Devskill.Framework.csproj": {
+                "projectPath": "H:\\ASP COURSE\\Personal Project\\BlogProject_Devskill\\BlogProject_Devskill.Web\\BlogProject_Devskill.Framework\\BlogProject_Devskill.Framework.csproj"
+              },
+              "H:\\ASP COURSE\\Personal Project\\BlogProject_Devskill\\BlogProject_Devskill.Web\\BlogProject_Devskill.Membership\\BlogProject_Devskill.Membership.csproj": {
+                "projectPath": "H:\\ASP COURSE\\Personal Project\\BlogProject_Devskill\\BlogProject_Devskill.Web\\BlogProject_Devskill.Membership\\BlogProject_Devskill.Membership.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "Autofac.Extensions.DependencyInjection": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "Markdig": {
+              "target": "Package",
+              "version": "[0.21.1, )"
+            },
+            "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[3.1.7, )"
+            },
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[3.1.5, )"
+            },
+            "Microsoft.AspNetCore.Identity.UI": {
+              "target": "Package",
+              "version": "[3.1.5, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[3.1.7, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.1.7, )"
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[3.1.4, )"
+            },
+            "Serilog.Extensions.Hosting": {
+              "target": "Package",
+              "version": "[3.1.0, )"
+            },
+            "Serilog.Sinks.File": {
+              "target": "Package",
+              "version": "[4.1.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.302\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

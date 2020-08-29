@@ -1,0 +1,14 @@
+H:\ASP COURSE\Personal Project\BlogProject_Devskill\BlogProject_Devskill.Web\BlogProject_Devskill.Framework\bin\Debug\netcoreapp3.1\BlogProject_Devskill.Framework.deps.json
+H:\ASP COURSE\Personal Project\BlogProject_Devskill\BlogProject_Devskill.Web\BlogProject_Devskill.Framework\bin\Debug\netcoreapp3.1\BlogProject_Devskill.Framework.dll
+H:\ASP COURSE\Personal Project\BlogProject_Devskill\BlogProject_Devskill.Web\BlogProject_Devskill.Framework\obj\Debug\netcoreapp3.1\BlogProject_Devskill.Framework.csprojAssemblyReference.cache
+H:\ASP COURSE\Personal Project\BlogProject_Devskill\BlogProject_Devskill.Web\BlogProject_Devskill.Framework\obj\Debug\netcoreapp3.1\BlogProject_Devskill.Framework.AssemblyInfoInputs.cache
+H:\ASP COURSE\Personal Project\BlogProject_Devskill\BlogProject_Devskill.Web\BlogProject_Devskill.Framework\obj\Debug\netcoreapp3.1\BlogProject_Devskill.Framework.AssemblyInfo.cs
+H:\ASP COURSE\Personal Project\BlogProject_Devskill\BlogProject_Devskill.Web\BlogProject_Devskill.Framework\obj\Debug\netcoreapp3.1\BlogProject_Devskill.Framework.csproj.CoreCompileInputs.cache
+H:\ASP COURSE\Personal Project\BlogProject_Devskill\BlogProject_Devskill.Web\BlogProject_Devskill.Framework\bin\Debug\netcoreapp3.1\BlogProject_Devskill.Framework.pdb
+H:\ASP COURSE\Personal Project\BlogProject_Devskill\BlogProject_Devskill.Web\BlogProject_Devskill.Framework\obj\Debug\netcoreapp3.1\BlogProject_Devskill.Framework.dll
+H:\ASP COURSE\Personal Project\BlogProject_Devskill\BlogProject_Devskill.Web\BlogProject_Devskill.Framework\obj\Debug\netcoreapp3.1\BlogProject_Devskill.Framework.pdb
+H:\ASP COURSE\Personal Project\BlogProject_Devskill\BlogProject_Devskill.Web\BlogProject_Devskill.Framework\bin\Debug\netcoreapp3.1\BlogProject_Devskill.Data.dll
+H:\ASP COURSE\Personal Project\BlogProject_Devskill\BlogProject_Devskill.Web\BlogProject_Devskill.Framework\bin\Debug\netcoreapp3.1\BlogProject_Devskill.Data.pdb
+H:\ASP COURSE\Personal Project\BlogProject_Devskill\BlogProject_Devskill.Web\BlogProject_Devskill.Framework\obj\Debug\netcoreapp3.1\BlogProject_Devskill.Framework.csproj.CopyComplete
+H:\ASP COURSE\Personal Project\BlogProject_Devskill\BlogProject_Devskill.Web\BlogProject_Devskill.Framework\bin\Debug\netcoreapp3.1\BlogProject_Devskill.Membership.dll
+H:\ASP COURSE\Personal Project\BlogProject_Devskill\BlogProject_Devskill.Web\BlogProject_Devskill.Framework\bin\Debug\netcoreapp3.1\BlogProject_Devskill.Membership.pdb

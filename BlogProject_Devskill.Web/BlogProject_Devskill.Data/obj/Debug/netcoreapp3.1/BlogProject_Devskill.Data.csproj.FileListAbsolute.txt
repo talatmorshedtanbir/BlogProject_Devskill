@@ -1,0 +1,9 @@
+H:\ASP COURSE\Personal Project\BlogProject_Devskill\BlogProject_Devskill.Web\BlogProject_Devskill.Data\bin\Debug\netcoreapp3.1\BlogProject_Devskill.Data.deps.json
+H:\ASP COURSE\Personal Project\BlogProject_Devskill\BlogProject_Devskill.Web\BlogProject_Devskill.Data\bin\Debug\netcoreapp3.1\BlogProject_Devskill.Data.dll
+H:\ASP COURSE\Personal Project\BlogProject_Devskill\BlogProject_Devskill.Web\BlogProject_Devskill.Data\obj\Debug\netcoreapp3.1\BlogProject_Devskill.Data.csprojAssemblyReference.cache
+H:\ASP COURSE\Personal Project\BlogProject_Devskill\BlogProject_Devskill.Web\BlogProject_Devskill.Data\obj\Debug\netcoreapp3.1\BlogProject_Devskill.Data.AssemblyInfoInputs.cache
+H:\ASP COURSE\Personal Project\BlogProject_Devskill\BlogProject_Devskill.Web\BlogProject_Devskill.Data\obj\Debug\netcoreapp3.1\BlogProject_Devskill.Data.AssemblyInfo.cs
+H:\ASP COURSE\Personal Project\BlogProject_Devskill\BlogProject_Devskill.Web\BlogProject_Devskill.Data\bin\Debug\netcoreapp3.1\BlogProject_Devskill.Data.pdb
+H:\ASP COURSE\Personal Project\BlogProject_Devskill\BlogProject_Devskill.Web\BlogProject_Devskill.Data\obj\Debug\netcoreapp3.1\BlogProject_Devskill.Data.csproj.CoreCompileInputs.cache
+H:\ASP COURSE\Personal Project\BlogProject_Devskill\BlogProject_Devskill.Web\BlogProject_Devskill.Data\obj\Debug\netcoreapp3.1\BlogProject_Devskill.Data.dll
+H:\ASP COURSE\Personal Project\BlogProject_Devskill\BlogProject_Devskill.Web\BlogProject_Devskill.Data\obj\Debug\netcoreapp3.1\BlogProject_Devskill.Data.pdb

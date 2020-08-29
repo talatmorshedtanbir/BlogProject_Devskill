@@ -1,0 +1,73 @@
+﻿@model LoginModel
+
+@section Styles
+{
+    <link rel="stylesheet" type="text/css" href="~/Identities/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="~/Identities/vendor/animate/animate.css">
+    <link rel="stylesheet" type="text/css" href="~/Identities/vendor/css-hamburgers/hamburgers.min.css">
+    <link rel="stylesheet" type="text/css" href="~/Identities/vendor/select2/select2.min.css">
+    <link rel="stylesheet" type="text/css" href="~/Identities/css/util.css">
+    <link rel="stylesheet" type="text/css" href="~/Identities/css/main.css">
+
+    <style>
+        body {
+            margin-bottom: 0px;
+        }
+    </style>
+}
+
+
+<div class="container-login100">
+    <div class="wrap-login100">
+        <div class="login100-pic js-tilt" data-tilt>
+            <img src="~/Identities/images/img-01.png" alt="IMG">
+        </div>
+
+        <form class="login100-form validate-form" asp-area="" asp-controller="Accounts" asp-action="Login">
+            <span class="login100-form-title">
+                Admin Login
+            </span>
+
+            <div asp-validation-summary="All" class="text-danger"></div>
+
+            <div class="wrap-input100 validate-input">
+                <input class="input100" type="text" asp-for="UserName" placeholder="User Name">
+                <span class="focus-input100"></span>
+                <span class="symbol-input100">
+                    <i class="fa fa-user" aria-hidden="true"></i>
+                </span>
+            </div>
+
+            <div class="wrap-input100 validate-input" data-validate="Password is required">
+                <input class="input100" type="password" asp-for="Password" placeholder="Password">
+                <span class="focus-input100"></span>
+                <span class="symbol-input100">
+                    <i class="fa fa-lock" aria-hidden="true"></i>
+                </span>
+            </div>
+
+            <div class="container-login100-form-btn">
+                <button class="login100-form-btn">
+                    Login
+                </button>
+            </div>
+
+        </form>
+    </div>
+</div>
+
+
+@section Scripts
+{
+    <script src="~/Identities/vendor/bootstrap/js/popper.js"></script>
+    <script src="~/Identities/vendor/select2/select2.min.js"></script>
+    <script src="~/Identities/vendor/tilt/tilt.jquery.min.js"></script>
+    <script>
+        $('.js-tilt').tilt({
+            scale: 1.1
+        })
+    </script>
+    <script src="~/Identities/js/main.js"></script>
+}
+
+

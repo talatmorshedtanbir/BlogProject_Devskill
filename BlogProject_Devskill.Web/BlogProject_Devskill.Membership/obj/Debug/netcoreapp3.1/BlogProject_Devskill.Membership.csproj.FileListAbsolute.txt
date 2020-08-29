@@ -1,0 +1,12 @@
+H:\ASP COURSE\Personal Project\BlogProject_Devskill\BlogProject_Devskill.Web\BlogProject_Devskill.Membership\bin\Debug\netcoreapp3.1\BlogProject_Devskill.Data.dll
+H:\ASP COURSE\Personal Project\BlogProject_Devskill\BlogProject_Devskill.Web\BlogProject_Devskill.Membership\obj\Debug\netcoreapp3.1\BlogProject_Devskill.Membership.csprojAssemblyReference.cache
+H:\ASP COURSE\Personal Project\BlogProject_Devskill\BlogProject_Devskill.Web\BlogProject_Devskill.Membership\obj\Debug\netcoreapp3.1\BlogProject_Devskill.Membership.AssemblyInfoInputs.cache
+H:\ASP COURSE\Personal Project\BlogProject_Devskill\BlogProject_Devskill.Web\BlogProject_Devskill.Membership\obj\Debug\netcoreapp3.1\BlogProject_Devskill.Membership.AssemblyInfo.cs
+H:\ASP COURSE\Personal Project\BlogProject_Devskill\BlogProject_Devskill.Web\BlogProject_Devskill.Membership\bin\Debug\netcoreapp3.1\BlogProject_Devskill.Membership.deps.json
+H:\ASP COURSE\Personal Project\BlogProject_Devskill\BlogProject_Devskill.Web\BlogProject_Devskill.Membership\bin\Debug\netcoreapp3.1\BlogProject_Devskill.Membership.dll
+H:\ASP COURSE\Personal Project\BlogProject_Devskill\BlogProject_Devskill.Web\BlogProject_Devskill.Membership\bin\Debug\netcoreapp3.1\BlogProject_Devskill.Membership.pdb
+H:\ASP COURSE\Personal Project\BlogProject_Devskill\BlogProject_Devskill.Web\BlogProject_Devskill.Membership\bin\Debug\netcoreapp3.1\BlogProject_Devskill.Data.pdb
+H:\ASP COURSE\Personal Project\BlogProject_Devskill\BlogProject_Devskill.Web\BlogProject_Devskill.Membership\obj\Debug\netcoreapp3.1\BlogProject_Devskill.Membership.csproj.CopyComplete
+H:\ASP COURSE\Personal Project\BlogProject_Devskill\BlogProject_Devskill.Web\BlogProject_Devskill.Membership\obj\Debug\netcoreapp3.1\BlogProject_Devskill.Membership.dll
+H:\ASP COURSE\Personal Project\BlogProject_Devskill\BlogProject_Devskill.Web\BlogProject_Devskill.Membership\obj\Debug\netcoreapp3.1\BlogProject_Devskill.Membership.pdb
+H:\ASP COURSE\Personal Project\BlogProject_Devskill\BlogProject_Devskill.Web\BlogProject_Devskill.Membership\obj\Debug\netcoreapp3.1\BlogProject_Devskill.Membership.csproj.CoreCompileInputs.cache

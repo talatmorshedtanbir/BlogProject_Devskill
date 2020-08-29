@@ -1,0 +1,10 @@
+﻿@model BlogProject_Devskill.Web.Areas.Admin.Models.ResponseModel
+
+@if (Model != null)
+{
+    <div class="alert alert-dismissible @Model.StyleCssClass">
+        <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+        <h5><i class="icon fas @Model.IconCssClass"></i> @Model.Title</h5>
+        @Model.Message
+    </div>
+}
