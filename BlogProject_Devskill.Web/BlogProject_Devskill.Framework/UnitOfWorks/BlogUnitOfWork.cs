@@ -9,10 +9,13 @@ namespace BlogProject_Devskill.Framework.UnitOfWorks
 {
     public class BlogUnitOfWork : UnitOfWork, IBlogUnitOfWork
     {
-        public ICategoryRepository CategoryRepository { get; set; }
-        public BlogUnitOfWork(FrameworkContext dbContext, ICategoryRepository categoryRepository) : base(dbContext)
+        //public ICategoryRepository CategoryRepository { get; set; }
+        //public BlogUnitOfWork(FrameworkContext dbContext, ICategoryRepository categoryRepository) : base(dbContext)
+        //{
+        //    CategoryRepository = categoryRepository;
+        //}
+        public BlogUnitOfWork(FrameworkContext dbContext) : base(dbContext)
         {
-            CategoryRepository = categoryRepository;
         }
     }
 }

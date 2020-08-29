@@ -23,6 +23,7 @@ namespace BlogProject_Devskill.Membership.Services
             int pageIndex,
             int pageSize);
         Task<ApplicationUser> GetByIdAsync(Guid id);
+        ApplicationUser GetById(Guid id);
         Task<ApplicationUser> GetByUserNameAsync(string userName);
         Task<Guid> AddAsync(ApplicationUser entity, Guid userRoleId, string newPassword);
         Task<Guid> AddAsync(ApplicationUser entity, string userRoleName, string newPassword);

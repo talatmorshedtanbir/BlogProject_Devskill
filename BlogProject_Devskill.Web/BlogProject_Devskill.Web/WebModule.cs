@@ -2,6 +2,7 @@
 using BlogProject_Devskill.Membership.Data;
 using BlogProject_Devskill.Web.Areas.Admin.Models;
 using BlogProject_Devskill.Web.Areas.Admin.Models.AdminControl;
+using BlogProject_Devskill.Web.Areas.Admin.Models.BlogPostModels;
 using BlogProject_Devskill.Web.Areas.Admin.Models.CategoryModels;
 using System;
 using System.Collections.Generic;
@@ -26,6 +27,7 @@ namespace BlogProject_Devskill.Web
             builder.RegisterType<AdminControlModel>();
             builder.RegisterType<EditAdminModel>();
             builder.RegisterType<CategoryModel>();
+            builder.RegisterType<BlogPostModel>();
             base.Load(builder);
         }
     }

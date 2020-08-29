@@ -19,7 +19,6 @@ namespace BlogProject_Devskill.Web.Areas.User.Models
         }
         public IList<BlogPost> Blogs { get; set; }
         public Pager Pager { get; set; }
-        public Author Author { get; set; } // posts by author
         public string Category { get; set; } // posts by category
         public PostListType PostListType { get; set; }
         //public async Task<IList<BlogPost>> GetAllAsync()
