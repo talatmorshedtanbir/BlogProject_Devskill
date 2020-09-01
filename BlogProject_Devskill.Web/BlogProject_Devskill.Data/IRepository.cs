@@ -35,6 +35,7 @@ namespace BlogProject_Devskill.Data
                             bool disableTracking = true);
         Task<TEntity> GetByIdAsync(TKey id);
         IList<TEntity> GetAll();
+        IList<TEntity> Get(Expression<Func<TEntity, bool>> filter);
         Task<int> GetCountAsync(Expression<Func<TEntity, bool>> predicate = null);
         Task<bool> IsExistsAsync(Expression<Func<TEntity, bool>> predicate);
         Task AddAsync(TEntity entity);

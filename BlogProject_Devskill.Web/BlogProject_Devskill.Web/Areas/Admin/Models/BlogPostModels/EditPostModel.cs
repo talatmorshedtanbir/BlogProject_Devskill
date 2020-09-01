@@ -1,11 +1,8 @@
 ﻿using BlogProject_Devskill.Framework.Entities;
 using BlogProject_Devskill.Framework.Services.CategoryServices;
 using BlogProject_Devskill.Framework.Services.PostServices;
-using BlogProject_Devskill.Membership.Entities;
 using BlogProject_Devskill.Membership.Services;
 using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.CodeAnalysis.CSharp.Syntax;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
@@ -14,11 +11,12 @@ using System.Threading.Tasks;
 
 namespace BlogProject_Devskill.Web.Areas.Admin.Models.BlogPostModels
 {
-    public class PostModel : BlogPostBaseModel
+    public class EditPostModel : BlogPostBaseModel
     {
+        public int Id { get; set; }
         [Required]
         public Guid AuthorId { get; set; }
-
+        public string AuthorName { get; set; }
         [Required]
         [StringLength(160)]
         public string Title { get; set; }
@@ -29,32 +27,48 @@ namespace BlogProject_Devskill.Web.Areas.Admin.Models.BlogPostModels
         public string CoverImageUrl { get; set; }
         [Required]
         public bool Draft { get; set; }
-        public DateTime CreationTime { get; set; }
+        public DateTime EditingTime { get; set; }
+        public DateTime PublicationTime { get; set; }
         public IList<Category> Categories { get; set; }
         public IFormFile CoverImage { get; set; }
         [Required]
         public bool UseAdminInfo { get; set; }
-        public PostModel(ICurrentUserService currentUserService, IPostService postService,
+        public EditPostModel(ICurrentUserService currentUserService, IPostService postService,
         ICategoryService categoryService) : base(currentUserService, postService, categoryService)
         {
 
         }
-        public PostModel() : base()
+        public EditPostModel() : base()
         {
 
         }
 
         public IList<Category> GetAllCategoryForSelectAsync()
         {
-            return  _categoryService.GetAllCategory();
+            return _categoryService.GetAllCategory();
         }
 
-        public async Task AddBlogAsync()
+        public async Task LoadByIdAsync(int id)
+        {
+            var post = await _postService.GetByIdAsync(id);
+            this.Id = post.Id;
+            this.AuthorId = post.AuthorId;
+            this.AuthorName = post.AuthorName;
+            this.Title = post.Title;
+            this.Description = post.Description;
+            this.UseAdminInfo = post.UseAdminInfo;
+            this.CoverImageUrl = post.CoverImageUrl;
+           // this.Categories = (IList<Category>)post.BlogCategories.Select(x => x.Category.Name).ToList();
+            this.PublicationTime = post.CreationTime;
+            this.Draft = post.Draft;
+        }
+        public async Task EditBlogAsync()
         {
 
             var blog = new BlogPost();
+            blog.Id = this.Id;
             blog.AuthorId = _currentUserService.UserId;
-            blog.CreationTime = DateTime.Now;
+            blog.LastEditTime = DateTime.Now;
             blog.Title = this.Title;
             blog.Description = this.Description;
             blog.CoverImageUrl = this.CoverImageUrl;
@@ -73,7 +87,7 @@ namespace BlogProject_Devskill.Web.Areas.Admin.Models.BlogPostModels
                 blog.AuthorImageUrl = defaultAuth.AuthorImageUrl;
                 blog.UseAdminInfo = false;
             }
-            await _postService.AddAsync(blog);
+            await _postService.UpdateAsync(blog);
 
             var blogId = await _postService.GetIdByTitleAsync(Title);
             var blogCategories = new List<BlogCategory>();
@@ -88,17 +102,6 @@ namespace BlogProject_Devskill.Web.Areas.Admin.Models.BlogPostModels
                 }
             }
             await _postService.AddBlogCategory(blogCategories);
-        }
-
-    }
-    public class DefaultValues
-    {
-        public string AuthorName { get; set; }
-        public string AuthorImageUrl { get; set; }
-        public DefaultValues()
-        {
-            AuthorName = "Anonymous";
-            AuthorImageUrl = "/ProfileImages/defaultPropic.jpg";
         }
     }
 }

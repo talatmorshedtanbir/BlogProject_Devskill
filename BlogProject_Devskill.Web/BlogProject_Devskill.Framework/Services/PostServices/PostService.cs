@@ -39,6 +39,7 @@ namespace BlogProject_Devskill.Framework.Services.PostServices
             return await _postUnitOfWork.PostRepository.GetByIdAsync(id);
         }
 
+
         public async Task<int> GetIdByTitleAsync(string title)
         {
             var blog = await _postUnitOfWork.PostRepository.GetFirstOrDefaultAsync(x => x, x => x.Title == title, null, true);
@@ -59,13 +60,13 @@ namespace BlogProject_Devskill.Framework.Services.PostServices
 
         public async Task UpdateAsync(BlogPost entity)
         {
-            var isExists = await _postUnitOfWork.PostRepository.IsExistsAsync(x => x.Title == entity.Title && x.Id != entity.Id);
-            if (isExists)
-                throw new DuplicationException(nameof(entity.Title));
-
+            //var isExists = await _postUnitOfWork.PostRepository.IsExistsAsync(x => x.Title == entity.Title && x.Id != entity.Id);
+            //if (isExists)
+            //    throw new DuplicationException(nameof(entity.Title));
+            if (entity.BlogCategories != null)
+                await _postUnitOfWork.BlogCategoryRepository.DeleteAsync(x => x.BlogPostId == entity.Id);
             var updateEntity = await GetByIdAsync(entity.Id);
             updateEntity.Title = entity.Title;
-
             await _postUnitOfWork.PostRepository.UpdateAsync(updateEntity);
             await _postUnitOfWork.SaveChangesAsync();
         }
@@ -73,7 +74,10 @@ namespace BlogProject_Devskill.Framework.Services.PostServices
         public async Task<BlogPost> DeleteAsync(int id)
         {
             var post = await GetByIdAsync(id);
+            if (post == null) throw new NotFoundException(nameof(post), id);
             await _postUnitOfWork.PostRepository.DeleteAsync(id);
+            if(post.BlogCategories!=null)
+            await _postUnitOfWork.BlogCategoryRepository.DeleteAsync(x=> x.BlogPostId == id);
             await _postUnitOfWork.SaveChangesAsync();
             return post;
         }
