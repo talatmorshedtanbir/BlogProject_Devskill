@@ -1,6 +1,6 @@
-﻿@model BlogProject_Devskill.Web.Areas.Admin.Models.BlogPostModels.PostModel
+﻿@model BlogProject_Devskill.Web.Areas.Admin.Models.BlogPostModels.EditPostModel
 @{
-    ViewData["Title"] = "AddBlog";
+    ViewData["Title"] = "EditBlog";
 }
 
 <div class="content-wrapper">
@@ -14,12 +14,13 @@
         <hr />
         <partial name="_ActionMessage" model="@Model.Response" />
         <div class="card-body">
-            <form id="addBlogForm" asp-area="Admin" asp-controller="BlogPost" asp-action="AddBlog" method="post" enctype="multipart/form-data">
+            <form id="editBlogForm" asp-area="Admin" asp-controller="BlogPost" asp-action="EditBlog" method="post" enctype="multipart/form-data">
                 <div class="row">
                     <div class="col-md-6">
                         <div class="pl-5 pr-3">
                             <h4>Add Blog Details</h4>
                             @Html.AntiForgeryToken()
+                            <input type="hidden" asp-for="Id" />
                             <div class="form-group row">
                                 <label asp-for="Title" class="col-sm-3 col-form-label">Title</label>
                                 <div class="col-lg-12 rounded-radius">
@@ -123,7 +124,7 @@
     });
 
     document.getElementById("btnsubmit").onclick = function () {
-        document.getElementById("addBlogForm").submit();
+        document.getElementById("editBlogForm").submit();
     }
 </script>
 @section PageScripts

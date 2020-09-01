@@ -55,6 +55,17 @@ namespace BlogProject_Devskill.Data
             return result;
         }
 
+        public virtual IList<TEntity> Get(Expression<Func<TEntity, bool>> filter)
+        {
+            IQueryable<TEntity> query = _dbSet;
+
+            if (filter != null)
+            {
+                query = query.Where(filter);
+            }
+
+            return query.ToList();
+        }
         public virtual async Task<(IList<TResult> Items, int Total, int TotalFilter)> GetAsync<TResult>(Expression<Func<TEntity, TResult>> selector,
                             Expression<Func<TEntity, bool>> predicate = null,
                             Func<IQueryable<TEntity>, IOrderedQueryable<TEntity>> orderBy = null,

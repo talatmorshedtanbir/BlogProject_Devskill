@@ -1125,3 +1125,231 @@ File name: 'Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation, Culture=neutral, 
 
 
    --- End of inner exception stack trace ---
+2020-08-30 20:39:45.523 +06:00 [INF] Application Starting up
+2020-08-30 20:39:52.120 +06:00 [FTL] Hosting startup assembly exception
+System.InvalidOperationException: Startup assembly Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation failed to execute. See the inner exception for more details.
+ ---> System.IO.FileNotFoundException: Could not load file or assembly 'Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation, Culture=neutral, PublicKeyToken=null'. The system cannot find the file specified.
+File name: 'Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation, Culture=neutral, PublicKeyToken=null'
+   at System.Reflection.RuntimeAssembly.nLoad(AssemblyName fileName, String codeBase, RuntimeAssembly assemblyContext, StackCrawlMark& stackMark, Boolean throwOnFileNotFound, AssemblyLoadContext assemblyLoadContext)
+   at System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, StackCrawlMark& stackMark, AssemblyLoadContext assemblyLoadContext)
+   at System.Reflection.Assembly.Load(AssemblyName assemblyRef, StackCrawlMark& stackMark, AssemblyLoadContext assemblyLoadContext)
+   at System.Reflection.Assembly.Load(AssemblyName assemblyRef)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostBuilder.ExecuteHostingStartups()
+
+
+   --- End of inner exception stack trace ---
+2020-08-30 20:41:31.445 +06:00 [INF] Admin logged in.
+2020-08-30 20:43:34.162 +06:00 [INF] Application Starting up
+2020-08-30 20:43:36.610 +06:00 [FTL] Hosting startup assembly exception
+System.InvalidOperationException: Startup assembly Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation failed to execute. See the inner exception for more details.
+ ---> System.IO.FileNotFoundException: Could not load file or assembly 'Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation, Culture=neutral, PublicKeyToken=null'. The system cannot find the file specified.
+File name: 'Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation, Culture=neutral, PublicKeyToken=null'
+   at System.Reflection.RuntimeAssembly.nLoad(AssemblyName fileName, String codeBase, RuntimeAssembly assemblyContext, StackCrawlMark& stackMark, Boolean throwOnFileNotFound, AssemblyLoadContext assemblyLoadContext)
+   at System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, StackCrawlMark& stackMark, AssemblyLoadContext assemblyLoadContext)
+   at System.Reflection.Assembly.Load(AssemblyName assemblyRef, StackCrawlMark& stackMark, AssemblyLoadContext assemblyLoadContext)
+   at System.Reflection.Assembly.Load(AssemblyName assemblyRef)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostBuilder.ExecuteHostingStartups()
+
+
+   --- End of inner exception stack trace ---
+2020-08-30 20:43:49.689 +06:00 [INF] Admin logged in.
+2020-08-30 20:46:46.523 +06:00 [INF] Application Starting up
+2020-08-30 20:46:48.736 +06:00 [FTL] Hosting startup assembly exception
+System.InvalidOperationException: Startup assembly Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation failed to execute. See the inner exception for more details.
+ ---> System.IO.FileNotFoundException: Could not load file or assembly 'Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation, Culture=neutral, PublicKeyToken=null'. The system cannot find the file specified.
+File name: 'Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation, Culture=neutral, PublicKeyToken=null'
+   at System.Reflection.RuntimeAssembly.nLoad(AssemblyName fileName, String codeBase, RuntimeAssembly assemblyContext, StackCrawlMark& stackMark, Boolean throwOnFileNotFound, AssemblyLoadContext assemblyLoadContext)
+   at System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, StackCrawlMark& stackMark, AssemblyLoadContext assemblyLoadContext)
+   at System.Reflection.Assembly.Load(AssemblyName assemblyRef, StackCrawlMark& stackMark, AssemblyLoadContext assemblyLoadContext)
+   at System.Reflection.Assembly.Load(AssemblyName assemblyRef)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostBuilder.ExecuteHostingStartups()
+
+
+   --- End of inner exception stack trace ---
+2020-08-30 20:48:49.023 +06:00 [INF] Application Starting up
+2020-08-30 20:48:52.813 +06:00 [FTL] Hosting startup assembly exception
+System.InvalidOperationException: Startup assembly Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation failed to execute. See the inner exception for more details.
+ ---> System.IO.FileNotFoundException: Could not load file or assembly 'Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation, Culture=neutral, PublicKeyToken=null'. The system cannot find the file specified.
+File name: 'Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation, Culture=neutral, PublicKeyToken=null'
+   at System.Reflection.RuntimeAssembly.nLoad(AssemblyName fileName, String codeBase, RuntimeAssembly assemblyContext, StackCrawlMark& stackMark, Boolean throwOnFileNotFound, AssemblyLoadContext assemblyLoadContext)
+   at System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, StackCrawlMark& stackMark, AssemblyLoadContext assemblyLoadContext)
+   at System.Reflection.Assembly.Load(AssemblyName assemblyRef, StackCrawlMark& stackMark, AssemblyLoadContext assemblyLoadContext)
+   at System.Reflection.Assembly.Load(AssemblyName assemblyRef)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostBuilder.ExecuteHostingStartups()
+
+
+   --- End of inner exception stack trace ---
+2020-08-30 20:50:57.667 +06:00 [INF] Application Starting up
+2020-08-30 20:51:00.192 +06:00 [FTL] Hosting startup assembly exception
+System.InvalidOperationException: Startup assembly Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation failed to execute. See the inner exception for more details.
+ ---> System.IO.FileNotFoundException: Could not load file or assembly 'Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation, Culture=neutral, PublicKeyToken=null'. The system cannot find the file specified.
+File name: 'Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation, Culture=neutral, PublicKeyToken=null'
+   at System.Reflection.RuntimeAssembly.nLoad(AssemblyName fileName, String codeBase, RuntimeAssembly assemblyContext, StackCrawlMark& stackMark, Boolean throwOnFileNotFound, AssemblyLoadContext assemblyLoadContext)
+   at System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, StackCrawlMark& stackMark, AssemblyLoadContext assemblyLoadContext)
+   at System.Reflection.Assembly.Load(AssemblyName assemblyRef, StackCrawlMark& stackMark, AssemblyLoadContext assemblyLoadContext)
+   at System.Reflection.Assembly.Load(AssemblyName assemblyRef)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostBuilder.ExecuteHostingStartups()
+
+
+   --- End of inner exception stack trace ---
+2020-08-30 20:51:19.145 +06:00 [INF] Admin logged in.
+2020-08-30 21:05:18.526 +06:00 [INF] Application Starting up
+2020-08-30 21:05:21.030 +06:00 [FTL] Hosting startup assembly exception
+System.InvalidOperationException: Startup assembly Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation failed to execute. See the inner exception for more details.
+ ---> System.IO.FileNotFoundException: Could not load file or assembly 'Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation, Culture=neutral, PublicKeyToken=null'. The system cannot find the file specified.
+File name: 'Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation, Culture=neutral, PublicKeyToken=null'
+   at System.Reflection.RuntimeAssembly.nLoad(AssemblyName fileName, String codeBase, RuntimeAssembly assemblyContext, StackCrawlMark& stackMark, Boolean throwOnFileNotFound, AssemblyLoadContext assemblyLoadContext)
+   at System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, StackCrawlMark& stackMark, AssemblyLoadContext assemblyLoadContext)
+   at System.Reflection.Assembly.Load(AssemblyName assemblyRef, StackCrawlMark& stackMark, AssemblyLoadContext assemblyLoadContext)
+   at System.Reflection.Assembly.Load(AssemblyName assemblyRef)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostBuilder.ExecuteHostingStartups()
+
+
+   --- End of inner exception stack trace ---
+2020-08-30 21:11:09.070 +06:00 [INF] Application Starting up
+2020-08-30 21:11:11.604 +06:00 [FTL] Hosting startup assembly exception
+System.InvalidOperationException: Startup assembly Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation failed to execute. See the inner exception for more details.
+ ---> System.IO.FileNotFoundException: Could not load file or assembly 'Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation, Culture=neutral, PublicKeyToken=null'. The system cannot find the file specified.
+File name: 'Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation, Culture=neutral, PublicKeyToken=null'
+   at System.Reflection.RuntimeAssembly.nLoad(AssemblyName fileName, String codeBase, RuntimeAssembly assemblyContext, StackCrawlMark& stackMark, Boolean throwOnFileNotFound, AssemblyLoadContext assemblyLoadContext)
+   at System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, StackCrawlMark& stackMark, AssemblyLoadContext assemblyLoadContext)
+   at System.Reflection.Assembly.Load(AssemblyName assemblyRef, StackCrawlMark& stackMark, AssemblyLoadContext assemblyLoadContext)
+   at System.Reflection.Assembly.Load(AssemblyName assemblyRef)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostBuilder.ExecuteHostingStartups()
+
+
+   --- End of inner exception stack trace ---
+2020-08-30 21:12:26.697 +06:00 [INF] Application Starting up
+2020-08-30 21:12:28.936 +06:00 [FTL] Hosting startup assembly exception
+System.InvalidOperationException: Startup assembly Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation failed to execute. See the inner exception for more details.
+ ---> System.IO.FileNotFoundException: Could not load file or assembly 'Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation, Culture=neutral, PublicKeyToken=null'. The system cannot find the file specified.
+File name: 'Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation, Culture=neutral, PublicKeyToken=null'
+   at System.Reflection.RuntimeAssembly.nLoad(AssemblyName fileName, String codeBase, RuntimeAssembly assemblyContext, StackCrawlMark& stackMark, Boolean throwOnFileNotFound, AssemblyLoadContext assemblyLoadContext)
+   at System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, StackCrawlMark& stackMark, AssemblyLoadContext assemblyLoadContext)
+   at System.Reflection.Assembly.Load(AssemblyName assemblyRef, StackCrawlMark& stackMark, AssemblyLoadContext assemblyLoadContext)
+   at System.Reflection.Assembly.Load(AssemblyName assemblyRef)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostBuilder.ExecuteHostingStartups()
+
+
+   --- End of inner exception stack trace ---
+2020-08-30 21:13:10.033 +06:00 [INF] Application Starting up
+2020-08-30 21:13:12.313 +06:00 [FTL] Hosting startup assembly exception
+System.InvalidOperationException: Startup assembly Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation failed to execute. See the inner exception for more details.
+ ---> System.IO.FileNotFoundException: Could not load file or assembly 'Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation, Culture=neutral, PublicKeyToken=null'. The system cannot find the file specified.
+File name: 'Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation, Culture=neutral, PublicKeyToken=null'
+   at System.Reflection.RuntimeAssembly.nLoad(AssemblyName fileName, String codeBase, RuntimeAssembly assemblyContext, StackCrawlMark& stackMark, Boolean throwOnFileNotFound, AssemblyLoadContext assemblyLoadContext)
+   at System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, StackCrawlMark& stackMark, AssemblyLoadContext assemblyLoadContext)
+   at System.Reflection.Assembly.Load(AssemblyName assemblyRef, StackCrawlMark& stackMark, AssemblyLoadContext assemblyLoadContext)
+   at System.Reflection.Assembly.Load(AssemblyName assemblyRef)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostBuilder.ExecuteHostingStartups()
+
+
+   --- End of inner exception stack trace ---
+2020-08-30 21:15:52.399 +06:00 [INF] Application Starting up
+2020-08-30 21:15:54.677 +06:00 [FTL] Hosting startup assembly exception
+System.InvalidOperationException: Startup assembly Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation failed to execute. See the inner exception for more details.
+ ---> System.IO.FileNotFoundException: Could not load file or assembly 'Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation, Culture=neutral, PublicKeyToken=null'. The system cannot find the file specified.
+File name: 'Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation, Culture=neutral, PublicKeyToken=null'
+   at System.Reflection.RuntimeAssembly.nLoad(AssemblyName fileName, String codeBase, RuntimeAssembly assemblyContext, StackCrawlMark& stackMark, Boolean throwOnFileNotFound, AssemblyLoadContext assemblyLoadContext)
+   at System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, StackCrawlMark& stackMark, AssemblyLoadContext assemblyLoadContext)
+   at System.Reflection.Assembly.Load(AssemblyName assemblyRef, StackCrawlMark& stackMark, AssemblyLoadContext assemblyLoadContext)
+   at System.Reflection.Assembly.Load(AssemblyName assemblyRef)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostBuilder.ExecuteHostingStartups()
+
+
+   --- End of inner exception stack trace ---
+2020-08-30 21:20:48.550 +06:00 [INF] Application Starting up
+2020-08-30 21:20:50.799 +06:00 [FTL] Hosting startup assembly exception
+System.InvalidOperationException: Startup assembly Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation failed to execute. See the inner exception for more details.
+ ---> System.IO.FileNotFoundException: Could not load file or assembly 'Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation, Culture=neutral, PublicKeyToken=null'. The system cannot find the file specified.
+File name: 'Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation, Culture=neutral, PublicKeyToken=null'
+   at System.Reflection.RuntimeAssembly.nLoad(AssemblyName fileName, String codeBase, RuntimeAssembly assemblyContext, StackCrawlMark& stackMark, Boolean throwOnFileNotFound, AssemblyLoadContext assemblyLoadContext)
+   at System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, StackCrawlMark& stackMark, AssemblyLoadContext assemblyLoadContext)
+   at System.Reflection.Assembly.Load(AssemblyName assemblyRef, StackCrawlMark& stackMark, AssemblyLoadContext assemblyLoadContext)
+   at System.Reflection.Assembly.Load(AssemblyName assemblyRef)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostBuilder.ExecuteHostingStartups()
+
+
+   --- End of inner exception stack trace ---
+2020-08-30 21:26:22.897 +06:00 [INF] Application Starting up
+2020-08-30 21:26:25.116 +06:00 [FTL] Hosting startup assembly exception
+System.InvalidOperationException: Startup assembly Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation failed to execute. See the inner exception for more details.
+ ---> System.IO.FileNotFoundException: Could not load file or assembly 'Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation, Culture=neutral, PublicKeyToken=null'. The system cannot find the file specified.
+File name: 'Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation, Culture=neutral, PublicKeyToken=null'
+   at System.Reflection.RuntimeAssembly.nLoad(AssemblyName fileName, String codeBase, RuntimeAssembly assemblyContext, StackCrawlMark& stackMark, Boolean throwOnFileNotFound, AssemblyLoadContext assemblyLoadContext)
+   at System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, StackCrawlMark& stackMark, AssemblyLoadContext assemblyLoadContext)
+   at System.Reflection.Assembly.Load(AssemblyName assemblyRef, StackCrawlMark& stackMark, AssemblyLoadContext assemblyLoadContext)
+   at System.Reflection.Assembly.Load(AssemblyName assemblyRef)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostBuilder.ExecuteHostingStartups()
+
+
+   --- End of inner exception stack trace ---
+2020-08-30 21:27:13.838 +06:00 [INF] Application Starting up
+2020-08-30 21:27:16.093 +06:00 [FTL] Hosting startup assembly exception
+System.InvalidOperationException: Startup assembly Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation failed to execute. See the inner exception for more details.
+ ---> System.IO.FileNotFoundException: Could not load file or assembly 'Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation, Culture=neutral, PublicKeyToken=null'. The system cannot find the file specified.
+File name: 'Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation, Culture=neutral, PublicKeyToken=null'
+   at System.Reflection.RuntimeAssembly.nLoad(AssemblyName fileName, String codeBase, RuntimeAssembly assemblyContext, StackCrawlMark& stackMark, Boolean throwOnFileNotFound, AssemblyLoadContext assemblyLoadContext)
+   at System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, StackCrawlMark& stackMark, AssemblyLoadContext assemblyLoadContext)
+   at System.Reflection.Assembly.Load(AssemblyName assemblyRef, StackCrawlMark& stackMark, AssemblyLoadContext assemblyLoadContext)
+   at System.Reflection.Assembly.Load(AssemblyName assemblyRef)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostBuilder.ExecuteHostingStartups()
+
+
+   --- End of inner exception stack trace ---
+2020-08-30 21:29:47.241 +06:00 [INF] Application Starting up
+2020-08-30 21:29:49.411 +06:00 [FTL] Hosting startup assembly exception
+System.InvalidOperationException: Startup assembly Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation failed to execute. See the inner exception for more details.
+ ---> System.IO.FileNotFoundException: Could not load file or assembly 'Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation, Culture=neutral, PublicKeyToken=null'. The system cannot find the file specified.
+File name: 'Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation, Culture=neutral, PublicKeyToken=null'
+   at System.Reflection.RuntimeAssembly.nLoad(AssemblyName fileName, String codeBase, RuntimeAssembly assemblyContext, StackCrawlMark& stackMark, Boolean throwOnFileNotFound, AssemblyLoadContext assemblyLoadContext)
+   at System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, StackCrawlMark& stackMark, AssemblyLoadContext assemblyLoadContext)
+   at System.Reflection.Assembly.Load(AssemblyName assemblyRef, StackCrawlMark& stackMark, AssemblyLoadContext assemblyLoadContext)
+   at System.Reflection.Assembly.Load(AssemblyName assemblyRef)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostBuilder.ExecuteHostingStartups()
+
+
+   --- End of inner exception stack trace ---
+2020-08-30 21:37:05.352 +06:00 [INF] Application Starting up
+2020-08-30 21:37:07.613 +06:00 [FTL] Hosting startup assembly exception
+System.InvalidOperationException: Startup assembly Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation failed to execute. See the inner exception for more details.
+ ---> System.IO.FileNotFoundException: Could not load file or assembly 'Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation, Culture=neutral, PublicKeyToken=null'. The system cannot find the file specified.
+File name: 'Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation, Culture=neutral, PublicKeyToken=null'
+   at System.Reflection.RuntimeAssembly.nLoad(AssemblyName fileName, String codeBase, RuntimeAssembly assemblyContext, StackCrawlMark& stackMark, Boolean throwOnFileNotFound, AssemblyLoadContext assemblyLoadContext)
+   at System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, StackCrawlMark& stackMark, AssemblyLoadContext assemblyLoadContext)
+   at System.Reflection.Assembly.Load(AssemblyName assemblyRef, StackCrawlMark& stackMark, AssemblyLoadContext assemblyLoadContext)
+   at System.Reflection.Assembly.Load(AssemblyName assemblyRef)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostBuilder.ExecuteHostingStartups()
+
+
+   --- End of inner exception stack trace ---
+2020-08-30 21:50:48.474 +06:00 [INF] Application Starting up
+2020-08-30 21:50:50.891 +06:00 [FTL] Hosting startup assembly exception
+System.InvalidOperationException: Startup assembly Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation failed to execute. See the inner exception for more details.
+ ---> System.IO.FileNotFoundException: Could not load file or assembly 'Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation, Culture=neutral, PublicKeyToken=null'. The system cannot find the file specified.
+File name: 'Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation, Culture=neutral, PublicKeyToken=null'
+   at System.Reflection.RuntimeAssembly.nLoad(AssemblyName fileName, String codeBase, RuntimeAssembly assemblyContext, StackCrawlMark& stackMark, Boolean throwOnFileNotFound, AssemblyLoadContext assemblyLoadContext)
+   at System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, StackCrawlMark& stackMark, AssemblyLoadContext assemblyLoadContext)
+   at System.Reflection.Assembly.Load(AssemblyName assemblyRef, StackCrawlMark& stackMark, AssemblyLoadContext assemblyLoadContext)
+   at System.Reflection.Assembly.Load(AssemblyName assemblyRef)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostBuilder.ExecuteHostingStartups()
+
+
+   --- End of inner exception stack trace ---
+2020-08-30 21:51:15.109 +06:00 [ERR] Entity "ApplicationUser" (00000000-0000-0000-0000-000000000000) was not found.
+2020-08-30 21:51:20.677 +06:00 [ERR] Entity "ApplicationUser" (00000000-0000-0000-0000-000000000000) was not found.
+2020-08-30 21:51:21.650 +06:00 [ERR] Entity "ApplicationUser" (00000000-0000-0000-0000-000000000000) was not found.
+2020-08-30 22:04:08.602 +06:00 [INF] Application Starting up
+2020-08-30 22:04:12.071 +06:00 [FTL] Hosting startup assembly exception
+System.InvalidOperationException: Startup assembly Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation failed to execute. See the inner exception for more details.
+ ---> System.IO.FileNotFoundException: Could not load file or assembly 'Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation, Culture=neutral, PublicKeyToken=null'. The system cannot find the file specified.
+File name: 'Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation, Culture=neutral, PublicKeyToken=null'
+   at System.Reflection.RuntimeAssembly.nLoad(AssemblyName fileName, String codeBase, RuntimeAssembly assemblyContext, StackCrawlMark& stackMark, Boolean throwOnFileNotFound, AssemblyLoadContext assemblyLoadContext)
+   at System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, StackCrawlMark& stackMark, AssemblyLoadContext assemblyLoadContext)
+   at System.Reflection.Assembly.Load(AssemblyName assemblyRef, StackCrawlMark& stackMark, AssemblyLoadContext assemblyLoadContext)
+   at System.Reflection.Assembly.Load(AssemblyName assemblyRef)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostBuilder.ExecuteHostingStartups()
+
+
+   --- End of inner exception stack trace ---
+2020-08-30 22:04:34.195 +06:00 [INF] Admin logged in.

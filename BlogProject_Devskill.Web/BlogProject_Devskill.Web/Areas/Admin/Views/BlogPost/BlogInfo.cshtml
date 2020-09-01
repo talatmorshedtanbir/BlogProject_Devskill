@@ -1,0 +1,77 @@
+﻿@model BlogProject_Devskill.Web.Areas.Admin.Models.BlogPostModels.EditPostModel
+@{
+    ViewData["Title"] = "BlogInformation";
+}
+
+<div class="content-wrapper"
+<!-- Page header -->
+<div class="page-header">
+    <div class="page-header-content header-elements-md-inline">
+        <div class="page-title d-flex">
+            <h4><a asp-controller="Dashboard" asp-action="Index" asp-area="Admin" class="text-black-50"><i class="icon-arrow-left52 mr-2"></i> <span class="font-weight-semibold">Dashboard</span></a></h4>
+            <a href="#" class="header-elements-toggle text-default d-md-none"><i class="icon-more"></i></a>
+        </div>
+
+        <div class="header-elements d-none text-center text-md-left mb-3 mb-md-0">
+            <a asp-controller="BlogPost" asp-action="Index" asp-area="Admin" class="btn btn-labeled btn-labeled-right bg-primary"><i class="icon-list mr-2"></i> <span class="font-weight-semibold">Admin List</span></a>
+        </div>
+    </div>
+</div>
+<!-- /page header -->
+<!-- Content area -->
+<div class="content pt-0">
+
+    <div class="card">
+        <div class="card-header header-elements-inline">
+            <h5 class="card-title text-primary">Blog Informations</h5>
+        </div>
+
+        <div class="card-body">
+            <div class="row">
+                <div class="col-6">
+                    <table class="table">
+                        <tr>
+                            
+                            <td align="center">
+                                <img src="@Model.CoverImageUrl"
+                                        class="rounded-circle"
+                                        height="100" width="100"
+                                        asp-append-version="true" />
+                             </td>
+
+                        </tr>
+                        <tr>
+                            <td class="col-4 float-left"><h5>Title : </h5></td>
+                            <td class="col-8 float-left"><h5>@Model.Title</h5></td>
+                        </tr>
+                        <tr>
+                            <td class="col-4 float-left"><h5>Author : </h5></td>
+                            <td class="col-8 float-left"><h5>@Model.AuthorName</h5></td>
+                        </tr>
+                        <tr>
+                            <td class="col-4 float-left"><h5>Description : </h5></td>
+                            <td class="col-8 float-left"><h5>@Model.Description</h5></td>
+                        </tr>
+
+                        <tr>
+                            <td class="col-4 float-left"><h5>Categories : </h5></td>
+                            @{
+                                foreach (var category in Model.Categories)
+                                {<td class="col-8 float-left"><h5>@category</h5></td>}
+                            }
+                        </tr>
+                        <tr>
+                            <td class="col-4 float-left"><h5>Publication Time : </h5></td>
+                            <td class="col-8 float-left">
+                                <h5>@Model.PublicationTime</h5>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<!-- /Content area -->

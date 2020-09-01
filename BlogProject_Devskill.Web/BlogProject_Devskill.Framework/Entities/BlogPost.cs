@@ -3,6 +3,7 @@ using BlogProject_Devskill.Membership.Entities;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.Net;
 using System.Text;
 
 namespace BlogProject_Devskill.Framework.Entities
@@ -11,6 +12,8 @@ namespace BlogProject_Devskill.Framework.Entities
     {
         [Required]
         public Guid AuthorId { get; set; }
+        public string AuthorName { get; set; }
+        public string AuthorImageUrl { get; set; }
 
         [Required]
         [StringLength(160)]
@@ -24,6 +27,7 @@ namespace BlogProject_Devskill.Framework.Entities
         public string CoverImageUrl { get; set; }
         [Required]
         public bool Draft { get; set; }
+        public bool UseAdminInfo { get; set; }
         public DateTime CreationTime { get; set; }
         public DateTime LastEditTime { get; set; }
         public DateTime PublishTime { get; set; }

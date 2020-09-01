@@ -205,3 +205,5 @@ H:\ASP COURSE\Personal Project\BlogProject_Devskill\BlogProject_Devskill.Web\Blo
 H:\ASP COURSE\Personal Project\BlogProject_Devskill\BlogProject_Devskill.Web\BlogProject_Devskill.Web\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\Admin\ChangePassword.cshtml.g.cs
 H:\ASP COURSE\Personal Project\BlogProject_Devskill\BlogProject_Devskill.Web\BlogProject_Devskill.Web\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\BlogPost\AddBlog.cshtml.g.cs
 H:\ASP COURSE\Personal Project\BlogProject_Devskill\BlogProject_Devskill.Web\BlogProject_Devskill.Web\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\BlogPost\Index.cshtml.g.cs
+H:\ASP COURSE\Personal Project\BlogProject_Devskill\BlogProject_Devskill.Web\BlogProject_Devskill.Web\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\BlogPost\EditBlog.cshtml.g.cs
+H:\ASP COURSE\Personal Project\BlogProject_Devskill\BlogProject_Devskill.Web\BlogProject_Devskill.Web\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\BlogPost\BlogInfo.cshtml.g.cs
