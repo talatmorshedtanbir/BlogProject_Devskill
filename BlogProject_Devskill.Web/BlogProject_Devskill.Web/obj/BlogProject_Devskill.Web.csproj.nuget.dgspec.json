@@ -291,6 +291,10 @@
       "frameworks": {
         "netcoreapp3.1": {
           "dependencies": {
+            "Askmethat.Aspnet.JsonLocalizer": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
             "Autofac.Extensions.DependencyInjection": {
               "target": "Package",
               "version": "[6.0.0, )"

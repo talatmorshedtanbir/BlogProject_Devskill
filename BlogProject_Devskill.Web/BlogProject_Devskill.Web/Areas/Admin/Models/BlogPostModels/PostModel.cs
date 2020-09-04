@@ -83,6 +83,7 @@ namespace BlogProject_Devskill.Web.Areas.Admin.Models.BlogPostModels
                 {
                     var newBlogCategory = new BlogCategory();
                     newBlogCategory.BlogPostId = blogId;
+                    await _categoryService.UpdateCountAsync(item);
                     newBlogCategory.CategoryId = item.Id;
                     blogCategories.Add(newBlogCategory);
                 }

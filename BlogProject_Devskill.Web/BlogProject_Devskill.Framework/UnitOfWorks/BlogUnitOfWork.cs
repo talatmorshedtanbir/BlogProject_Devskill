@@ -1,5 +1,7 @@
 ﻿using BlogProject_Devskill.Data;
 using BlogProject_Devskill.Framework.Contexts;
+using BlogProject_Devskill.Framework.Repositories;
+using BlogProject_Devskill.Framework.Repositories.BlogCategoryRepos;
 using BlogProject_Devskill.Framework.Repositories.CategoryRepos;
 using System;
 using System.Collections.Generic;
@@ -9,13 +11,16 @@ namespace BlogProject_Devskill.Framework.UnitOfWorks
 {
     public class BlogUnitOfWork : UnitOfWork, IBlogUnitOfWork
     {
-        //public ICategoryRepository CategoryRepository { get; set; }
-        //public BlogUnitOfWork(FrameworkContext dbContext, ICategoryRepository categoryRepository) : base(dbContext)
-        //{
-        //    CategoryRepository = categoryRepository;
-        //}
-        public BlogUnitOfWork(FrameworkContext dbContext) : base(dbContext)
+        public IPostRepository PostRepository { get; set; }
+        public ICategoryRepository CategoryRepository { get; set; }
+        public IBlogCategoryRepository BlogCategoryRepository { get; set; }
+        public BlogUnitOfWork(FrameworkContext context, IPostRepository postRepository, ICategoryRepository categoryRepository,
+            IBlogCategoryRepository blogCategoryRepository)
+          : base(context)
         {
+            PostRepository = postRepository;
+            CategoryRepository = categoryRepository;
+            BlogCategoryRepository = blogCategoryRepository;
         }
     }
 }

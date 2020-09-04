@@ -27,7 +27,7 @@ namespace BlogProject_Devskill.Web.Areas.Admin.Controllers
             _webHostEnvironment = webHostEnvironment;
         }
         [Authorize(Roles = "Administrator")]
-        public async Task<IActionResult> Index()
+        public IActionResult Index()
         {
             var model = Startup.AutofacContainer.Resolve<BlogPostModel>();
             return View(model);
@@ -86,13 +86,12 @@ namespace BlogProject_Devskill.Web.Areas.Admin.Controllers
         [HttpPost]
         public async Task<IActionResult> EditBlog(EditPostModel model)
         {
-            model.CoverImageUrl = UploadedFile(model);
+            var newUrl = UploadedFile(model);
             if (ModelState.IsValid)
             {
-
                 try
                 {
-                    await model.EditBlogAsync();
+                    await model.EditBlogAsync(newUrl);
                     var msg = "Congrats! Editted Blog Successfully";
                     _logger.LogInformation("Blog Editted Successfully");
                     model.Response = new ResponseModel(msg, ResponseType.Success);
@@ -108,6 +107,7 @@ namespace BlogProject_Devskill.Web.Areas.Admin.Controllers
             model.Categories = model.GetAllCategoryForSelectAsync();
             return View(model);
         }
+
 
         [HttpPost]
         [ValidateAntiForgeryToken]
@@ -133,12 +133,29 @@ namespace BlogProject_Devskill.Web.Areas.Admin.Controllers
         }
         private string UploadedFile(PostModel model)
         {
-            string uniqueFileName = "/CoverImages/defaultIcon.jpg";
+            string uniqueFileName = "defaultIcon.jpg";
 
             if (model.CoverImage != null)
             {
                 string uploadsFolder = Path.Combine(_webHostEnvironment.WebRootPath, "CoverImages");
                 uniqueFileName = Guid.NewGuid().ToString() + "_" + model.CoverImage.FileName;
+                string filePath = Path.Combine(uploadsFolder, uniqueFileName);
+                using (var fileStream = new FileStream(filePath, FileMode.Create))
+                {
+                    model.CoverImage.CopyTo(fileStream);
+                }
+            }
+            return uniqueFileName;
+        }
+
+        private string UploadedFile(EditPostModel model)
+        {
+            string uniqueFileName = "defaultIcon.jpg";
+
+            if (model.CoverImage != null)
+            {
+                string uploadsFolder = Path.Combine(_webHostEnvironment.WebRootPath, "CoverImages");
+                uniqueFileName = Guid.NewGuid().ToString() + "_"+ model.CoverImage.FileName;
                 string filePath = Path.Combine(uploadsFolder, uniqueFileName);
                 using (var fileStream = new FileStream(filePath, FileMode.Create))
                 {
@@ -149,27 +166,11 @@ namespace BlogProject_Devskill.Web.Areas.Admin.Controllers
         }
 
         [Authorize(Roles = "Administrator")]
-        public async Task<IActionResult> BlogInfo(int id)
+        public async Task<IActionResult> BlogInformation(int id)
         {
-            var model = new EditPostModel();
+            var model = new BlogInformationModel();
             await model.LoadByIdAsync(id);
             return View(model);
-        }
-        private string UploadedFile(EditPostModel model)
-        {
-            string uniqueFileName = "/CoverImages/defaultIcon.jpg";
-
-            if (model.CoverImage != null)
-            {
-                string uploadsFolder = Path.Combine(_webHostEnvironment.WebRootPath, "CoverImages");
-                uniqueFileName = Guid.NewGuid().ToString() + "_" + model.CoverImage.FileName;
-                string filePath = Path.Combine(uploadsFolder, uniqueFileName);
-                using (var fileStream = new FileStream(filePath, FileMode.Create))
-                {
-                    model.CoverImage.CopyTo(fileStream);
-                }
-            }
-            return uniqueFileName;
         }
     }
 }

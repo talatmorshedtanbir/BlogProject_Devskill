@@ -39,7 +39,7 @@ namespace BlogProject_Devskill.Web.Areas.Admin.Models.BlogPostModels
                             item.Title,
                             string.Join(", ",item.BlogCategories.Select(x=>x.Category.Name)),
                             item.AuthorName,
-                            (item.Description.Substring(0,item.Description.Length-1>20?20:item.Description.Length-1)+".....").ToString(),
+                            (item.Description.Substring(0,item.Description.Length-1>30?30:item.Description.Length-1)+".....").ToString(),
                             item.CreationTime.ToString(),
                             item.Id.ToString()
                         }).ToArray()

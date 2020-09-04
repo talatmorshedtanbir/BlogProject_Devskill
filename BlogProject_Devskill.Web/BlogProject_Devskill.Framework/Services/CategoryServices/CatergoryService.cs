@@ -68,6 +68,14 @@ namespace BlogProject_Devskill.Framework.Services.CategoryServices
             await _postUnitOfWork.SaveChangesAsync();
         }
 
+        public async Task UpdateCountAsync(Category entity)
+        {
+            var updateEntity = await GetByIdAsync(entity.Id);
+            updateEntity.Id = entity.Id;
+            updateEntity.PostCount += 1;
+            await _postUnitOfWork.CategoryRepository.UpdateAsync(updateEntity);
+            await _postUnitOfWork.SaveChangesAsync();
+        }
         public async Task<Category> DeleteAsync(int id)
         {
             var category = await GetByIdAsync(id);

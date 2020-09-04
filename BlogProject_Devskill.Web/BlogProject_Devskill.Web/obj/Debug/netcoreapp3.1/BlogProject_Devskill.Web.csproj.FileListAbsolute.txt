@@ -190,9 +190,6 @@ H:\ASP COURSE\Personal Project\BlogProject_Devskill\BlogProject_Devskill.Web\Blo
 H:\ASP COURSE\Personal Project\BlogProject_Devskill\BlogProject_Devskill.Web\BlogProject_Devskill.Web\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\_ViewImports.cshtml.g.cs
 H:\ASP COURSE\Personal Project\BlogProject_Devskill\BlogProject_Devskill.Web\BlogProject_Devskill.Web\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\_ViewStart.cshtml.g.cs
 H:\ASP COURSE\Personal Project\BlogProject_Devskill\BlogProject_Devskill.Web\BlogProject_Devskill.Web\bin\Debug\netcoreapp3.1\Markdig.dll
-H:\ASP COURSE\Personal Project\BlogProject_Devskill\BlogProject_Devskill.Web\BlogProject_Devskill.Web\obj\Debug\netcoreapp3.1\BlogProject_Devskill.Web.csproj.CoreCompileInputs.cache
-H:\ASP COURSE\Personal Project\BlogProject_Devskill\BlogProject_Devskill.Web\BlogProject_Devskill.Web\obj\Debug\netcoreapp3.1\BlogProject_Devskill.Web.MvcApplicationPartsAssemblyInfo.cs
-H:\ASP COURSE\Personal Project\BlogProject_Devskill\BlogProject_Devskill.Web\BlogProject_Devskill.Web\obj\Debug\netcoreapp3.1\BlogProject_Devskill.Web.MvcApplicationPartsAssemblyInfo.cache
 H:\ASP COURSE\Personal Project\BlogProject_Devskill\BlogProject_Devskill.Web\BlogProject_Devskill.Web\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\Admin\Index.cshtml.g.cs
 H:\ASP COURSE\Personal Project\BlogProject_Devskill\BlogProject_Devskill.Web\BlogProject_Devskill.Web\obj\Debug\netcoreapp3.1\Razor\Views\Accounts\Login.cshtml.g.cs
 H:\ASP COURSE\Personal Project\BlogProject_Devskill\BlogProject_Devskill.Web\BlogProject_Devskill.Web\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\Dashboard\Index.cshtml.g.cs
@@ -206,4 +203,15 @@ H:\ASP COURSE\Personal Project\BlogProject_Devskill\BlogProject_Devskill.Web\Blo
 H:\ASP COURSE\Personal Project\BlogProject_Devskill\BlogProject_Devskill.Web\BlogProject_Devskill.Web\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\BlogPost\AddBlog.cshtml.g.cs
 H:\ASP COURSE\Personal Project\BlogProject_Devskill\BlogProject_Devskill.Web\BlogProject_Devskill.Web\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\BlogPost\Index.cshtml.g.cs
 H:\ASP COURSE\Personal Project\BlogProject_Devskill\BlogProject_Devskill.Web\BlogProject_Devskill.Web\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\BlogPost\EditBlog.cshtml.g.cs
-H:\ASP COURSE\Personal Project\BlogProject_Devskill\BlogProject_Devskill.Web\BlogProject_Devskill.Web\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\BlogPost\BlogInfo.cshtml.g.cs
+H:\ASP COURSE\Personal Project\BlogProject_Devskill\BlogProject_Devskill.Web\BlogProject_Devskill.Web\obj\Debug\netcoreapp3.1\Razor\Areas\User\Views\Blog\Index.cshtml.g.cs
+H:\ASP COURSE\Personal Project\BlogProject_Devskill\BlogProject_Devskill.Web\BlogProject_Devskill.Web\obj\Debug\netcoreapp3.1\Razor\Areas\User\Views\Blog\Shared\Footer.cshtml.g.cs
+H:\ASP COURSE\Personal Project\BlogProject_Devskill\BlogProject_Devskill.Web\BlogProject_Devskill.Web\obj\Debug\netcoreapp3.1\Razor\Areas\User\Views\Blog\Shared\Header.cshtml.g.cs
+H:\ASP COURSE\Personal Project\BlogProject_Devskill\BlogProject_Devskill.Web\BlogProject_Devskill.Web\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\BlogPost\BlogInformation.cshtml.g.cs
+H:\ASP COURSE\Personal Project\BlogProject_Devskill\BlogProject_Devskill.Web\BlogProject_Devskill.Web\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\Shared\Footer.cshtml.g.cs
+H:\ASP COURSE\Personal Project\BlogProject_Devskill\BlogProject_Devskill.Web\BlogProject_Devskill.Web\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\Shared\Header.cshtml.g.cs
+H:\ASP COURSE\Personal Project\BlogProject_Devskill\BlogProject_Devskill.Web\BlogProject_Devskill.Web\obj\Debug\netcoreapp3.1\Razor\Areas\User\Views\Blog\Shared\Head.cshtml.g.cs
+H:\ASP COURSE\Personal Project\BlogProject_Devskill\BlogProject_Devskill.Web\BlogProject_Devskill.Web\bin\Debug\netcoreapp3.1\Askmethat.Aspnet.JsonLocalizer.dll
+H:\ASP COURSE\Personal Project\BlogProject_Devskill\BlogProject_Devskill.Web\BlogProject_Devskill.Web\obj\Debug\netcoreapp3.1\BlogProject_Devskill.Web.csproj.CoreCompileInputs.cache
+H:\ASP COURSE\Personal Project\BlogProject_Devskill\BlogProject_Devskill.Web\BlogProject_Devskill.Web\obj\Debug\netcoreapp3.1\BlogProject_Devskill.Web.MvcApplicationPartsAssemblyInfo.cs
+H:\ASP COURSE\Personal Project\BlogProject_Devskill\BlogProject_Devskill.Web\BlogProject_Devskill.Web\obj\Debug\netcoreapp3.1\BlogProject_Devskill.Web.MvcApplicationPartsAssemblyInfo.cache
+H:\ASP COURSE\Personal Project\BlogProject_Devskill\BlogProject_Devskill.Web\BlogProject_Devskill.Web\obj\Debug\netcoreapp3.1\Razor\Areas\User\Views\_ViewImports.cshtml.g.cs

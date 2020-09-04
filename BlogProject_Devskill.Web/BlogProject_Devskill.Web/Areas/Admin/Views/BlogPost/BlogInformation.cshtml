@@ -1,6 +1,6 @@
-﻿@model BlogProject_Devskill.Web.Areas.Admin.Models.BlogPostModels.EditPostModel
+﻿@model BlogProject_Devskill.Web.Areas.Admin.Models.BlogPostModels.BlogInformationModel
 @{
-    ViewData["Title"] = "BlogInformation";
+    ViewData["Title"] = "BlogInformations";
 }
 
 <div class="content-wrapper"
@@ -13,7 +13,7 @@
         </div>
 
         <div class="header-elements d-none text-center text-md-left mb-3 mb-md-0">
-            <a asp-controller="BlogPost" asp-action="Index" asp-area="Admin" class="btn btn-labeled btn-labeled-right bg-primary"><i class="icon-list mr-2"></i> <span class="font-weight-semibold">Admin List</span></a>
+            <a asp-controller="BlogPost" asp-action="Index" asp-area="Admin" class="btn btn-labeled btn-labeled-right bg-primary"><i class="icon-list mr-2"></i> <span class="font-weight-semibold">Blog List</span></a>
         </div>
     </div>
 </div>
@@ -23,7 +23,7 @@
 
     <div class="card">
         <div class="card-header header-elements-inline">
-            <h5 class="card-title text-primary">Blog Informations</h5>
+            <h5 class="card-title text-primary">Blog Information</h5>
         </div>
 
         <div class="card-body">
@@ -31,13 +31,14 @@
                 <div class="col-6">
                     <table class="table">
                         <tr>
-                            
-                            <td align="center">
-                                <img src="@Model.CoverImageUrl"
-                                        class="rounded-circle"
-                                        height="100" width="100"
-                                        asp-append-version="true" />
-                             </td>
+                            @{
+                                <td align="center">
+                                    <img src="/CoverImages/@Model.CoverImageUrl"
+                                         class="img-fluid rounded hoverable"
+                                         height="250" width="350"
+                                         asp-append-version="true" />
+                                </td>
+                            }
 
                         </tr>
                         <tr>
@@ -52,20 +53,24 @@
                             <td class="col-4 float-left"><h5>Description : </h5></td>
                             <td class="col-8 float-left"><h5>@Model.Description</h5></td>
                         </tr>
-
                         <tr>
                             <td class="col-4 float-left"><h5>Categories : </h5></td>
-                            @{
-                                foreach (var category in Model.Categories)
-                                {<td class="col-8 float-left"><h5>@category</h5></td>}
-                            }
+                            <td class="col-8 float-left"><h5>@Model.Categories</h5></td>
                         </tr>
                         <tr>
                             <td class="col-4 float-left"><h5>Publication Time : </h5></td>
-                            <td class="col-8 float-left">
-                                <h5>@Model.PublicationTime</h5>
-                            </td>
+                            <td class="col-8 float-left"><h5>@Model.PublicationTime</h5></td>
                         </tr>
+                        @{
+                            if (Model.EditingTime > DateTime.MinValue)
+                            {
+                                <tr>
+                                    <td class="col-4 float-left"><h5>Last Edit Time : </h5></td>
+                                    <td class="col-8 float-left"><h5>@Model.EditingTime</h5></td>
+                                </tr>
+                            }
+
+                        }
                     </table>
                 </div>
             </div>

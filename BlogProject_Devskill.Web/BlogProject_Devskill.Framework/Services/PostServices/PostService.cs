@@ -39,6 +39,10 @@ namespace BlogProject_Devskill.Framework.Services.PostServices
             return await _postUnitOfWork.PostRepository.GetByIdAsync(id);
         }
 
+        public async Task<BlogPost> GetWithIncludeByIdAsync(int id)
+        {
+            return await _postUnitOfWork.PostRepository.GetFirstOrDefaultAsync(x => x, x => x.Id == id, x => x.Include(i => i.BlogCategories).ThenInclude(i => i.Category));
+        }
 
         public async Task<int> GetIdByTitleAsync(string title)
         {
@@ -48,6 +52,10 @@ namespace BlogProject_Devskill.Framework.Services.PostServices
 
         public async Task AddAsync(BlogPost entity)
         {
+            if(entity.Title == null)
+            {
+                throw new NotFoundException(nameof(entity.Title),entity.Id);
+            }
             await _postUnitOfWork.PostRepository.AddAsync(entity);
             await _postUnitOfWork.SaveChangesAsync();
         }
@@ -60,24 +68,49 @@ namespace BlogProject_Devskill.Framework.Services.PostServices
 
         public async Task UpdateAsync(BlogPost entity)
         {
-            //var isExists = await _postUnitOfWork.PostRepository.IsExistsAsync(x => x.Title == entity.Title && x.Id != entity.Id);
-            //if (isExists)
-            //    throw new DuplicationException(nameof(entity.Title));
-            if (entity.BlogCategories != null)
-                await _postUnitOfWork.BlogCategoryRepository.DeleteAsync(x => x.BlogPostId == entity.Id);
             var updateEntity = await GetByIdAsync(entity.Id);
+            if (updateEntity.BlogCategories != null)
+            {
+                var results = _postUnitOfWork.BlogCategoryRepository.Get(x => x.BlogPostId == updateEntity.Id);
+                {
+                    foreach (var result in results)
+                    {
+                        var category = await _postUnitOfWork.CategoryRepository.GetByIdAsync(result.CategoryId);
+                        category.Id = result.CategoryId;
+                        category.PostCount -= 1;
+                        await _postUnitOfWork.CategoryRepository.UpdateAsync(category);
+                    }
+                }
+                await _postUnitOfWork.BlogCategoryRepository.DeleteAsync(x => x.BlogPostId == updateEntity.Id);
+            }
+            updateEntity.Id = entity.Id;
             updateEntity.Title = entity.Title;
+            updateEntity.Description = entity.Description;
+            updateEntity.CoverImageUrl = entity.CoverImageUrl;
+            updateEntity.LastEditTime = DateTime.Now;
+            updateEntity.UseAdminInfo = entity.UseAdminInfo;
             await _postUnitOfWork.PostRepository.UpdateAsync(updateEntity);
             await _postUnitOfWork.SaveChangesAsync();
         }
-
         public async Task<BlogPost> DeleteAsync(int id)
         {
             var post = await GetByIdAsync(id);
             if (post == null) throw new NotFoundException(nameof(post), id);
             await _postUnitOfWork.PostRepository.DeleteAsync(id);
             if(post.BlogCategories!=null)
-            await _postUnitOfWork.BlogCategoryRepository.DeleteAsync(x=> x.BlogPostId == id);
+            {
+                var results = _postUnitOfWork.BlogCategoryRepository.Get(x=>x.BlogPostId==id);
+                {
+                    foreach(var result in results)
+                    {
+                        var updateEntity = await _postUnitOfWork.CategoryRepository.GetByIdAsync(result.CategoryId);
+                        updateEntity.Id = result.CategoryId;
+                        updateEntity.PostCount -= 1;
+                        await _postUnitOfWork.CategoryRepository.UpdateAsync(updateEntity);
+                    }
+                }
+                await _postUnitOfWork.BlogCategoryRepository.DeleteAsync(x => x.BlogPostId == id);
+            }
             await _postUnitOfWork.SaveChangesAsync();
             return post;
         }

@@ -2,6 +2,21 @@
   "version": 3,
   "targets": {
     ".NETCoreApp,Version=v3.1": {
+      "Askmethat.Aspnet.JsonLocalizer/2.2.0": {
+        "type": "package",
+        "dependencies": {
+          "Newtonsoft.Json": "12.0.3"
+        },
+        "compile": {
+          "lib/netcoreapp3.1/Askmethat.Aspnet.JsonLocalizer.dll": {}
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/Askmethat.Aspnet.JsonLocalizer.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      },
       "Autofac/5.2.0": {
         "type": "package",
         "compile": {
@@ -1131,7 +1146,7 @@
           "System.Xml.XDocument": "4.3.0"
         }
       },
-      "Newtonsoft.Json/12.0.2": {
+      "Newtonsoft.Json/12.0.3": {
         "type": "package",
         "compile": {
           "lib/netstandard2.0/Newtonsoft.Json.dll": {}
@@ -2998,6 +3013,18 @@
     }
   },
   "libraries": {
+    "Askmethat.Aspnet.JsonLocalizer/2.2.0": {
+      "sha512": "SjqjNg8vx0MqTB36fvYAUdK9Nbxd+WGwouKCqxyRD2X+mIoC/jxOx2tKpXFY/gTs9BcIezujn3/306TNTioxNw==",
+      "type": "package",
+      "path": "askmethat.aspnet.jsonlocalizer/2.2.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "askmethat.aspnet.jsonlocalizer.2.2.0.nupkg.sha512",
+        "askmethat.aspnet.jsonlocalizer.nuspec",
+        "lib/netcoreapp3.1/Askmethat.Aspnet.JsonLocalizer.dll"
+      ]
+    },
     "Autofac/5.2.0": {
       "sha512": "V8dBH0dsv75uDzl7Sw+HkhKDPUw2eXnlMjcSVMH+tLo2s67MpTKGyDj1pDcpR+IF2u4YRs0s3/x7R88YJzIWvg==",
       "type": "package",
@@ -4783,10 +4810,10 @@
         "netstandard.library.nuspec"
       ]
     },
-    "Newtonsoft.Json/12.0.2": {
-      "sha512": "rTK0s2EKlfHsQsH6Yx2smvcTCeyoDNgCW7FEYyV01drPlh2T243PR2DiDXqtC5N4GDm4Ma/lkxfW5a/4793vbA==",
+    "Newtonsoft.Json/12.0.3": {
+      "sha512": "6mgjfnRB4jKMlzHSl+VD+oUc1IebOZabkbyWj2RiTgWwYPPuaK1H97G1sHqGwPlS5npiF5Q0OrxN1wni2n5QWg==",
       "type": "package",
-      "path": "newtonsoft.json/12.0.2",
+      "path": "newtonsoft.json/12.0.3",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -4809,8 +4836,9 @@
         "lib/portable-net40+sl5+win8+wp8+wpa81/Newtonsoft.Json.xml",
         "lib/portable-net45+win8+wp8+wpa81/Newtonsoft.Json.dll",
         "lib/portable-net45+win8+wp8+wpa81/Newtonsoft.Json.xml",
-        "newtonsoft.json.12.0.2.nupkg.sha512",
-        "newtonsoft.json.nuspec"
+        "newtonsoft.json.12.0.3.nupkg.sha512",
+        "newtonsoft.json.nuspec",
+        "packageIcon.png"
       ]
     },
     "NuGet.Frameworks/4.7.0": {
@@ -9471,6 +9499,7 @@
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
+      "Askmethat.Aspnet.JsonLocalizer >= 2.2.0",
       "Autofac.Extensions.DependencyInjection >= 6.0.0",
       "BlogProject_Devskill.Data >= 1.0.0",
       "BlogProject_Devskill.Framework >= 1.0.0",
@@ -9537,6 +9566,10 @@
     "frameworks": {
       "netcoreapp3.1": {
         "dependencies": {
+          "Askmethat.Aspnet.JsonLocalizer": {
+            "target": "Package",
+            "version": "[2.2.0, )"
+          },
           "Autofac.Extensions.DependencyInjection": {
             "target": "Package",
             "version": "[6.0.0, )"
