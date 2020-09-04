@@ -26,8 +26,15 @@ using BlogProject_Devskill.Web.Areas.Admin.Models.AdminControl;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 3 "H:\ASP COURSE\Personal Project\BlogProject_Devskill\BlogProject_Devskill.Web\BlogProject_Devskill.Web\Areas\Admin\Views\_ViewImports.cshtml"
+using BlogProject_Devskill.Web.Areas.Admin.Models.BlogPostModels;
+
+#line default
+#line hidden
+#nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"b37cb9ab57a0c01bd46aa542e070799fa540140f", @"/Areas/Admin/Views/Admin/Index.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"c333dd44dea71ce9d2352bd4bc7038d8d41a626e", @"/Areas/Admin/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"5ffc6283e0567e73773e8013c878906e1e7983ff", @"/Areas/Admin/Views/_ViewImports.cshtml")]
     public class Areas_Admin_Views_Admin_Index : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<BlogProject_Devskill.Web.Areas.Admin.Models.AdminControl.AdminControlModel>
     {
         private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_0 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("rel", new global::Microsoft.AspNetCore.Html.HtmlString("stylesheet"), global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
@@ -83,7 +90,7 @@ using BlogProject_Devskill.Web.Areas.Admin.Models.AdminControl;
 #nullable disable
             DefineSection("PageStyles", async() => {
                 WriteLiteral("\r\n    <!-- DataTables -->\r\n    ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("link", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "b37cb9ab57a0c01bd46aa542e070799fa540140f9457", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("link", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "b37cb9ab57a0c01bd46aa542e070799fa540140f9744", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -101,7 +108,7 @@ using BlogProject_Devskill.Web.Areas.Admin.Models.AdminControl;
             }
             );
             WriteLiteral("<div class=\"page-header\">\r\n    <div class=\"page-header-content header-elements-md-inline\">\r\n        <div class=\"page-title d-flex\">\r\n            <h4>");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b37cb9ab57a0c01bd46aa542e070799fa540140f10851", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b37cb9ab57a0c01bd46aa542e070799fa540140f11138", async() => {
                 WriteLiteral("<i class=\"icon-arrow-left52 mr-2\"></i> <span class=\"font-weight-semibold\">Dashboard</span>");
             }
             );
@@ -122,7 +129,7 @@ using BlogProject_Devskill.Web.Areas.Admin.Models.AdminControl;
             Write(__tagHelperExecutionContext.Output);
             __tagHelperExecutionContext = __tagHelperScopeManager.End();
             WriteLiteral("</h4>\r\n            <a href=\"#\" class=\"header-elements-toggle text-default d-md-none\"><i class=\"icon-more\"></i></a>\r\n        </div>\r\n\r\n        <div class=\"header-elements d-none text-center text-md-left mb-3 mb-md-0\">\r\n            ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b37cb9ab57a0c01bd46aa542e070799fa540140f12828", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b37cb9ab57a0c01bd46aa542e070799fa540140f13115", async() => {
                 WriteLiteral("<i class=\"icon-user-plus mr-2\"></i> <span class=\"font-weight-semibold\">Add Admin</span>");
             }
             );
@@ -171,7 +178,7 @@ using BlogProject_Devskill.Web.Areas.Admin.Models.AdminControl;
                 <div class=""card"">
                     <div>
                         ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("partial", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "b37cb9ab57a0c01bd46aa542e070799fa540140f15499", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("partial", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "b37cb9ab57a0c01bd46aa542e070799fa540140f15786", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_TagHelpers_PartialTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.TagHelpers.PartialTagHelper>();
@@ -241,7 +248,7 @@ __Microsoft_AspNetCore_Mvc_TagHelpers_PartialTagHelper.Model = Model.Response;
             <div class=""modal-body"">
                 <p>Are you sure, you want to delete?</p>
                 ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b37cb9ab57a0c01bd46aa542e070799fa540140f18968", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b37cb9ab57a0c01bd46aa542e070799fa540140f19255", async() => {
                 WriteLiteral("\r\n                    ");
 #nullable restore
 #line 93 "H:\ASP COURSE\Personal Project\BlogProject_Devskill\BlogProject_Devskill.Web\BlogProject_Devskill.Web\Areas\Admin\Views\Admin\Index.cshtml"
@@ -285,7 +292,7 @@ __Microsoft_AspNetCore_Mvc_TagHelpers_PartialTagHelper.Model = Model.Response;
 ");
             DefineSection("PageScripts", async() => {
                 WriteLiteral("\r\n    <!-- DataTables -->\r\n    ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("script", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b37cb9ab57a0c01bd46aa542e070799fa540140f21691", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("script", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b37cb9ab57a0c01bd46aa542e070799fa540140f21978", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -299,7 +306,7 @@ __Microsoft_AspNetCore_Mvc_TagHelpers_PartialTagHelper.Model = Model.Response;
                 Write(__tagHelperExecutionContext.Output);
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 WriteLiteral("\r\n    ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("script", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b37cb9ab57a0c01bd46aa542e070799fa540140f22792", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("script", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b37cb9ab57a0c01bd46aa542e070799fa540140f23079", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();

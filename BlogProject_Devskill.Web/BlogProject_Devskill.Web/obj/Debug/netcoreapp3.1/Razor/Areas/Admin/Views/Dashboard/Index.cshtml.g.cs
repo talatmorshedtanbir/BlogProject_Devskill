@@ -26,8 +26,15 @@ using BlogProject_Devskill.Web.Areas.Admin.Models.AdminControl;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 3 "H:\ASP COURSE\Personal Project\BlogProject_Devskill\BlogProject_Devskill.Web\BlogProject_Devskill.Web\Areas\Admin\Views\_ViewImports.cshtml"
+using BlogProject_Devskill.Web.Areas.Admin.Models.BlogPostModels;
+
+#line default
+#line hidden
+#nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"e20b8d874ba2c20c5e9295f0367bf1cbab03ef25", @"/Areas/Admin/Views/Dashboard/Index.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"c333dd44dea71ce9d2352bd4bc7038d8d41a626e", @"/Areas/Admin/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"5ffc6283e0567e73773e8013c878906e1e7983ff", @"/Areas/Admin/Views/_ViewImports.cshtml")]
     public class Areas_Admin_Views_Dashboard_Index : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<dynamic>
     {
         private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_0 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("asp-controller", "Admin", global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
@@ -83,7 +90,7 @@ using BlogProject_Devskill.Web.Areas.Admin.Models.AdminControl;
                     <div class=""card-body"">
                         <i class=""icon-users4 icon-2x text-primary border-primary border-3 rounded-round p-3 mb-3""></i>
                         ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "e20b8d874ba2c20c5e9295f0367bf1cbab03ef256083", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "e20b8d874ba2c20c5e9295f0367bf1cbab03ef256370", async() => {
                 WriteLiteral("<i class=\"icon-eye\"></i> <b>View Current Admins</b>");
             }
             );
@@ -115,7 +122,7 @@ using BlogProject_Devskill.Web.Areas.Admin.Models.AdminControl;
                     <div class=""card-body"">
                         <i class=""icon-users4 icon-2x text-primary border-primary border-3 rounded-round p-3 mb-3""></i>
                         ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "e20b8d874ba2c20c5e9295f0367bf1cbab03ef258188", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "e20b8d874ba2c20c5e9295f0367bf1cbab03ef258475", async() => {
                 WriteLiteral("<i class=\"icon-eye\"></i> <b>Add New Admin</b>");
             }
             );
@@ -147,7 +154,7 @@ using BlogProject_Devskill.Web.Areas.Admin.Models.AdminControl;
                     <div class=""card-body"">
                         <i class=""icon-users4 icon-2x text-primary border-primary border-3 rounded-round p-3 mb-3""></i>
                         ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "e20b8d874ba2c20c5e9295f0367bf1cbab03ef2510287", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "e20b8d874ba2c20c5e9295f0367bf1cbab03ef2510574", async() => {
                 WriteLiteral("<i class=\"icon-eye\"></i> <b>View Current Posts</b>");
             }
             );

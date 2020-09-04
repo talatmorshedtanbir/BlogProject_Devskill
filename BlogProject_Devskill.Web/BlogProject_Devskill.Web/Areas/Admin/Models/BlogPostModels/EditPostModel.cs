@@ -7,6 +7,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
+using System.Linq.Dynamic.Core;
 using System.Threading.Tasks;
 
 namespace BlogProject_Devskill.Web.Areas.Admin.Models.BlogPostModels
@@ -50,19 +51,18 @@ namespace BlogProject_Devskill.Web.Areas.Admin.Models.BlogPostModels
 
         public async Task LoadByIdAsync(int id)
         {
-            var post = await _postService.GetByIdAsync(id);
+            var post = await _postService.GetWithIncludeByIdAsync(id);
             this.Id = post.Id;
             this.AuthorId = post.AuthorId;
             this.AuthorName = post.AuthorName;
             this.Title = post.Title;
             this.Description = post.Description;
             this.UseAdminInfo = post.UseAdminInfo;
-            this.CoverImageUrl = post.CoverImageUrl;
-           // this.Categories = (IList<Category>)post.BlogCategories.Select(x => x.Category.Name).ToList();
+            this.Categories  = post.BlogCategories.Select(x=>x.Category).ToList<Category>();
             this.PublicationTime = post.CreationTime;
             this.Draft = post.Draft;
         }
-        public async Task EditBlogAsync()
+        public async Task EditBlogAsync(string newUrl)
         {
 
             var blog = new BlogPost();
@@ -71,7 +71,7 @@ namespace BlogProject_Devskill.Web.Areas.Admin.Models.BlogPostModels
             blog.LastEditTime = DateTime.Now;
             blog.Title = this.Title;
             blog.Description = this.Description;
-            blog.CoverImageUrl = this.CoverImageUrl;
+            blog.CoverImageUrl = newUrl;
             blog.Draft = false;
             if (this.UseAdminInfo)
             {
@@ -98,6 +98,7 @@ namespace BlogProject_Devskill.Web.Areas.Admin.Models.BlogPostModels
                     var newBlogCategory = new BlogCategory();
                     newBlogCategory.BlogPostId = blogId;
                     newBlogCategory.CategoryId = item.Id;
+                    await _categoryService.UpdateCountAsync(item);
                     blogCategories.Add(newBlogCategory);
                 }
             }

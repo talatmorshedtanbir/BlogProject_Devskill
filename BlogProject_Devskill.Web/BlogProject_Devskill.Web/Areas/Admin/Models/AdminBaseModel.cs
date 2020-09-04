@@ -95,10 +95,10 @@ namespace BlogProject_Devskill.Web.Areas.Admin.Models
                         new MenuItem
                         {
                             Title = "Posts",
-                            Icon = "fas fa-edit",
+                            Icon = "fas fa-book-reader",
                             Childs = new List<MenuChildItem>
                             {
-                                new MenuChildItem{ Title = "View Posts", Url = "/Admin/BlogPost/Index", Icon="fas fa-clipboard" },
+                                new MenuChildItem{ Title = "View Posted Blogs", Url = "/Admin/BlogPost/Index", Icon="fas fa-align-left" },
                                  new MenuChildItem{ Title = "Post New Blog", Url = "/Admin/BlogPost/AddBlog", Icon="fas fa-edit" }
                             }
 

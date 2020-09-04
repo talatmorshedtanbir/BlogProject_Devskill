@@ -15,6 +15,7 @@ namespace BlogProject_Devskill.Framework.Services.PostServices
          int pageIndex,
          int pageSize);
         Task<BlogPost> GetByIdAsync(int id);
+        Task<BlogPost> GetWithIncludeByIdAsync(int id);
         Task<int> GetIdByTitleAsync(string title);
         Task AddAsync(BlogPost entity);
         Task UpdateAsync(BlogPost entity);

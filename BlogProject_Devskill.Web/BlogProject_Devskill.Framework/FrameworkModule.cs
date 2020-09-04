@@ -4,6 +4,7 @@ using BlogProject_Devskill.Framework.Repositories;
 using BlogProject_Devskill.Framework.Repositories.BlogCategoryRepos;
 using BlogProject_Devskill.Framework.Repositories.CategoryRepos;
 using BlogProject_Devskill.Framework.Services;
+using BlogProject_Devskill.Framework.Services.BlogServices;
 using BlogProject_Devskill.Framework.Services.CategoryServices;
 using BlogProject_Devskill.Framework.Services.PostServices;
 using BlogProject_Devskill.Framework.UnitOfWorks;
@@ -57,6 +58,8 @@ namespace BlogProject_Devskill.Framework
             builder.RegisterType<ApplicationUserService>().As<IApplicationUserService>()
                .InstancePerLifetimeScope();
             builder.RegisterType<CurrentUserService>().As<ICurrentUserService>()
+            .InstancePerLifetimeScope();
+            builder.RegisterType<BlogService>().As<IBlogService>()
             .InstancePerLifetimeScope();
 
             builder.RegisterType<AccountSeed>()
