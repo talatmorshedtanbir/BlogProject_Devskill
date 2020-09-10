@@ -2,11 +2,13 @@
 using BlogProject_Devskill.Framework.Enums;
 using BlogProject_Devskill.Framework.Services;
 using BlogProject_Devskill.Framework.Services.BlogServices;
+using BlogProject_Devskill.Framework.Services.CategoryServices;
 using BlogProject_Devskill.Membership.Services;
 using BlogProject_Devskill.Web.Areas.Admin.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Linq.Expressions;
 using System.Threading.Tasks;
 
 namespace BlogProject_Devskill.Web.Areas.User.Models
@@ -14,7 +16,7 @@ namespace BlogProject_Devskill.Web.Areas.User.Models
     public class BlogModel : BlogBaseModel
     {
         public BlogModel() : base() { }
-        public BlogModel(IApplicationUserService applicationUserService, IBlogService blogService) : base(applicationUserService, blogService)
+        public BlogModel( IBlogService blogService, ICategoryService categoryService) : base( blogService, categoryService)
         {
 
         }
@@ -52,13 +54,34 @@ namespace BlogProject_Devskill.Web.Areas.User.Models
             var skip = pager.CurrentPage * pager.ItemsPerPage - pager.ItemsPerPage;
 
             var posts = new List<BlogPost>();
-            foreach (var p in await _blogService.GetPosts())
+            var blogs = await _blogService.GetPosts();
+            foreach (var p in blogs)
             {
                 posts.Add(p);
             }
             pager.Configure(posts.Count);
 
             var items = new List<BlogPost>();
+            foreach (var p in posts.Skip(skip).Take(pager.ItemsPerPage).ToList())
+            {
+                items.Add(p);
+            }
+            return await Task.FromResult(items);
+        }
+
+        public async Task<IList<PostItem>> GetList(Expression<Func<BlogPost, bool>> predicate, Pager pager)
+        {
+            var skip = pager.CurrentPage * pager.ItemsPerPage - pager.ItemsPerPage;
+
+            var posts = new List<PostItem>();
+            var blogs = await _blogService.GetList(predicate, pager);
+            foreach (var p in blogs)
+            {
+                posts.Add(p);
+            }
+            pager.Configure(posts.Count);
+
+            var items = new List<PostItem>();
             foreach (var p in posts.Skip(skip).Take(pager.ItemsPerPage).ToList())
             {
                 items.Add(p);

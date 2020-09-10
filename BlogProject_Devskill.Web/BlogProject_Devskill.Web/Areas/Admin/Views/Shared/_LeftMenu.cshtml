@@ -4,32 +4,40 @@
         <!-- Add icons to the links using the .nav-icon class
     with font-awesome or any other icon font library -->
         <li class="nav-item border-bottom">
+            <a asp-area="" asp-controller="Home" asp-action="Index" class="nav-link ">
+                <i class="glyphicon glyphicon-home"></i>
+                <span>
+                    <b>Home</b>
+                </span>
+            </a>
+        </li>
+        <li class="nav-item border-bottom">
             <a asp-area="Admin" asp-controller="Dashboard" asp-action="Index" class="nav-link ">
                 <i class="glyphicon"></i>
                 <span>
-                    <b>Dashboard</b>                   
+                    <b>Dashboard</b>
                 </span>
             </a>
         </li>
         @foreach (var item in Model.MenuItems)
         {
-        <li class="nav-item border-bottom has-treeview">
-            <a href="#" class="nav-link">
-                <i class="@item.Icon" style="font-size:25px;color:blanchedalmond"></i>
-                <span>@item.Title</span>
-            </a>
-            <ul class="nav nav-treeview">
-                @foreach (var subItem in item.Childs)
+            <li class="nav-item border-bottom has-treeview">
+                <a href="#" class="nav-link">
+                    <i class="@item.Icon" style="font-size:25px;color:blanchedalmond"></i>
+                    <span>@item.Title</span>
+                </a>
+                <ul class="nav nav-treeview">
+                    @foreach (var subItem in item.Childs)
                     {
-                <li class="nav-item">
-                    <a href="@subItem.Url" class="nav-link">
-                        <i class="@subItem.Icon" style="font-size:20px;color:lightseagreen"></i>
-                        <p>@subItem.Title</p>
-                    </a>
-                </li>
+                        <li class="nav-item">
+                            <a href="@subItem.Url" class="nav-link">
+                                <i class="@subItem.Icon" style="font-size:20px;color:lightseagreen"></i>
+                                <p>@subItem.Title</p>
+                            </a>
+                        </li>
                     }
-            </ul>
-        </li>
+                </ul>
+            </li>
         }
 
 

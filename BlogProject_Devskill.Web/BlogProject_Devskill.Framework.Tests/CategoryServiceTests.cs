@@ -54,7 +54,7 @@ namespace BlogProject_Devskill.Framework.Tests
         }
 
         [Test]
-        public async Task AddAsync_CategoryAlreadyExists_ThrowsDuplicationException()
+        public void AddAsync_CategoryAlreadyExists_ThrowsDuplicationException()
         {
             // Arrange
             var category = new Category
@@ -64,22 +64,142 @@ namespace BlogProject_Devskill.Framework.Tests
             };
             var categoryToMatch = new Category
             {
-                Id=1,
+                Id = 2,
                 Name="Test"
             };
+
             _postUnitOfWorkMock.Setup(x => x.CategoryRepository)
                 .Returns(_categoryRepositoryMock.Object);
 
-            //await _categoryRepositoryMock.Setup( x=> x.IsExistsAsync(
-            //     It.Is<Expression<Func<Category, bool>>>(y => y.Compile() (categoryToMatch))))
-            //    .Returns(null).Verifiable();
+              _categoryRepositoryMock.Setup(x => x.IsExistsAsync(
+                It.Is<Expression<Func<Category, bool>>>(y => y.Compile()(categoryToMatch))))
+                .ReturnsAsync(true).Verifiable();
 
             // Act
             Should.Throw<DuplicationException>(() =>
-                   _categoryService.AddAsync(category));
+                    _categoryService.AddAsync(category));
 
             // Assert
             _categoryRepositoryMock.VerifyAll();
+        }
+
+        [Test]
+        public void AddAsync_CategoryDoesNotExists_SavesCategory()
+        {
+            //Arrange
+            var category = new Category
+            {
+                Id = 1,
+                Name = "Test"
+            };
+            var categoryToMatch = new Category
+            {
+                Id = 2,
+                Name = "Test"
+            };
+
+            _postUnitOfWorkMock.Setup(x => x.CategoryRepository)
+            .Returns(_categoryRepositoryMock.Object);
+
+            _categoryRepositoryMock.Setup(x => x.IsExistsAsync(
+              It.Is<Expression<Func<Category, bool>>>(y => y.Compile()(categoryToMatch))))
+              .ReturnsAsync(false).Verifiable();
+
+            _categoryRepositoryMock.Setup(x => x.AddAsync(category)).Returns(Task.CompletedTask).Verifiable();
+            _postUnitOfWorkMock.Setup( x => x.SaveChangesAsync()).Verifiable();
+
+            // Act
+             _categoryService.AddAsync(category);
+
+            // Assert
+            _categoryRepositoryMock.VerifyAll();
+            _postUnitOfWorkMock.VerifyAll();
+        }
+
+        [Test]
+        public void UpdateAsync_CategoryAlreadyExists_ThrowsDuplicationException()
+        {
+            // Arrange
+            var category = new Category
+            {
+                Id = 1,
+                Name = "Test"
+            };
+            var categoryToMatch = new Category
+            {
+                Id = 2,
+                Name = "Test"
+            };
+
+            _postUnitOfWorkMock.Setup(x => x.CategoryRepository)
+                .Returns(_categoryRepositoryMock.Object);
+
+            _categoryRepositoryMock.Setup(x => x.IsExistsAsync(
+              It.Is<Expression<Func<Category, bool>>>(y => y.Compile()(categoryToMatch))))
+              .ReturnsAsync(true).Verifiable();
+
+            // Act
+            Should.Throw<DuplicationException>( () =>
+                    _categoryService.UpdateAsync(category));
+
+            // Assert
+            _categoryRepositoryMock.VerifyAll();
+        }
+
+        [Test]
+        public void DeleteAsync_CategoryDoesNotExists_ThrowsNotFoundException()
+        {
+            // Arrange
+            var category = new Category
+            {
+                Id = 2,
+                Name = "Test"
+            };
+            var categoryReturned = new Category();
+            categoryReturned = null;
+
+            _postUnitOfWorkMock.Setup(x => x.CategoryRepository)
+                .Returns(_categoryRepositoryMock.Object);
+
+            _categoryRepositoryMock.Setup( x =>  x.GetByIdAsync(category.Id))
+                .ReturnsAsync(categoryReturned).Verifiable();
+
+            // Act
+            Should.Throw<NotFoundException>( () =>
+                    _categoryService.DeleteAsync(category.Id));
+
+            // Assert
+            _categoryRepositoryMock.VerifyAll();
+        }
+
+        [Test]
+        public void DeleteAsync_CategoryAlreadyExists_DeletesCategory()
+        {
+            // Arrange
+            var category = new Category
+            {
+                Id = 2,
+                Name = "Test"
+            };
+            var categoryReturned = new Category();
+            categoryReturned = null;
+
+            _postUnitOfWorkMock.Setup(x => x.CategoryRepository)
+                .Returns(_categoryRepositoryMock.Object);
+
+            _categoryRepositoryMock.Setup(x => x.GetByIdAsync(category.Id))
+                .ReturnsAsync(category).Verifiable();
+
+            _categoryRepositoryMock.Setup(x => x.DeleteAsync(category.Id)).Returns(Task.CompletedTask).Verifiable();
+
+            _postUnitOfWorkMock.Setup(x => x.SaveChangesAsync()).Verifiable();
+
+            // Act
+            _categoryService.DeleteAsync(category.Id);
+
+            // Assert
+            _categoryRepositoryMock.VerifyAll();
+            _postUnitOfWorkMock.VerifyAll();
         }
     }
 }

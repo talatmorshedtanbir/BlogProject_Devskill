@@ -1,0 +1,9 @@
+﻿input[type="text"],textarea {
+    font-size: 18px;
+    color:black;
+}
+
+#commentDescription {
+    font-size: 18px;
+    color: black;
+}

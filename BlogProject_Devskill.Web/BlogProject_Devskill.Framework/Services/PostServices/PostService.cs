@@ -11,7 +11,7 @@ using System.Threading.Tasks;
 
 namespace BlogProject_Devskill.Framework.Services.PostServices
 {
-    class PostService : IPostService, IDisposable
+    public class PostService : IPostService, IDisposable
     {
         public IPostUnitOfWork _postUnitOfWork { get; set; }
         public PostService(IPostUnitOfWork postUnitOfWork)

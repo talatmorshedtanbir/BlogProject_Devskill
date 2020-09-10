@@ -31,10 +31,12 @@ namespace BlogProject_Devskill.Framework.Entities
         public DateTime CreationTime { get; set; }
         public DateTime LastEditTime { get; set; }
         public DateTime PublishTime { get; set; }
+        public IList<Comment> Comments { get; set; }
         public IList<BlogCategory> BlogCategories { get; set; }
 
         public BlogPost()
         {
+            this.Comments = new List<Comment>();
             this.BlogCategories = new List<BlogCategory>();
         }
     }

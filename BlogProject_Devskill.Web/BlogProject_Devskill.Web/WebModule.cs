@@ -30,6 +30,7 @@ namespace BlogProject_Devskill.Web
             builder.RegisterType<CategoryModel>();
             builder.RegisterType<BlogPostModel>();
             builder.RegisterType<BlogModel>();
+            builder.RegisterType<Areas.Admin.Models.BlogPostModels.CommentModel>();
             base.Load(builder);
         }
     }

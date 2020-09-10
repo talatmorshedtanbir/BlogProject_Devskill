@@ -37,9 +37,13 @@ namespace BlogProject_Devskill.Framework.Contexts
             {
                 blogCategory.HasKey(ur => new { ur.CategoryId, ur.BlogPostId });
             });
+            modelBuilder.Entity<BlogPost>()
+                .HasMany(c => c.Comments)
+                .WithOne(b => b.BlogPost);
         }
         public DbSet<Category> Categories { get; set; }
         public DbSet<BlogPost> BlogPosts { get; set; }
+        public DbSet<Comment> Comments { get; set; }
         public DbSet<BlogCategory> BlogCategories { get; set; }
     }
 }

@@ -10,8 +10,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace BlogProject_Devskill.Web.Migrations.Framework
 {
     [DbContext(typeof(FrameworkContext))]
-    [Migration("20200829184224_PostBlogTable")]
-    partial class PostBlogTable
+    [Migration("20200908163635_CommentTableAdded")]
+    partial class CommentTableAdded
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -49,6 +49,12 @@ namespace BlogProject_Devskill.Web.Migrations.Framework
                     b.Property<Guid>("AuthorId")
                         .HasColumnType("uniqueidentifier");
 
+                    b.Property<string>("AuthorImageUrl")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("AuthorName")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("CoverImageUrl")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -74,6 +80,9 @@ namespace BlogProject_Devskill.Web.Migrations.Framework
                         .IsRequired()
                         .HasColumnType("nvarchar(160)")
                         .HasMaxLength(160);
+
+                    b.Property<bool>("UseAdminInfo")
+                        .HasColumnType("bit");
 
                     b.HasKey("Id");
 
@@ -101,6 +110,38 @@ namespace BlogProject_Devskill.Web.Migrations.Framework
                     b.ToTable("Categories");
                 });
 
+            modelBuilder.Entity("BlogProject_Devskill.Framework.Entities.Comment", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<int>("BlogPostId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Description")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Email")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<bool>("IsAuthorized")
+                        .HasColumnType("bit");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("BlogPostId");
+
+                    b.ToTable("Comments");
+                });
+
             modelBuilder.Entity("BlogProject_Devskill.Framework.Entities.BlogCategory", b =>
                 {
                     b.HasOne("BlogProject_Devskill.Framework.Entities.BlogPost", "BlogPost")
@@ -112,6 +153,15 @@ namespace BlogProject_Devskill.Web.Migrations.Framework
                     b.HasOne("BlogProject_Devskill.Framework.Entities.Category", "Category")
                         .WithMany("BlogCategories")
                         .HasForeignKey("CategoryId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
+            modelBuilder.Entity("BlogProject_Devskill.Framework.Entities.Comment", b =>
+                {
+                    b.HasOne("BlogProject_Devskill.Framework.Entities.BlogPost", "BlogPost")
+                        .WithMany("Comments")
+                        .HasForeignKey("BlogPostId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
                 });

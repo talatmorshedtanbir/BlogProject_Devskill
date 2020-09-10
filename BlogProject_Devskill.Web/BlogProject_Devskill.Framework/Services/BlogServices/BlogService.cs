@@ -64,6 +64,11 @@ namespace BlogProject_Devskill.Framework.Services.BlogServices
             return await Task.FromResult(PostListToItems(postPage));
         }
 
+        public async Task<BlogPost> GetWithIncludeByIdAsync(int id)
+        {
+            return await _blogUnitOfWork.PostRepository.GetFirstOrDefaultAsync(x => x, x => x.Id == id, x => x.Include(i => i.BlogCategories).ThenInclude(i => i.Category));
+        }
+
         public List<PostItem> PostListToItems(List<BlogPost> posts)
         {
             return posts.Select(p => new PostItem
@@ -76,6 +81,16 @@ namespace BlogProject_Devskill.Framework.Services.BlogServices
                 PublicationTime = p.CreationTime,
                 CoverImageUrl = p.CoverImageUrl
             }).Distinct().ToList();
+        }
+        public IList<Comment> GetCommentsByBlogIdAsync(int id)
+        {
+            var result = _blogUnitOfWork.CommentRepository.Get(x=> x.BlogPostId == id && x.IsAuthorized);
+            return result;
+        }
+        public async Task AddCommentAsync(Comment entity)
+        {
+            await _blogUnitOfWork.CommentRepository.AddAsync(entity);
+            await _blogUnitOfWork.SaveChangesAsync();
         }
         public void Dispose()
         {

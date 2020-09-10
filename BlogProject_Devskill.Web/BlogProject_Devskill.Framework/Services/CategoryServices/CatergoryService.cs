@@ -79,6 +79,10 @@ namespace BlogProject_Devskill.Framework.Services.CategoryServices
         public async Task<Category> DeleteAsync(int id)
         {
             var category = await GetByIdAsync(id);
+            if(category == null)
+            {
+                throw new NotFoundException("Category Not Found",nameof(category));
+            }
             await _postUnitOfWork.CategoryRepository.DeleteAsync(id);
             await _postUnitOfWork.SaveChangesAsync();
             return category;
