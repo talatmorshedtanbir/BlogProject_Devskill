@@ -108,6 +108,41 @@ namespace BlogProject_Devskill.Web.Migrations.Framework
                     b.ToTable("Categories");
                 });
 
+            modelBuilder.Entity("BlogProject_Devskill.Framework.Entities.Comment", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<int>("BlogPostId")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime>("CommentTime")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Description")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Email")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<bool>("IsAuthorized")
+                        .HasColumnType("bit");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("BlogPostId");
+
+                    b.ToTable("Comments");
+                });
+
             modelBuilder.Entity("BlogProject_Devskill.Framework.Entities.BlogCategory", b =>
                 {
                     b.HasOne("BlogProject_Devskill.Framework.Entities.BlogPost", "BlogPost")
@@ -119,6 +154,15 @@ namespace BlogProject_Devskill.Web.Migrations.Framework
                     b.HasOne("BlogProject_Devskill.Framework.Entities.Category", "Category")
                         .WithMany("BlogCategories")
                         .HasForeignKey("CategoryId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
+            modelBuilder.Entity("BlogProject_Devskill.Framework.Entities.Comment", b =>
+                {
+                    b.HasOne("BlogProject_Devskill.Framework.Entities.BlogPost", "BlogPost")
+                        .WithMany("Comments")
+                        .HasForeignKey("BlogPostId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
                 });

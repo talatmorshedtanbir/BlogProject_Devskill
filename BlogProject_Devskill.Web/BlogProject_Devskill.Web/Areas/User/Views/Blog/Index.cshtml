@@ -1,6 +1,5 @@
 ﻿@using BlogProject_Devskill.Framework.Entities
 @using BlogProject_Devskill.Framework.Services.BlogServices
-@using Askmethat.Aspnet.JsonLocalizer.Localizer
 @inject IBlogService BlogService
 @{ListModel listModel = (ListModel)Model;
     Pager pgr = listModel.Pager;
@@ -53,10 +52,10 @@
                                                    var categories = post.BlogCategories.Select(x => x.Category);
                                                    foreach(var catergory in categories)
                                                    {
-                                                       <a href="~/categories/@catergory" class="post-cata cata-sm cata-danger">@catergory.Name</a>
+                                                       <a href="~/categories/@catergory.Id" class="post-cata cata-sm cata-danger">@catergory.Name</a>
                                                    }
                                                }
-                                            <a href="blog/@post.Id" class="post-title mb-2">@post.Title</a>
+                                            <a href="/User/Blog/SingleBlog/@post.Id" class="post-title mb-2">@post.Title</a>
                                             <div class="post-meta d-flex align-items-center mb-2">
                                                 <span class="post-author">By @post.AuthorName </span>
                                                 <i class="fa fa-circle" aria-hidden="true"></i>
@@ -118,7 +117,7 @@
                                                         <i class="fa fa-tags" aria-hidden="true"></i>
                                                     </div>
                                                     <div class="post-content">
-                                                        <a href="~/categories/@catergory.Id" class="post-title">@catergory.Name (@catergory.PostCount)</a>
+                                                        <a href="#" class="post-title">@catergory.Name (@catergory.PostCount)</a>
                                                     </div>
                                                 </div>
                                             }

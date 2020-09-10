@@ -36,7 +36,7 @@ namespace BlogProject_Devskill.Web.Areas.Admin.Models.BlogPostModels
                 data = (from item in result.Items
                         select new string[]
                         {
-                            item.Title,
+                            $"<a href=\"/user/blog/singleblog/{item.Id}\" class=\"post-cata cata-sm cata-danger\"><b>{item.Title}</b></a>",
                             string.Join(", ",item.BlogCategories.Select(x=>x.Category.Name)),
                             item.AuthorName,
                             (item.Description.Substring(0,item.Description.Length-1>30?30:item.Description.Length-1)+".....").ToString(),

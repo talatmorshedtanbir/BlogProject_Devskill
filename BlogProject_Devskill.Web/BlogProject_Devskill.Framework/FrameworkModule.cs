@@ -2,10 +2,12 @@
 using BlogProject_Devskill.Framework.Contexts;
 using BlogProject_Devskill.Framework.Repositories;
 using BlogProject_Devskill.Framework.Repositories.BlogCategoryRepos;
+using BlogProject_Devskill.Framework.Repositories.BlogRepos;
 using BlogProject_Devskill.Framework.Repositories.CategoryRepos;
 using BlogProject_Devskill.Framework.Services;
 using BlogProject_Devskill.Framework.Services.BlogServices;
 using BlogProject_Devskill.Framework.Services.CategoryServices;
+using BlogProject_Devskill.Framework.Services.CommentService;
 using BlogProject_Devskill.Framework.Services.PostServices;
 using BlogProject_Devskill.Framework.UnitOfWorks;
 using BlogProject_Devskill.Membership.Data;
@@ -49,11 +51,14 @@ namespace BlogProject_Devskill.Framework
            .InstancePerLifetimeScope();
             builder.RegisterType<BlogCategoryRepository>().As<IBlogCategoryRepository>()
           .InstancePerLifetimeScope();
-
+            builder.RegisterType<CommentRepository>().As<ICommentRepository>()
+          .InstancePerLifetimeScope();
 
             builder.RegisterType<PostService>().As<IPostService>()
               .InstancePerLifetimeScope();
             builder.RegisterType<CatergoryService>().As<ICategoryService>()
+             .InstancePerLifetimeScope();
+             builder.RegisterType<CommentService>().As<ICommentService>()
              .InstancePerLifetimeScope();
             builder.RegisterType<ApplicationUserService>().As<IApplicationUserService>()
                .InstancePerLifetimeScope();

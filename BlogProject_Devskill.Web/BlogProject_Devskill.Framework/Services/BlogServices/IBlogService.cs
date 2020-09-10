@@ -16,6 +16,9 @@ namespace BlogProject_Devskill.Framework.Services.BlogServices
     int pageSize);
         BlogPost GetByIdAsync(int id);
         Task<IList<BlogPost>> GetPosts();
+        IList<Comment> GetCommentsByBlogIdAsync(int id);
+        Task AddCommentAsync(Comment entity);
+        Task<BlogPost> GetWithIncludeByIdAsync(int id);
         public IList<Category> GetAllCategory();
         Task<IEnumerable<PostItem>> GetList(Expression<Func<BlogPost, bool>> predicate, Pager pager);
     }

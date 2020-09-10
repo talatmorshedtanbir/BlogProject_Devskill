@@ -1,5 +1,6 @@
 ﻿using Autofac;
 using BlogProject_Devskill.Framework.Services.CategoryServices;
+using BlogProject_Devskill.Framework.Services.CommentService;
 using BlogProject_Devskill.Framework.Services.PostServices;
 using BlogProject_Devskill.Membership.Services;
 using Serilog;
@@ -16,6 +17,7 @@ namespace BlogProject_Devskill.Web.Areas.Admin.Models.BlogPostModels
         protected readonly IApplicationUserService _applicationUserService;
         protected readonly IPostService _postService;
         protected readonly ICategoryService _categoryService;
+        protected readonly ICommentService _commentService;
         public BlogPostBaseModel(ICurrentUserService currentUserService, IPostService postService,
             ICategoryService categoryService,  IApplicationUserService applicationUserService)
         {
@@ -37,6 +39,7 @@ namespace BlogProject_Devskill.Web.Areas.Admin.Models.BlogPostModels
             _postService = Startup.AutofacContainer.Resolve<IPostService>();
             _currentUserService = Startup.AutofacContainer.Resolve<ICurrentUserService>();
             _applicationUserService = Startup.AutofacContainer.Resolve<IApplicationUserService>();
+            _commentService = Startup.AutofacContainer.Resolve<ICommentService>();
         }
         public void Dispose()
         {

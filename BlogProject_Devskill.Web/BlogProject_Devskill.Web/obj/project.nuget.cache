@@ -1,10 +1,9 @@
 {
   "version": 2,
-  "dgSpecHash": "cQagoy/Q+230DQi2zlYn2xrMsWfqLXF72WFvGSiuAFsV2vdHnSS++MRWkEgI5RLJoBa3y2R0l/XQI8FQkNyuBw==",
+  "dgSpecHash": "+loyPl5xoLjkTCgghXIz81vi3ggVvT8DrmHAkyCajEG1rPv4OaGwQplDUR5EvaiYkbSz9Nh1xKGg4EPDIxal2g==",
   "success": true,
   "projectFilePath": "H:\\ASP COURSE\\Personal Project\\BlogProject_Devskill\\BlogProject_Devskill.Web\\BlogProject_Devskill.Web\\BlogProject_Devskill.Web.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Tanbir\\.nuget\\packages\\askmethat.aspnet.jsonlocalizer\\2.2.0\\askmethat.aspnet.jsonlocalizer.2.2.0.nupkg.sha512",
     "C:\\Users\\Tanbir\\.nuget\\packages\\autofac\\5.2.0\\autofac.5.2.0.nupkg.sha512",
     "C:\\Users\\Tanbir\\.nuget\\packages\\autofac.extensions.dependencyinjection\\6.0.0\\autofac.extensions.dependencyinjection.6.0.0.nupkg.sha512",
     "C:\\Users\\Tanbir\\.nuget\\packages\\markdig\\0.21.1\\markdig.0.21.1.nupkg.sha512",
@@ -76,7 +75,7 @@
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.win32.primitives\\4.3.0\\microsoft.win32.primitives.4.3.0.nupkg.sha512",
     "C:\\Users\\Tanbir\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\netstandard.library\\1.6.1\\netstandard.library.1.6.1.nupkg.sha512",
-    "C:\\Users\\Tanbir\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
+    "C:\\Users\\Tanbir\\.nuget\\packages\\newtonsoft.json\\12.0.2\\newtonsoft.json.12.0.2.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\nuget.frameworks\\4.7.0\\nuget.frameworks.4.7.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\runtime.debian.8-x64.runtime.native.system.security.cryptography.openssl\\4.3.0\\runtime.debian.8-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\runtime.fedora.23-x64.runtime.native.system.security.cryptography.openssl\\4.3.0\\runtime.fedora.23-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",
