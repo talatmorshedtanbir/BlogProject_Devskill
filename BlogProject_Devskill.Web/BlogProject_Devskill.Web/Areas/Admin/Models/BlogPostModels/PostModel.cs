@@ -99,7 +99,7 @@ namespace BlogProject_Devskill.Web.Areas.Admin.Models.BlogPostModels
         public DefaultValues()
         {
             AuthorName = "Anonymous";
-            AuthorImageUrl = "/ProfileImages/defaultPropic.jpg";
+            AuthorImageUrl = "defaultPropic.jpg";
         }
     }
 }

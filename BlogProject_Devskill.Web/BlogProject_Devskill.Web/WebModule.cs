@@ -4,6 +4,7 @@ using BlogProject_Devskill.Web.Areas.Admin.Models;
 using BlogProject_Devskill.Web.Areas.Admin.Models.AdminControl;
 using BlogProject_Devskill.Web.Areas.Admin.Models.BlogPostModels;
 using BlogProject_Devskill.Web.Areas.Admin.Models.CategoryModels;
+using BlogProject_Devskill.Web.Areas.Admin.Models.Dashboard;
 using BlogProject_Devskill.Web.Areas.User.Models;
 using System;
 using System.Collections.Generic;
@@ -30,6 +31,7 @@ namespace BlogProject_Devskill.Web
             builder.RegisterType<CategoryModel>();
             builder.RegisterType<BlogPostModel>();
             builder.RegisterType<BlogModel>();
+            builder.RegisterType<DashboardModel>();
             builder.RegisterType<Areas.Admin.Models.BlogPostModels.CommentModel>();
             base.Load(builder);
         }

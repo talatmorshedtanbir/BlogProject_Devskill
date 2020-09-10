@@ -58,9 +58,11 @@ namespace BlogProject_Devskill.Web.Areas.Admin.Models
         }
         private void SetupMenu()
         {
-            MenuModel = new MenuModel
+            if(_applicationuserService !=null)
             {
-                MenuItems = new List<MenuItem>
+                MenuModel = new MenuModel
+                {
+                    MenuItems = new List<MenuItem>
                 {
                     {
                         new MenuItem
@@ -105,7 +107,9 @@ namespace BlogProject_Devskill.Web.Areas.Admin.Models
                         }
                     }
                 }
-            };
+                };
+            }
+
         }
 
     }

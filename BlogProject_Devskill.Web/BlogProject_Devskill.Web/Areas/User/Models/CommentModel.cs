@@ -27,6 +27,7 @@ namespace BlogProject_Devskill.Web.Areas.User.Models
                 Email = this.Email,
                 Description = this.Description,
                 IsAuthorized = false,
+                BlogPostId = this.BlogId,
                 CommentTime = DateTime.Now
             };
             await _blogService.AddCommentAsync(entity);

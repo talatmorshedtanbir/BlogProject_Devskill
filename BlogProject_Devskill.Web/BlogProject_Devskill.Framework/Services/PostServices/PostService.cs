@@ -89,6 +89,7 @@ namespace BlogProject_Devskill.Framework.Services.PostServices
             updateEntity.CoverImageUrl = entity.CoverImageUrl;
             updateEntity.LastEditTime = DateTime.Now;
             updateEntity.UseAdminInfo = entity.UseAdminInfo;
+            updateEntity.AuthorImageUrl = entity.AuthorImageUrl;
             await _postUnitOfWork.PostRepository.UpdateAsync(updateEntity);
             await _postUnitOfWork.SaveChangesAsync();
         }
