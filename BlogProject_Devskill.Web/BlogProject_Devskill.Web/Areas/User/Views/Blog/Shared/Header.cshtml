@@ -42,7 +42,7 @@
                                 <li class="active"><a href="~/User/blog">Blog</a></li>
                                 <li>
                                     <div class="top-search-area">
-                                        <form asp-controller="Blog" asp-action="Search" method="post">
+                                        <form asp-controller="Blog" asp-area="User" asp-action="Search" method="post">
                                             <input type="search" id="term" name="term" placeholder="Search...">
                                             <button type="submit" class="btn"><i class="fa fa-search" aria-hidden="true"></i></button>
                                         </form>

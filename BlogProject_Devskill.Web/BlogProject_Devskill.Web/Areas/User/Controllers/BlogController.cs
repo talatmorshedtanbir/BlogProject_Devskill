@@ -23,24 +23,21 @@ namespace BlogProject_Devskill.Web.Areas.User.Controllers
             _postService = postService;
             _logger = logger;
         }
-        public async Task<IActionResult> Index(string term, int page = 1)
+        public async Task<IActionResult> Index(string searchString="", int currentPage = 1)
         {
             var model = Startup.AutofacContainer.Resolve<BlogModel>();
             var listModel = new ListModel
             {
                 PostListType = PostListType.Blog
             };
-            var pgr = new Pager(page, 10);
-            listModel.Posts = await model.GetList(pgr,"");
-            if (pgr.ShowOlder) pgr.LinkToOlder = $"blog?page={pgr.Older}";
-            if (pgr.ShowNewer) pgr.LinkToNewer = $"blog?page={pgr.Newer}";
-            model.Pager = pgr;
-            if (!string.IsNullOrEmpty(term))
-            {
-                listModel.Blog.Title = term;
-                listModel.Blog.Description = "";
-                listModel.PostListType = PostListType.Search;
-            }
+            var pgr = new Pager(currentPage, 10);
+            var result = await model.GetList(pgr,"");
+            listModel.Posts = result.Item1;
+            listModel.TotalPages = (int)Math.Ceiling(decimal.Divide(result.Item2, 10));
+            listModel.Posts = listModel.Posts.Where(x => x.Title.Contains(searchString));
+            if (pgr.ShowOlder) pgr.LinkToOlder = $"blog?currentPage={pgr.Older}";
+            if (pgr.ShowNewer) pgr.LinkToNewer = $"blog?currentPage={pgr.Newer}";
+            listModel.Pager = pgr;
             return View(listModel);
         }
 
@@ -75,25 +72,10 @@ namespace BlogProject_Devskill.Web.Areas.User.Controllers
             return RedirectToAction("SingleBlog", "Blog", new { @id = model.Id });
         }
 
-
-        //[HttpGet("categories/{id}")]
-        //public async Task<IActionResult> Categories(string name, int page = 1)
-        //{
-        //    var model = Startup.AutofacContainer.Resolve<BlogModel>();
-        //    var listModel = new ListModel
-        //    {
-        //        PostListType = PostListType.Blog
-        //    };
-        //    var pgr = new Pager(page, 10);
-
-        //    listModel.Posts = await model.GetList(p => p.BlogCategories.Contains(), pgr);
-
-        //    if (pgr.ShowOlder) pgr.LinkToOlder = $"?page={pgr.Older}";
-        //    if (pgr.ShowNewer) pgr.LinkToNewer = $"?page={pgr.Newer}";
-
-        //    model.Pager = pgr;
-
-        //    return View($"~/Views/Themes/{blog.Theme}/List.cshtml", model);
-        //}
+        [HttpPost]
+        public IActionResult Search(string term)
+        {
+            return Redirect($"/User/blog?searchString={term}");
+        }
     }
 }

@@ -18,6 +18,7 @@ namespace BlogProject_Devskill.Framework.Entities
         public BlogPost Blog { get; set; }
         public Category Category { get; set; } // posts by category
 
+        public int TotalPages { get; set; }
         public IEnumerable<BlogPost> Posts { get; set; }
         public Pager Pager { get; set; }
 

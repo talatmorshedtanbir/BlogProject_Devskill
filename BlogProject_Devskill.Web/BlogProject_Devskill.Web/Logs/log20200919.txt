@@ -1,0 +1,769 @@
+2020-09-19 20:41:07.555 +06:00 [INF] Application Starting up
+2020-09-19 20:41:14.570 +06:00 [FTL] Hosting startup assembly exception
+System.InvalidOperationException: Startup assembly Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation failed to execute. See the inner exception for more details.
+ ---> System.IO.FileNotFoundException: Could not load file or assembly 'Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation, Culture=neutral, PublicKeyToken=null'. The system cannot find the file specified.
+File name: 'Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation, Culture=neutral, PublicKeyToken=null'
+   at System.Reflection.RuntimeAssembly.nLoad(AssemblyName fileName, String codeBase, RuntimeAssembly assemblyContext, StackCrawlMark& stackMark, Boolean throwOnFileNotFound, AssemblyLoadContext assemblyLoadContext)
+   at System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, StackCrawlMark& stackMark, AssemblyLoadContext assemblyLoadContext)
+   at System.Reflection.Assembly.Load(AssemblyName assemblyRef, StackCrawlMark& stackMark, AssemblyLoadContext assemblyLoadContext)
+   at System.Reflection.Assembly.Load(AssemblyName assemblyRef)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostBuilder.ExecuteHostingStartups()
+
+
+   --- End of inner exception stack trace ---
+2020-09-19 20:42:31.898 +06:00 [INF] Application Starting up
+2020-09-19 20:42:34.754 +06:00 [FTL] Hosting startup assembly exception
+System.InvalidOperationException: Startup assembly Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation failed to execute. See the inner exception for more details.
+ ---> System.IO.FileNotFoundException: Could not load file or assembly 'Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation, Culture=neutral, PublicKeyToken=null'. The system cannot find the file specified.
+File name: 'Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation, Culture=neutral, PublicKeyToken=null'
+   at System.Reflection.RuntimeAssembly.nLoad(AssemblyName fileName, String codeBase, RuntimeAssembly assemblyContext, StackCrawlMark& stackMark, Boolean throwOnFileNotFound, AssemblyLoadContext assemblyLoadContext)
+   at System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, StackCrawlMark& stackMark, AssemblyLoadContext assemblyLoadContext)
+   at System.Reflection.Assembly.Load(AssemblyName assemblyRef, StackCrawlMark& stackMark, AssemblyLoadContext assemblyLoadContext)
+   at System.Reflection.Assembly.Load(AssemblyName assemblyRef)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostBuilder.ExecuteHostingStartups()
+
+
+   --- End of inner exception stack trace ---
+2020-09-19 20:43:04.628 +06:00 [INF] Application Starting up
+2020-09-19 20:43:07.464 +06:00 [FTL] Hosting startup assembly exception
+System.InvalidOperationException: Startup assembly Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation failed to execute. See the inner exception for more details.
+ ---> System.IO.FileNotFoundException: Could not load file or assembly 'Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation, Culture=neutral, PublicKeyToken=null'. The system cannot find the file specified.
+File name: 'Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation, Culture=neutral, PublicKeyToken=null'
+   at System.Reflection.RuntimeAssembly.nLoad(AssemblyName fileName, String codeBase, RuntimeAssembly assemblyContext, StackCrawlMark& stackMark, Boolean throwOnFileNotFound, AssemblyLoadContext assemblyLoadContext)
+   at System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, StackCrawlMark& stackMark, AssemblyLoadContext assemblyLoadContext)
+   at System.Reflection.Assembly.Load(AssemblyName assemblyRef, StackCrawlMark& stackMark, AssemblyLoadContext assemblyLoadContext)
+   at System.Reflection.Assembly.Load(AssemblyName assemblyRef)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostBuilder.ExecuteHostingStartups()
+
+
+   --- End of inner exception stack trace ---
+2020-09-19 20:52:13.535 +06:00 [INF] Application Starting up
+2020-09-19 20:52:17.414 +06:00 [FTL] Hosting startup assembly exception
+System.InvalidOperationException: Startup assembly Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation failed to execute. See the inner exception for more details.
+ ---> System.IO.FileNotFoundException: Could not load file or assembly 'Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation, Culture=neutral, PublicKeyToken=null'. The system cannot find the file specified.
+File name: 'Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation, Culture=neutral, PublicKeyToken=null'
+   at System.Reflection.RuntimeAssembly.nLoad(AssemblyName fileName, String codeBase, RuntimeAssembly assemblyContext, StackCrawlMark& stackMark, Boolean throwOnFileNotFound, AssemblyLoadContext assemblyLoadContext)
+   at System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, StackCrawlMark& stackMark, AssemblyLoadContext assemblyLoadContext)
+   at System.Reflection.Assembly.Load(AssemblyName assemblyRef, StackCrawlMark& stackMark, AssemblyLoadContext assemblyLoadContext)
+   at System.Reflection.Assembly.Load(AssemblyName assemblyRef)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostBuilder.ExecuteHostingStartups()
+
+
+   --- End of inner exception stack trace ---
+2020-09-19 20:53:17.727 +06:00 [INF] Application Starting up
+2020-09-19 20:53:20.618 +06:00 [FTL] Hosting startup assembly exception
+System.InvalidOperationException: Startup assembly Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation failed to execute. See the inner exception for more details.
+ ---> System.IO.FileNotFoundException: Could not load file or assembly 'Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation, Culture=neutral, PublicKeyToken=null'. The system cannot find the file specified.
+File name: 'Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation, Culture=neutral, PublicKeyToken=null'
+   at System.Reflection.RuntimeAssembly.nLoad(AssemblyName fileName, String codeBase, RuntimeAssembly assemblyContext, StackCrawlMark& stackMark, Boolean throwOnFileNotFound, AssemblyLoadContext assemblyLoadContext)
+   at System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, StackCrawlMark& stackMark, AssemblyLoadContext assemblyLoadContext)
+   at System.Reflection.Assembly.Load(AssemblyName assemblyRef, StackCrawlMark& stackMark, AssemblyLoadContext assemblyLoadContext)
+   at System.Reflection.Assembly.Load(AssemblyName assemblyRef)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostBuilder.ExecuteHostingStartups()
+
+
+   --- End of inner exception stack trace ---
+2020-09-19 20:55:13.204 +06:00 [INF] Application Starting up
+2020-09-19 20:55:15.921 +06:00 [FTL] Hosting startup assembly exception
+System.InvalidOperationException: Startup assembly Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation failed to execute. See the inner exception for more details.
+ ---> System.IO.FileNotFoundException: Could not load file or assembly 'Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation, Culture=neutral, PublicKeyToken=null'. The system cannot find the file specified.
+File name: 'Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation, Culture=neutral, PublicKeyToken=null'
+   at System.Reflection.RuntimeAssembly.nLoad(AssemblyName fileName, String codeBase, RuntimeAssembly assemblyContext, StackCrawlMark& stackMark, Boolean throwOnFileNotFound, AssemblyLoadContext assemblyLoadContext)
+   at System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, StackCrawlMark& stackMark, AssemblyLoadContext assemblyLoadContext)
+   at System.Reflection.Assembly.Load(AssemblyName assemblyRef, StackCrawlMark& stackMark, AssemblyLoadContext assemblyLoadContext)
+   at System.Reflection.Assembly.Load(AssemblyName assemblyRef)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostBuilder.ExecuteHostingStartups()
+
+
+   --- End of inner exception stack trace ---
+2020-09-19 20:56:31.032 +06:00 [INF] Application Starting up
+2020-09-19 20:56:33.742 +06:00 [FTL] Hosting startup assembly exception
+System.InvalidOperationException: Startup assembly Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation failed to execute. See the inner exception for more details.
+ ---> System.IO.FileNotFoundException: Could not load file or assembly 'Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation, Culture=neutral, PublicKeyToken=null'. The system cannot find the file specified.
+File name: 'Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation, Culture=neutral, PublicKeyToken=null'
+   at System.Reflection.RuntimeAssembly.nLoad(AssemblyName fileName, String codeBase, RuntimeAssembly assemblyContext, StackCrawlMark& stackMark, Boolean throwOnFileNotFound, AssemblyLoadContext assemblyLoadContext)
+   at System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, StackCrawlMark& stackMark, AssemblyLoadContext assemblyLoadContext)
+   at System.Reflection.Assembly.Load(AssemblyName assemblyRef, StackCrawlMark& stackMark, AssemblyLoadContext assemblyLoadContext)
+   at System.Reflection.Assembly.Load(AssemblyName assemblyRef)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostBuilder.ExecuteHostingStartups()
+
+
+   --- End of inner exception stack trace ---
+2020-09-19 20:56:50.603 +06:00 [INF] Admin logged in.
+2020-09-19 21:07:09.015 +06:00 [INF] Application Starting up
+2020-09-19 21:07:13.742 +06:00 [FTL] Hosting startup assembly exception
+System.InvalidOperationException: Startup assembly Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation failed to execute. See the inner exception for more details.
+ ---> System.IO.FileNotFoundException: Could not load file or assembly 'Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation, Culture=neutral, PublicKeyToken=null'. The system cannot find the file specified.
+File name: 'Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation, Culture=neutral, PublicKeyToken=null'
+   at System.Reflection.RuntimeAssembly.nLoad(AssemblyName fileName, String codeBase, RuntimeAssembly assemblyContext, StackCrawlMark& stackMark, Boolean throwOnFileNotFound, AssemblyLoadContext assemblyLoadContext)
+   at System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, StackCrawlMark& stackMark, AssemblyLoadContext assemblyLoadContext)
+   at System.Reflection.Assembly.Load(AssemblyName assemblyRef, StackCrawlMark& stackMark, AssemblyLoadContext assemblyLoadContext)
+   at System.Reflection.Assembly.Load(AssemblyName assemblyRef)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostBuilder.ExecuteHostingStartups()
+
+
+   --- End of inner exception stack trace ---
+2020-09-19 21:07:16.618 +06:00 [ERR] An unhandled exception has occurred while executing the request.
+System.ArgumentNullException: Value cannot be null. (Parameter 'value')
+   at System.String.Contains(String value)
+   at BlogProject_Devskill.Web.Areas.User.Controllers.BlogController.<>c__DisplayClass3_0.<Index>b__0(BlogPost x) in H:\ASP COURSE\Personal Project\BlogProject_Devskill\BlogProject_Devskill.Web\BlogProject_Devskill.Web\Areas\User\Controllers\BlogController.cs:line 35
+   at System.Linq.Enumerable.WhereListIterator`1.GetCount(Boolean onlyIfCheap)
+   at System.Linq.Enumerable.Count[TSource](IEnumerable`1 source)
+   at AspNetCore.Areas_User_Views_Blog_Index.<>c__DisplayClass17_0.<<ExecuteAsync>b__1>d.MoveNext() in H:\ASP COURSE\Personal Project\BlogProject_Devskill\BlogProject_Devskill.Web\BlogProject_Devskill.Web\Areas\User\Views\Blog\Index.cshtml:line 34
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperExecutionContext.SetOutputContentAsync()
+   at AspNetCore.Areas_User_Views_Blog_Index.ExecuteAsync() in H:\ASP COURSE\Personal Project\BlogProject_Devskill\BlogProject_Devskill.Web\BlogProject_Devskill.Web\Areas\User\Views\Blog\Index.cshtml:line 7
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageCoreAsync(IRazorPage page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageAsync(IRazorPage page, ViewContext context, Boolean invokeViewStarts)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderAsync(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ActionContext actionContext, IView view, ViewDataDictionary viewData, ITempDataDictionary tempData, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor.ExecuteAsync(ActionContext context, ViewResult result)
+   at Microsoft.AspNetCore.Mvc.ViewResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|29_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.MigrationsEndPointMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-09-19 21:07:39.288 +06:00 [INF] Application Starting up
+2020-09-19 21:07:42.403 +06:00 [FTL] Hosting startup assembly exception
+System.InvalidOperationException: Startup assembly Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation failed to execute. See the inner exception for more details.
+ ---> System.IO.FileNotFoundException: Could not load file or assembly 'Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation, Culture=neutral, PublicKeyToken=null'. The system cannot find the file specified.
+File name: 'Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation, Culture=neutral, PublicKeyToken=null'
+   at System.Reflection.RuntimeAssembly.nLoad(AssemblyName fileName, String codeBase, RuntimeAssembly assemblyContext, StackCrawlMark& stackMark, Boolean throwOnFileNotFound, AssemblyLoadContext assemblyLoadContext)
+   at System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, StackCrawlMark& stackMark, AssemblyLoadContext assemblyLoadContext)
+   at System.Reflection.Assembly.Load(AssemblyName assemblyRef, StackCrawlMark& stackMark, AssemblyLoadContext assemblyLoadContext)
+   at System.Reflection.Assembly.Load(AssemblyName assemblyRef)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostBuilder.ExecuteHostingStartups()
+
+
+   --- End of inner exception stack trace ---
+2020-09-19 21:12:58.981 +06:00 [INF] Application Starting up
+2020-09-19 21:13:06.703 +06:00 [FTL] Hosting startup assembly exception
+System.InvalidOperationException: Startup assembly Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation failed to execute. See the inner exception for more details.
+ ---> System.IO.FileNotFoundException: Could not load file or assembly 'Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation, Culture=neutral, PublicKeyToken=null'. The system cannot find the file specified.
+File name: 'Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation, Culture=neutral, PublicKeyToken=null'
+   at System.Reflection.RuntimeAssembly.nLoad(AssemblyName fileName, String codeBase, RuntimeAssembly assemblyContext, StackCrawlMark& stackMark, Boolean throwOnFileNotFound, AssemblyLoadContext assemblyLoadContext)
+   at System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, StackCrawlMark& stackMark, AssemblyLoadContext assemblyLoadContext)
+   at System.Reflection.Assembly.Load(AssemblyName assemblyRef, StackCrawlMark& stackMark, AssemblyLoadContext assemblyLoadContext)
+   at System.Reflection.Assembly.Load(AssemblyName assemblyRef)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostBuilder.ExecuteHostingStartups()
+
+
+   --- End of inner exception stack trace ---
+2020-09-19 21:13:38.574 +06:00 [INF] Application Starting up
+2020-09-19 21:13:41.143 +06:00 [FTL] Hosting startup assembly exception
+System.InvalidOperationException: Startup assembly Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation failed to execute. See the inner exception for more details.
+ ---> System.IO.FileNotFoundException: Could not load file or assembly 'Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation, Culture=neutral, PublicKeyToken=null'. The system cannot find the file specified.
+File name: 'Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation, Culture=neutral, PublicKeyToken=null'
+   at System.Reflection.RuntimeAssembly.nLoad(AssemblyName fileName, String codeBase, RuntimeAssembly assemblyContext, StackCrawlMark& stackMark, Boolean throwOnFileNotFound, AssemblyLoadContext assemblyLoadContext)
+   at System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, StackCrawlMark& stackMark, AssemblyLoadContext assemblyLoadContext)
+   at System.Reflection.Assembly.Load(AssemblyName assemblyRef, StackCrawlMark& stackMark, AssemblyLoadContext assemblyLoadContext)
+   at System.Reflection.Assembly.Load(AssemblyName assemblyRef)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostBuilder.ExecuteHostingStartups()
+
+
+   --- End of inner exception stack trace ---
+2020-09-19 21:13:49.238 +06:00 [ERR] An unhandled exception has occurred while executing the request.
+System.ArgumentNullException: Value cannot be null. (Parameter 'value')
+   at System.String.Contains(String value)
+   at BlogProject_Devskill.Web.Areas.User.Controllers.BlogController.<>c__DisplayClass3_0.<Index>b__0(BlogPost x) in H:\ASP COURSE\Personal Project\BlogProject_Devskill\BlogProject_Devskill.Web\BlogProject_Devskill.Web\Areas\User\Controllers\BlogController.cs:line 35
+   at System.Linq.Enumerable.WhereListIterator`1.GetCount(Boolean onlyIfCheap)
+   at System.Linq.Enumerable.Count[TSource](IEnumerable`1 source)
+   at AspNetCore.Areas_User_Views_Blog_Index.<>c__DisplayClass17_0.<<ExecuteAsync>b__1>d.MoveNext() in H:\ASP COURSE\Personal Project\BlogProject_Devskill\BlogProject_Devskill.Web\BlogProject_Devskill.Web\Areas\User\Views\Blog\Index.cshtml:line 34
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperExecutionContext.SetOutputContentAsync()
+   at AspNetCore.Areas_User_Views_Blog_Index.ExecuteAsync() in H:\ASP COURSE\Personal Project\BlogProject_Devskill\BlogProject_Devskill.Web\BlogProject_Devskill.Web\Areas\User\Views\Blog\Index.cshtml:line 7
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageCoreAsync(IRazorPage page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageAsync(IRazorPage page, ViewContext context, Boolean invokeViewStarts)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderAsync(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ActionContext actionContext, IView view, ViewDataDictionary viewData, ITempDataDictionary tempData, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor.ExecuteAsync(ActionContext context, ViewResult result)
+   at Microsoft.AspNetCore.Mvc.ViewResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|29_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.MigrationsEndPointMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-09-19 21:14:32.696 +06:00 [INF] Application Starting up
+2020-09-19 21:14:35.502 +06:00 [FTL] Hosting startup assembly exception
+System.InvalidOperationException: Startup assembly Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation failed to execute. See the inner exception for more details.
+ ---> System.IO.FileNotFoundException: Could not load file or assembly 'Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation, Culture=neutral, PublicKeyToken=null'. The system cannot find the file specified.
+File name: 'Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation, Culture=neutral, PublicKeyToken=null'
+   at System.Reflection.RuntimeAssembly.nLoad(AssemblyName fileName, String codeBase, RuntimeAssembly assemblyContext, StackCrawlMark& stackMark, Boolean throwOnFileNotFound, AssemblyLoadContext assemblyLoadContext)
+   at System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, StackCrawlMark& stackMark, AssemblyLoadContext assemblyLoadContext)
+   at System.Reflection.Assembly.Load(AssemblyName assemblyRef, StackCrawlMark& stackMark, AssemblyLoadContext assemblyLoadContext)
+   at System.Reflection.Assembly.Load(AssemblyName assemblyRef)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostBuilder.ExecuteHostingStartups()
+
+
+   --- End of inner exception stack trace ---
+2020-09-19 21:14:44.609 +06:00 [ERR] An unhandled exception has occurred while executing the request.
+System.ArgumentNullException: Value cannot be null. (Parameter 'value')
+   at System.String.Contains(String value)
+   at BlogProject_Devskill.Web.Areas.User.Controllers.BlogController.<>c__DisplayClass3_0.<Index>b__0(BlogPost x) in H:\ASP COURSE\Personal Project\BlogProject_Devskill\BlogProject_Devskill.Web\BlogProject_Devskill.Web\Areas\User\Controllers\BlogController.cs:line 35
+   at System.Linq.Enumerable.WhereListIterator`1.GetCount(Boolean onlyIfCheap)
+   at System.Linq.Enumerable.Count[TSource](IEnumerable`1 source)
+   at AspNetCore.Areas_User_Views_Blog_Index.<>c__DisplayClass17_0.<<ExecuteAsync>b__1>d.MoveNext() in H:\ASP COURSE\Personal Project\BlogProject_Devskill\BlogProject_Devskill.Web\BlogProject_Devskill.Web\Areas\User\Views\Blog\Index.cshtml:line 34
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperExecutionContext.SetOutputContentAsync()
+   at AspNetCore.Areas_User_Views_Blog_Index.ExecuteAsync() in H:\ASP COURSE\Personal Project\BlogProject_Devskill\BlogProject_Devskill.Web\BlogProject_Devskill.Web\Areas\User\Views\Blog\Index.cshtml:line 7
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageCoreAsync(IRazorPage page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageAsync(IRazorPage page, ViewContext context, Boolean invokeViewStarts)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderAsync(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ActionContext actionContext, IView view, ViewDataDictionary viewData, ITempDataDictionary tempData, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor.ExecuteAsync(ActionContext context, ViewResult result)
+   at Microsoft.AspNetCore.Mvc.ViewResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|29_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.MigrationsEndPointMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-09-19 21:15:39.276 +06:00 [INF] Application Starting up
+2020-09-19 21:15:41.738 +06:00 [FTL] Hosting startup assembly exception
+System.InvalidOperationException: Startup assembly Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation failed to execute. See the inner exception for more details.
+ ---> System.IO.FileNotFoundException: Could not load file or assembly 'Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation, Culture=neutral, PublicKeyToken=null'. The system cannot find the file specified.
+File name: 'Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation, Culture=neutral, PublicKeyToken=null'
+   at System.Reflection.RuntimeAssembly.nLoad(AssemblyName fileName, String codeBase, RuntimeAssembly assemblyContext, StackCrawlMark& stackMark, Boolean throwOnFileNotFound, AssemblyLoadContext assemblyLoadContext)
+   at System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, StackCrawlMark& stackMark, AssemblyLoadContext assemblyLoadContext)
+   at System.Reflection.Assembly.Load(AssemblyName assemblyRef, StackCrawlMark& stackMark, AssemblyLoadContext assemblyLoadContext)
+   at System.Reflection.Assembly.Load(AssemblyName assemblyRef)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostBuilder.ExecuteHostingStartups()
+
+
+   --- End of inner exception stack trace ---
+2020-09-19 21:16:43.214 +06:00 [INF] Application Starting up
+2020-09-19 21:16:46.107 +06:00 [FTL] Hosting startup assembly exception
+System.InvalidOperationException: Startup assembly Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation failed to execute. See the inner exception for more details.
+ ---> System.IO.FileNotFoundException: Could not load file or assembly 'Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation, Culture=neutral, PublicKeyToken=null'. The system cannot find the file specified.
+File name: 'Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation, Culture=neutral, PublicKeyToken=null'
+   at System.Reflection.RuntimeAssembly.nLoad(AssemblyName fileName, String codeBase, RuntimeAssembly assemblyContext, StackCrawlMark& stackMark, Boolean throwOnFileNotFound, AssemblyLoadContext assemblyLoadContext)
+   at System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, StackCrawlMark& stackMark, AssemblyLoadContext assemblyLoadContext)
+   at System.Reflection.Assembly.Load(AssemblyName assemblyRef, StackCrawlMark& stackMark, AssemblyLoadContext assemblyLoadContext)
+   at System.Reflection.Assembly.Load(AssemblyName assemblyRef)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostBuilder.ExecuteHostingStartups()
+
+
+   --- End of inner exception stack trace ---
+2020-09-19 21:18:22.148 +06:00 [INF] Application Starting up
+2020-09-19 21:18:24.737 +06:00 [FTL] Hosting startup assembly exception
+System.InvalidOperationException: Startup assembly Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation failed to execute. See the inner exception for more details.
+ ---> System.IO.FileNotFoundException: Could not load file or assembly 'Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation, Culture=neutral, PublicKeyToken=null'. The system cannot find the file specified.
+File name: 'Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation, Culture=neutral, PublicKeyToken=null'
+   at System.Reflection.RuntimeAssembly.nLoad(AssemblyName fileName, String codeBase, RuntimeAssembly assemblyContext, StackCrawlMark& stackMark, Boolean throwOnFileNotFound, AssemblyLoadContext assemblyLoadContext)
+   at System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, StackCrawlMark& stackMark, AssemblyLoadContext assemblyLoadContext)
+   at System.Reflection.Assembly.Load(AssemblyName assemblyRef, StackCrawlMark& stackMark, AssemblyLoadContext assemblyLoadContext)
+   at System.Reflection.Assembly.Load(AssemblyName assemblyRef)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostBuilder.ExecuteHostingStartups()
+
+
+   --- End of inner exception stack trace ---
+2020-09-19 21:18:57.359 +06:00 [INF] Application Starting up
+2020-09-19 21:18:59.717 +06:00 [FTL] Hosting startup assembly exception
+System.InvalidOperationException: Startup assembly Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation failed to execute. See the inner exception for more details.
+ ---> System.IO.FileNotFoundException: Could not load file or assembly 'Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation, Culture=neutral, PublicKeyToken=null'. The system cannot find the file specified.
+File name: 'Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation, Culture=neutral, PublicKeyToken=null'
+   at System.Reflection.RuntimeAssembly.nLoad(AssemblyName fileName, String codeBase, RuntimeAssembly assemblyContext, StackCrawlMark& stackMark, Boolean throwOnFileNotFound, AssemblyLoadContext assemblyLoadContext)
+   at System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, StackCrawlMark& stackMark, AssemblyLoadContext assemblyLoadContext)
+   at System.Reflection.Assembly.Load(AssemblyName assemblyRef, StackCrawlMark& stackMark, AssemblyLoadContext assemblyLoadContext)
+   at System.Reflection.Assembly.Load(AssemblyName assemblyRef)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostBuilder.ExecuteHostingStartups()
+
+
+   --- End of inner exception stack trace ---
+2020-09-19 21:20:15.959 +06:00 [INF] Application Starting up
+2020-09-19 21:20:18.238 +06:00 [FTL] Hosting startup assembly exception
+System.InvalidOperationException: Startup assembly Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation failed to execute. See the inner exception for more details.
+ ---> System.IO.FileNotFoundException: Could not load file or assembly 'Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation, Culture=neutral, PublicKeyToken=null'. The system cannot find the file specified.
+File name: 'Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation, Culture=neutral, PublicKeyToken=null'
+   at System.Reflection.RuntimeAssembly.nLoad(AssemblyName fileName, String codeBase, RuntimeAssembly assemblyContext, StackCrawlMark& stackMark, Boolean throwOnFileNotFound, AssemblyLoadContext assemblyLoadContext)
+   at System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, StackCrawlMark& stackMark, AssemblyLoadContext assemblyLoadContext)
+   at System.Reflection.Assembly.Load(AssemblyName assemblyRef, StackCrawlMark& stackMark, AssemblyLoadContext assemblyLoadContext)
+   at System.Reflection.Assembly.Load(AssemblyName assemblyRef)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostBuilder.ExecuteHostingStartups()
+
+
+   --- End of inner exception stack trace ---
+2020-09-19 21:20:57.192 +06:00 [INF] Application Starting up
+2020-09-19 21:20:59.625 +06:00 [FTL] Hosting startup assembly exception
+System.InvalidOperationException: Startup assembly Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation failed to execute. See the inner exception for more details.
+ ---> System.IO.FileNotFoundException: Could not load file or assembly 'Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation, Culture=neutral, PublicKeyToken=null'. The system cannot find the file specified.
+File name: 'Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation, Culture=neutral, PublicKeyToken=null'
+   at System.Reflection.RuntimeAssembly.nLoad(AssemblyName fileName, String codeBase, RuntimeAssembly assemblyContext, StackCrawlMark& stackMark, Boolean throwOnFileNotFound, AssemblyLoadContext assemblyLoadContext)
+   at System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, StackCrawlMark& stackMark, AssemblyLoadContext assemblyLoadContext)
+   at System.Reflection.Assembly.Load(AssemblyName assemblyRef, StackCrawlMark& stackMark, AssemblyLoadContext assemblyLoadContext)
+   at System.Reflection.Assembly.Load(AssemblyName assemblyRef)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostBuilder.ExecuteHostingStartups()
+
+
+   --- End of inner exception stack trace ---
+2020-09-19 21:28:31.755 +06:00 [INF] Application Starting up
+2020-09-19 21:28:34.458 +06:00 [FTL] Hosting startup assembly exception
+System.InvalidOperationException: Startup assembly Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation failed to execute. See the inner exception for more details.
+ ---> System.IO.FileNotFoundException: Could not load file or assembly 'Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation, Culture=neutral, PublicKeyToken=null'. The system cannot find the file specified.
+File name: 'Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation, Culture=neutral, PublicKeyToken=null'
+   at System.Reflection.RuntimeAssembly.nLoad(AssemblyName fileName, String codeBase, RuntimeAssembly assemblyContext, StackCrawlMark& stackMark, Boolean throwOnFileNotFound, AssemblyLoadContext assemblyLoadContext)
+   at System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, StackCrawlMark& stackMark, AssemblyLoadContext assemblyLoadContext)
+   at System.Reflection.Assembly.Load(AssemblyName assemblyRef, StackCrawlMark& stackMark, AssemblyLoadContext assemblyLoadContext)
+   at System.Reflection.Assembly.Load(AssemblyName assemblyRef)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostBuilder.ExecuteHostingStartups()
+
+
+   --- End of inner exception stack trace ---
+2020-09-19 21:28:38.764 +06:00 [ERR] An unhandled exception has occurred while executing the request.
+Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: 'BlogProject_Devskill.Framework.Entities.ListModel' does not contain a definition for 'CurrentPage'
+   at CallSite.Target(Closure , CallSite , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at AspNetCore.Areas_User_Views_Blog_Index.<>c__DisplayClass20_0.<<ExecuteAsync>b__1>d.MoveNext() in H:\ASP COURSE\Personal Project\BlogProject_Devskill\BlogProject_Devskill.Web\BlogProject_Devskill.Web\Areas\User\Views\Blog\Index.cshtml:line 80
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperExecutionContext.SetOutputContentAsync()
+   at AspNetCore.Areas_User_Views_Blog_Index.ExecuteAsync() in H:\ASP COURSE\Personal Project\BlogProject_Devskill\BlogProject_Devskill.Web\BlogProject_Devskill.Web\Areas\User\Views\Blog\Index.cshtml:line 7
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageCoreAsync(IRazorPage page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageAsync(IRazorPage page, ViewContext context, Boolean invokeViewStarts)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderAsync(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ActionContext actionContext, IView view, ViewDataDictionary viewData, ITempDataDictionary tempData, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor.ExecuteAsync(ActionContext context, ViewResult result)
+   at Microsoft.AspNetCore.Mvc.ViewResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|29_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.MigrationsEndPointMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-09-19 21:29:02.909 +06:00 [INF] Application Starting up
+2020-09-19 21:29:05.768 +06:00 [FTL] Hosting startup assembly exception
+System.InvalidOperationException: Startup assembly Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation failed to execute. See the inner exception for more details.
+ ---> System.IO.FileNotFoundException: Could not load file or assembly 'Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation, Culture=neutral, PublicKeyToken=null'. The system cannot find the file specified.
+File name: 'Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation, Culture=neutral, PublicKeyToken=null'
+   at System.Reflection.RuntimeAssembly.nLoad(AssemblyName fileName, String codeBase, RuntimeAssembly assemblyContext, StackCrawlMark& stackMark, Boolean throwOnFileNotFound, AssemblyLoadContext assemblyLoadContext)
+   at System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, StackCrawlMark& stackMark, AssemblyLoadContext assemblyLoadContext)
+   at System.Reflection.Assembly.Load(AssemblyName assemblyRef, StackCrawlMark& stackMark, AssemblyLoadContext assemblyLoadContext)
+   at System.Reflection.Assembly.Load(AssemblyName assemblyRef)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostBuilder.ExecuteHostingStartups()
+
+
+   --- End of inner exception stack trace ---
+2020-09-19 21:36:30.240 +06:00 [INF] Application Starting up
+2020-09-19 21:36:33.002 +06:00 [FTL] Hosting startup assembly exception
+System.InvalidOperationException: Startup assembly Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation failed to execute. See the inner exception for more details.
+ ---> System.IO.FileNotFoundException: Could not load file or assembly 'Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation, Culture=neutral, PublicKeyToken=null'. The system cannot find the file specified.
+File name: 'Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation, Culture=neutral, PublicKeyToken=null'
+   at System.Reflection.RuntimeAssembly.nLoad(AssemblyName fileName, String codeBase, RuntimeAssembly assemblyContext, StackCrawlMark& stackMark, Boolean throwOnFileNotFound, AssemblyLoadContext assemblyLoadContext)
+   at System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, StackCrawlMark& stackMark, AssemblyLoadContext assemblyLoadContext)
+   at System.Reflection.Assembly.Load(AssemblyName assemblyRef, StackCrawlMark& stackMark, AssemblyLoadContext assemblyLoadContext)
+   at System.Reflection.Assembly.Load(AssemblyName assemblyRef)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostBuilder.ExecuteHostingStartups()
+
+
+   --- End of inner exception stack trace ---
+2020-09-19 21:37:36.597 +06:00 [INF] Application Starting up
+2020-09-19 21:37:39.402 +06:00 [FTL] Hosting startup assembly exception
+System.InvalidOperationException: Startup assembly Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation failed to execute. See the inner exception for more details.
+ ---> System.IO.FileNotFoundException: Could not load file or assembly 'Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation, Culture=neutral, PublicKeyToken=null'. The system cannot find the file specified.
+File name: 'Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation, Culture=neutral, PublicKeyToken=null'
+   at System.Reflection.RuntimeAssembly.nLoad(AssemblyName fileName, String codeBase, RuntimeAssembly assemblyContext, StackCrawlMark& stackMark, Boolean throwOnFileNotFound, AssemblyLoadContext assemblyLoadContext)
+   at System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, StackCrawlMark& stackMark, AssemblyLoadContext assemblyLoadContext)
+   at System.Reflection.Assembly.Load(AssemblyName assemblyRef, StackCrawlMark& stackMark, AssemblyLoadContext assemblyLoadContext)
+   at System.Reflection.Assembly.Load(AssemblyName assemblyRef)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostBuilder.ExecuteHostingStartups()
+
+
+   --- End of inner exception stack trace ---
+2020-09-19 21:40:13.370 +06:00 [INF] Application Starting up
+2020-09-19 21:40:16.268 +06:00 [FTL] Hosting startup assembly exception
+System.InvalidOperationException: Startup assembly Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation failed to execute. See the inner exception for more details.
+ ---> System.IO.FileNotFoundException: Could not load file or assembly 'Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation, Culture=neutral, PublicKeyToken=null'. The system cannot find the file specified.
+File name: 'Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation, Culture=neutral, PublicKeyToken=null'
+   at System.Reflection.RuntimeAssembly.nLoad(AssemblyName fileName, String codeBase, RuntimeAssembly assemblyContext, StackCrawlMark& stackMark, Boolean throwOnFileNotFound, AssemblyLoadContext assemblyLoadContext)
+   at System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, StackCrawlMark& stackMark, AssemblyLoadContext assemblyLoadContext)
+   at System.Reflection.Assembly.Load(AssemblyName assemblyRef, StackCrawlMark& stackMark, AssemblyLoadContext assemblyLoadContext)
+   at System.Reflection.Assembly.Load(AssemblyName assemblyRef)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostBuilder.ExecuteHostingStartups()
+
+
+   --- End of inner exception stack trace ---
+2020-09-19 21:41:27.813 +06:00 [INF] Application Starting up
+2020-09-19 21:41:30.061 +06:00 [FTL] Hosting startup assembly exception
+System.InvalidOperationException: Startup assembly Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation failed to execute. See the inner exception for more details.
+ ---> System.IO.FileNotFoundException: Could not load file or assembly 'Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation, Culture=neutral, PublicKeyToken=null'. The system cannot find the file specified.
+File name: 'Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation, Culture=neutral, PublicKeyToken=null'
+   at System.Reflection.RuntimeAssembly.nLoad(AssemblyName fileName, String codeBase, RuntimeAssembly assemblyContext, StackCrawlMark& stackMark, Boolean throwOnFileNotFound, AssemblyLoadContext assemblyLoadContext)
+   at System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, StackCrawlMark& stackMark, AssemblyLoadContext assemblyLoadContext)
+   at System.Reflection.Assembly.Load(AssemblyName assemblyRef, StackCrawlMark& stackMark, AssemblyLoadContext assemblyLoadContext)
+   at System.Reflection.Assembly.Load(AssemblyName assemblyRef)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostBuilder.ExecuteHostingStartups()
+
+
+   --- End of inner exception stack trace ---
+2020-09-19 21:42:41.092 +06:00 [INF] Application Starting up
+2020-09-19 21:42:43.351 +06:00 [FTL] Hosting startup assembly exception
+System.InvalidOperationException: Startup assembly Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation failed to execute. See the inner exception for more details.
+ ---> System.IO.FileNotFoundException: Could not load file or assembly 'Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation, Culture=neutral, PublicKeyToken=null'. The system cannot find the file specified.
+File name: 'Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation, Culture=neutral, PublicKeyToken=null'
+   at System.Reflection.RuntimeAssembly.nLoad(AssemblyName fileName, String codeBase, RuntimeAssembly assemblyContext, StackCrawlMark& stackMark, Boolean throwOnFileNotFound, AssemblyLoadContext assemblyLoadContext)
+   at System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, StackCrawlMark& stackMark, AssemblyLoadContext assemblyLoadContext)
+   at System.Reflection.Assembly.Load(AssemblyName assemblyRef, StackCrawlMark& stackMark, AssemblyLoadContext assemblyLoadContext)
+   at System.Reflection.Assembly.Load(AssemblyName assemblyRef)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostBuilder.ExecuteHostingStartups()
+
+
+   --- End of inner exception stack trace ---
+2020-09-19 21:44:27.175 +06:00 [INF] Application Starting up
+2020-09-19 21:44:30.444 +06:00 [FTL] Hosting startup assembly exception
+System.InvalidOperationException: Startup assembly Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation failed to execute. See the inner exception for more details.
+ ---> System.IO.FileNotFoundException: Could not load file or assembly 'Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation, Culture=neutral, PublicKeyToken=null'. The system cannot find the file specified.
+File name: 'Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation, Culture=neutral, PublicKeyToken=null'
+   at System.Reflection.RuntimeAssembly.nLoad(AssemblyName fileName, String codeBase, RuntimeAssembly assemblyContext, StackCrawlMark& stackMark, Boolean throwOnFileNotFound, AssemblyLoadContext assemblyLoadContext)
+   at System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, StackCrawlMark& stackMark, AssemblyLoadContext assemblyLoadContext)
+   at System.Reflection.Assembly.Load(AssemblyName assemblyRef, StackCrawlMark& stackMark, AssemblyLoadContext assemblyLoadContext)
+   at System.Reflection.Assembly.Load(AssemblyName assemblyRef)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostBuilder.ExecuteHostingStartups()
+
+
+   --- End of inner exception stack trace ---
+2020-09-19 21:45:47.109 +06:00 [INF] Application Starting up
+2020-09-19 21:45:49.997 +06:00 [FTL] Hosting startup assembly exception
+System.InvalidOperationException: Startup assembly Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation failed to execute. See the inner exception for more details.
+ ---> System.IO.FileNotFoundException: Could not load file or assembly 'Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation, Culture=neutral, PublicKeyToken=null'. The system cannot find the file specified.
+File name: 'Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation, Culture=neutral, PublicKeyToken=null'
+   at System.Reflection.RuntimeAssembly.nLoad(AssemblyName fileName, String codeBase, RuntimeAssembly assemblyContext, StackCrawlMark& stackMark, Boolean throwOnFileNotFound, AssemblyLoadContext assemblyLoadContext)
+   at System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, StackCrawlMark& stackMark, AssemblyLoadContext assemblyLoadContext)
+   at System.Reflection.Assembly.Load(AssemblyName assemblyRef, StackCrawlMark& stackMark, AssemblyLoadContext assemblyLoadContext)
+   at System.Reflection.Assembly.Load(AssemblyName assemblyRef)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostBuilder.ExecuteHostingStartups()
+
+
+   --- End of inner exception stack trace ---
+2020-09-19 21:47:08.612 +06:00 [INF] Application Starting up
+2020-09-19 21:47:11.449 +06:00 [FTL] Hosting startup assembly exception
+System.InvalidOperationException: Startup assembly Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation failed to execute. See the inner exception for more details.
+ ---> System.IO.FileNotFoundException: Could not load file or assembly 'Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation, Culture=neutral, PublicKeyToken=null'. The system cannot find the file specified.
+File name: 'Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation, Culture=neutral, PublicKeyToken=null'
+   at System.Reflection.RuntimeAssembly.nLoad(AssemblyName fileName, String codeBase, RuntimeAssembly assemblyContext, StackCrawlMark& stackMark, Boolean throwOnFileNotFound, AssemblyLoadContext assemblyLoadContext)
+   at System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, StackCrawlMark& stackMark, AssemblyLoadContext assemblyLoadContext)
+   at System.Reflection.Assembly.Load(AssemblyName assemblyRef, StackCrawlMark& stackMark, AssemblyLoadContext assemblyLoadContext)
+   at System.Reflection.Assembly.Load(AssemblyName assemblyRef)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostBuilder.ExecuteHostingStartups()
+
+
+   --- End of inner exception stack trace ---
+2020-09-19 21:49:23.721 +06:00 [INF] Application Starting up
+2020-09-19 21:49:26.743 +06:00 [FTL] Hosting startup assembly exception
+System.InvalidOperationException: Startup assembly Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation failed to execute. See the inner exception for more details.
+ ---> System.IO.FileNotFoundException: Could not load file or assembly 'Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation, Culture=neutral, PublicKeyToken=null'. The system cannot find the file specified.
+File name: 'Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation, Culture=neutral, PublicKeyToken=null'
+   at System.Reflection.RuntimeAssembly.nLoad(AssemblyName fileName, String codeBase, RuntimeAssembly assemblyContext, StackCrawlMark& stackMark, Boolean throwOnFileNotFound, AssemblyLoadContext assemblyLoadContext)
+   at System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, StackCrawlMark& stackMark, AssemblyLoadContext assemblyLoadContext)
+   at System.Reflection.Assembly.Load(AssemblyName assemblyRef, StackCrawlMark& stackMark, AssemblyLoadContext assemblyLoadContext)
+   at System.Reflection.Assembly.Load(AssemblyName assemblyRef)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostBuilder.ExecuteHostingStartups()
+
+
+   --- End of inner exception stack trace ---
+2020-09-19 21:50:53.845 +06:00 [INF] Application Starting up
+2020-09-19 21:50:56.454 +06:00 [FTL] Hosting startup assembly exception
+System.InvalidOperationException: Startup assembly Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation failed to execute. See the inner exception for more details.
+ ---> System.IO.FileNotFoundException: Could not load file or assembly 'Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation, Culture=neutral, PublicKeyToken=null'. The system cannot find the file specified.
+File name: 'Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation, Culture=neutral, PublicKeyToken=null'
+   at System.Reflection.RuntimeAssembly.nLoad(AssemblyName fileName, String codeBase, RuntimeAssembly assemblyContext, StackCrawlMark& stackMark, Boolean throwOnFileNotFound, AssemblyLoadContext assemblyLoadContext)
+   at System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, StackCrawlMark& stackMark, AssemblyLoadContext assemblyLoadContext)
+   at System.Reflection.Assembly.Load(AssemblyName assemblyRef, StackCrawlMark& stackMark, AssemblyLoadContext assemblyLoadContext)
+   at System.Reflection.Assembly.Load(AssemblyName assemblyRef)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostBuilder.ExecuteHostingStartups()
+
+
+   --- End of inner exception stack trace ---
+2020-09-19 21:59:33.025 +06:00 [INF] Application Starting up
+2020-09-19 21:59:35.672 +06:00 [FTL] Hosting startup assembly exception
+System.InvalidOperationException: Startup assembly Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation failed to execute. See the inner exception for more details.
+ ---> System.IO.FileNotFoundException: Could not load file or assembly 'Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation, Culture=neutral, PublicKeyToken=null'. The system cannot find the file specified.
+File name: 'Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation, Culture=neutral, PublicKeyToken=null'
+   at System.Reflection.RuntimeAssembly.nLoad(AssemblyName fileName, String codeBase, RuntimeAssembly assemblyContext, StackCrawlMark& stackMark, Boolean throwOnFileNotFound, AssemblyLoadContext assemblyLoadContext)
+   at System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, StackCrawlMark& stackMark, AssemblyLoadContext assemblyLoadContext)
+   at System.Reflection.Assembly.Load(AssemblyName assemblyRef, StackCrawlMark& stackMark, AssemblyLoadContext assemblyLoadContext)
+   at System.Reflection.Assembly.Load(AssemblyName assemblyRef)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostBuilder.ExecuteHostingStartups()
+
+
+   --- End of inner exception stack trace ---
+2020-09-19 22:00:17.809 +06:00 [INF] Application Starting up
+2020-09-19 22:00:20.311 +06:00 [FTL] Hosting startup assembly exception
+System.InvalidOperationException: Startup assembly Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation failed to execute. See the inner exception for more details.
+ ---> System.IO.FileNotFoundException: Could not load file or assembly 'Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation, Culture=neutral, PublicKeyToken=null'. The system cannot find the file specified.
+File name: 'Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation, Culture=neutral, PublicKeyToken=null'
+   at System.Reflection.RuntimeAssembly.nLoad(AssemblyName fileName, String codeBase, RuntimeAssembly assemblyContext, StackCrawlMark& stackMark, Boolean throwOnFileNotFound, AssemblyLoadContext assemblyLoadContext)
+   at System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, StackCrawlMark& stackMark, AssemblyLoadContext assemblyLoadContext)
+   at System.Reflection.Assembly.Load(AssemblyName assemblyRef, StackCrawlMark& stackMark, AssemblyLoadContext assemblyLoadContext)
+   at System.Reflection.Assembly.Load(AssemblyName assemblyRef)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostBuilder.ExecuteHostingStartups()
+
+
+   --- End of inner exception stack trace ---
+2020-09-19 22:01:16.072 +06:00 [INF] Application Starting up
+2020-09-19 22:01:18.551 +06:00 [FTL] Hosting startup assembly exception
+System.InvalidOperationException: Startup assembly Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation failed to execute. See the inner exception for more details.
+ ---> System.IO.FileNotFoundException: Could not load file or assembly 'Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation, Culture=neutral, PublicKeyToken=null'. The system cannot find the file specified.
+File name: 'Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation, Culture=neutral, PublicKeyToken=null'
+   at System.Reflection.RuntimeAssembly.nLoad(AssemblyName fileName, String codeBase, RuntimeAssembly assemblyContext, StackCrawlMark& stackMark, Boolean throwOnFileNotFound, AssemblyLoadContext assemblyLoadContext)
+   at System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, StackCrawlMark& stackMark, AssemblyLoadContext assemblyLoadContext)
+   at System.Reflection.Assembly.Load(AssemblyName assemblyRef, StackCrawlMark& stackMark, AssemblyLoadContext assemblyLoadContext)
+   at System.Reflection.Assembly.Load(AssemblyName assemblyRef)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostBuilder.ExecuteHostingStartups()
+
+
+   --- End of inner exception stack trace ---
+2020-09-19 22:02:08.878 +06:00 [INF] Application Starting up
+2020-09-19 22:02:11.237 +06:00 [FTL] Hosting startup assembly exception
+System.InvalidOperationException: Startup assembly Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation failed to execute. See the inner exception for more details.
+ ---> System.IO.FileNotFoundException: Could not load file or assembly 'Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation, Culture=neutral, PublicKeyToken=null'. The system cannot find the file specified.
+File name: 'Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation, Culture=neutral, PublicKeyToken=null'
+   at System.Reflection.RuntimeAssembly.nLoad(AssemblyName fileName, String codeBase, RuntimeAssembly assemblyContext, StackCrawlMark& stackMark, Boolean throwOnFileNotFound, AssemblyLoadContext assemblyLoadContext)
+   at System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, StackCrawlMark& stackMark, AssemblyLoadContext assemblyLoadContext)
+   at System.Reflection.Assembly.Load(AssemblyName assemblyRef, StackCrawlMark& stackMark, AssemblyLoadContext assemblyLoadContext)
+   at System.Reflection.Assembly.Load(AssemblyName assemblyRef)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostBuilder.ExecuteHostingStartups()
+
+
+   --- End of inner exception stack trace ---
+2020-09-19 22:02:35.888 +06:00 [INF] Comment Added Successfully
+2020-09-19 22:02:50.767 +06:00 [INF] Admin logged in.
+2020-09-19 22:02:56.847 +06:00 [ERR] An unhandled exception has occurred while executing the request.
+BlogProject_Devskill.Membership.Extensions.NotFoundException: Entity "ApplicationUser" (00000000-0000-0000-0000-000000000000) was not found.
+   at BlogProject_Devskill.Membership.Services.ApplicationUserService.GetByIdAsync(Guid id) in H:\ASP COURSE\Personal Project\BlogProject_Devskill\BlogProject_Devskill.Web\BlogProject_Devskill.Membership\Services\ApplicationUserService.cs:line 144
+   at BlogProject_Devskill.Web.Areas.Admin.Models.AdminControl.AdminInformationModel.LoadByIdAsync(Guid id) in H:\ASP COURSE\Personal Project\BlogProject_Devskill\BlogProject_Devskill.Web\BlogProject_Devskill.Web\Areas\Admin\Models\AdminControl\AdminInformationModel.cs:line 35
+   at BlogProject_Devskill.Web.Areas.Admin.Controllers.AdminController.AdminInfo(Guid id) in H:\ASP COURSE\Personal Project\BlogProject_Devskill\BlogProject_Devskill.Web\BlogProject_Devskill.Web\Areas\Admin\Controllers\AdminController.cs:line 213
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.MigrationsEndPointMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-09-19 22:03:12.843 +06:00 [INF] Application Starting up
+2020-09-19 22:03:15.154 +06:00 [FTL] Hosting startup assembly exception
+System.InvalidOperationException: Startup assembly Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation failed to execute. See the inner exception for more details.
+ ---> System.IO.FileNotFoundException: Could not load file or assembly 'Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation, Culture=neutral, PublicKeyToken=null'. The system cannot find the file specified.
+File name: 'Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation, Culture=neutral, PublicKeyToken=null'
+   at System.Reflection.RuntimeAssembly.nLoad(AssemblyName fileName, String codeBase, RuntimeAssembly assemblyContext, StackCrawlMark& stackMark, Boolean throwOnFileNotFound, AssemblyLoadContext assemblyLoadContext)
+   at System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, StackCrawlMark& stackMark, AssemblyLoadContext assemblyLoadContext)
+   at System.Reflection.Assembly.Load(AssemblyName assemblyRef, StackCrawlMark& stackMark, AssemblyLoadContext assemblyLoadContext)
+   at System.Reflection.Assembly.Load(AssemblyName assemblyRef)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostBuilder.ExecuteHostingStartups()
+
+
+   --- End of inner exception stack trace ---
+2020-09-19 22:03:26.871 +06:00 [INF] Admin logged in.
+2020-09-19 22:03:31.656 +06:00 [ERR] An unhandled exception has occurred while executing the request.
+BlogProject_Devskill.Membership.Extensions.NotFoundException: Entity "ApplicationUser" (00000000-0000-0000-0000-000000000000) was not found.
+   at BlogProject_Devskill.Membership.Services.ApplicationUserService.GetByIdAsync(Guid id) in H:\ASP COURSE\Personal Project\BlogProject_Devskill\BlogProject_Devskill.Web\BlogProject_Devskill.Membership\Services\ApplicationUserService.cs:line 144
+   at BlogProject_Devskill.Web.Areas.Admin.Models.AdminControl.AdminInformationModel.LoadByIdAsync(Guid id) in H:\ASP COURSE\Personal Project\BlogProject_Devskill\BlogProject_Devskill.Web\BlogProject_Devskill.Web\Areas\Admin\Models\AdminControl\AdminInformationModel.cs:line 35
+   at BlogProject_Devskill.Web.Areas.Admin.Controllers.AdminController.AdminInfo(Guid id) in H:\ASP COURSE\Personal Project\BlogProject_Devskill\BlogProject_Devskill.Web\BlogProject_Devskill.Web\Areas\Admin\Controllers\AdminController.cs:line 213
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.MigrationsEndPointMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-09-19 22:03:39.957 +06:00 [ERR] An unhandled exception has occurred while executing the request.
+BlogProject_Devskill.Membership.Extensions.NotFoundException: Entity "ApplicationUser" (00000000-0000-0000-0000-000000000000) was not found.
+   at BlogProject_Devskill.Membership.Services.ApplicationUserService.GetByIdAsync(Guid id) in H:\ASP COURSE\Personal Project\BlogProject_Devskill\BlogProject_Devskill.Web\BlogProject_Devskill.Membership\Services\ApplicationUserService.cs:line 144
+   at BlogProject_Devskill.Web.Areas.Admin.Models.AdminControl.EditAdminModel.LoadByIdAsync(Guid id) in H:\ASP COURSE\Personal Project\BlogProject_Devskill\BlogProject_Devskill.Web\BlogProject_Devskill.Web\Areas\Admin\Models\AdminControl\EditAdminModel.cs:line 45
+   at BlogProject_Devskill.Web.Areas.Admin.Controllers.AdminController.EditAdmin(Guid id) in H:\ASP COURSE\Personal Project\BlogProject_Devskill\BlogProject_Devskill.Web\BlogProject_Devskill.Web\Areas\Admin\Controllers\AdminController.cs:line 83
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.MigrationsEndPointMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-09-19 22:03:47.743 +06:00 [INF] Application Starting up
+2020-09-19 22:03:50.095 +06:00 [FTL] Hosting startup assembly exception
+System.InvalidOperationException: Startup assembly Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation failed to execute. See the inner exception for more details.
+ ---> System.IO.FileNotFoundException: Could not load file or assembly 'Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation, Culture=neutral, PublicKeyToken=null'. The system cannot find the file specified.
+File name: 'Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation, Culture=neutral, PublicKeyToken=null'
+   at System.Reflection.RuntimeAssembly.nLoad(AssemblyName fileName, String codeBase, RuntimeAssembly assemblyContext, StackCrawlMark& stackMark, Boolean throwOnFileNotFound, AssemblyLoadContext assemblyLoadContext)
+   at System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, StackCrawlMark& stackMark, AssemblyLoadContext assemblyLoadContext)
+   at System.Reflection.Assembly.Load(AssemblyName assemblyRef, StackCrawlMark& stackMark, AssemblyLoadContext assemblyLoadContext)
+   at System.Reflection.Assembly.Load(AssemblyName assemblyRef)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostBuilder.ExecuteHostingStartups()
+
+
+   --- End of inner exception stack trace ---
+2020-09-19 22:04:03.140 +06:00 [INF] Admin logged in.
+2020-09-19 22:04:05.373 +06:00 [ERR] An unhandled exception has occurred while executing the request.
+BlogProject_Devskill.Membership.Extensions.NotFoundException: Entity "ApplicationUser" (00000000-0000-0000-0000-000000000000) was not found.
+   at BlogProject_Devskill.Membership.Services.ApplicationUserService.GetByIdAsync(Guid id) in H:\ASP COURSE\Personal Project\BlogProject_Devskill\BlogProject_Devskill.Web\BlogProject_Devskill.Membership\Services\ApplicationUserService.cs:line 144
+   at BlogProject_Devskill.Web.Areas.Admin.Models.AdminControl.AdminInformationModel.LoadByIdAsync(Guid id) in H:\ASP COURSE\Personal Project\BlogProject_Devskill\BlogProject_Devskill.Web\BlogProject_Devskill.Web\Areas\Admin\Models\AdminControl\AdminInformationModel.cs:line 35
+   at BlogProject_Devskill.Web.Areas.Admin.Controllers.AdminController.AdminInfo(Guid id) in H:\ASP COURSE\Personal Project\BlogProject_Devskill\BlogProject_Devskill.Web\BlogProject_Devskill.Web\Areas\Admin\Controllers\AdminController.cs:line 213
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.MigrationsEndPointMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-09-19 22:04:09.133 +06:00 [ERR] An unhandled exception has occurred while executing the request.
+BlogProject_Devskill.Membership.Extensions.NotFoundException: Entity "ApplicationUser" (00000000-0000-0000-0000-000000000000) was not found.
+   at BlogProject_Devskill.Membership.Services.ApplicationUserService.GetByIdAsync(Guid id) in H:\ASP COURSE\Personal Project\BlogProject_Devskill\BlogProject_Devskill.Web\BlogProject_Devskill.Membership\Services\ApplicationUserService.cs:line 144
+   at BlogProject_Devskill.Web.Areas.Admin.Models.AdminControl.AdminInformationModel.LoadByIdAsync(Guid id) in H:\ASP COURSE\Personal Project\BlogProject_Devskill\BlogProject_Devskill.Web\BlogProject_Devskill.Web\Areas\Admin\Models\AdminControl\AdminInformationModel.cs:line 35
+   at BlogProject_Devskill.Web.Areas.Admin.Controllers.AdminController.AdminInfo(Guid id) in H:\ASP COURSE\Personal Project\BlogProject_Devskill\BlogProject_Devskill.Web\BlogProject_Devskill.Web\Areas\Admin\Controllers\AdminController.cs:line 213
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.MigrationsEndPointMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-09-19 22:04:36.914 +06:00 [ERR] An unhandled exception has occurred while executing the request.
+BlogProject_Devskill.Membership.Extensions.NotFoundException: Entity "ApplicationUser" (00000000-0000-0000-0000-000000000000) was not found.
+   at BlogProject_Devskill.Membership.Services.ApplicationUserService.GetByIdAsync(Guid id) in H:\ASP COURSE\Personal Project\BlogProject_Devskill\BlogProject_Devskill.Web\BlogProject_Devskill.Membership\Services\ApplicationUserService.cs:line 144
+   at BlogProject_Devskill.Web.Areas.Admin.Models.AdminControl.AdminInformationModel.LoadByIdAsync(Guid id) in H:\ASP COURSE\Personal Project\BlogProject_Devskill\BlogProject_Devskill.Web\BlogProject_Devskill.Web\Areas\Admin\Models\AdminControl\AdminInformationModel.cs:line 35
+   at BlogProject_Devskill.Web.Areas.Admin.Controllers.AdminController.AdminInfo(Guid id) in H:\ASP COURSE\Personal Project\BlogProject_Devskill\BlogProject_Devskill.Web\BlogProject_Devskill.Web\Areas\Admin\Controllers\AdminController.cs:line 213
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.MigrationsEndPointMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)

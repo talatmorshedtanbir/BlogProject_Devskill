@@ -23,6 +23,7 @@ namespace BlogProject_Devskill.Web.Areas.User.Models
         public IList<BlogPost> Blogs { get; set; }
         public BlogPost Blog { get; set; }
         public Pager Pager { get; set; }
+        public int TotalPages { get; set; }
         public string Category { get; set; }
         public async Task<object> GetAllBlogAsync(DataTablesAjaxRequestModel tableModel)
         {
@@ -49,12 +50,13 @@ namespace BlogProject_Devskill.Web.Areas.User.Models
             };
         }
 
-        public async Task<IList<BlogPost>> GetList(Pager pager , string category = "", bool sanitize = true)
+        public async Task<(IList<BlogPost>,int)> GetList(Pager pager , string category = "", bool sanitize = true)
         {
             var skip = pager.CurrentPage * pager.ItemsPerPage - pager.ItemsPerPage;
 
             var posts = new List<BlogPost>();
             var blogs = await _blogService.GetPosts();
+            var cnt = blogs.Count;
             foreach (var p in blogs)
             {
                 posts.Add(p);
@@ -66,7 +68,7 @@ namespace BlogProject_Devskill.Web.Areas.User.Models
             {
                 items.Add(p);
             }
-            return await Task.FromResult(items);
+            return await Task.FromResult((items,cnt));
         }
 
         public async Task<IList<PostItem>> GetList(Expression<Func<BlogPost, bool>> predicate, Pager pager)
