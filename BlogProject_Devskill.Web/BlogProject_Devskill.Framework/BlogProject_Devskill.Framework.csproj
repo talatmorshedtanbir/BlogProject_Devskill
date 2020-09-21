@@ -19,7 +19,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Repositories\BlogRepos\" />
     <Folder Include="Repositories\PostRepos\" />
   </ItemGroup>
 

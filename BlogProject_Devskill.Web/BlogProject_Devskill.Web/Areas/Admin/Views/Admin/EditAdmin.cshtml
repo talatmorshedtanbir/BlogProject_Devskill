@@ -106,7 +106,8 @@
                                         <div class="form-group row">
                                             <label class="col-form-label col-lg-4" asp-for="ProfileImage"></label>
                                             <div class="col-md-10">
-                                                <input type="file" asp-for="ProfileImage" />
+                                                <img id="test" alt="your image" width="100" height="100" />
+                                                <input type="file" asp-for="ProfileImage" onchange="document.getElementById('test').src = window.URL.createObjectURL(this.files[0])" />
                                                 <span asp-validation-for="ProfileImage" class="text-danger"></span>
                                             </div>
                                            

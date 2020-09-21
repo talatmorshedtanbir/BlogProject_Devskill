@@ -96,8 +96,9 @@ namespace BlogProject_Devskill.Web
 
             services.ConfigureApplicationCookie(options =>
             {
-                options.AccessDeniedPath = "/Account/AccessDenied";
-                options.LoginPath = "/Account/Login";
+                options.AccessDeniedPath = "/Accounts/AccessDenied";
+                options.LoginPath = "/Accounts/Login";
+
             });
 
 
@@ -138,6 +139,7 @@ namespace BlogProject_Devskill.Web
             app.UseRouting();
 
             app.UseAuthentication();
+
             app.UseAuthorization();
             app.UseSession();
             app.UseEndpoints(endpoints =>

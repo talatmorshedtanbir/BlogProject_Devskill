@@ -12,11 +12,11 @@ namespace BlogProject_Devskill.Framework.Services.CategoryServices
 {
     public class CatergoryService : ICategoryService
     {
-        private readonly IBlogUnitOfWork _blogUnitOfWork;
+        private readonly IPostUnitOfWork _postUnitOfWork;
         private ICurrentUserService _currentUserService;
-        public CatergoryService(IBlogUnitOfWork blogUnitOfWork, ICurrentUserService currentUserService)
+        public CatergoryService(IPostUnitOfWork postUnitOfWork, ICurrentUserService currentUserService)
         {
-            _blogUnitOfWork = blogUnitOfWork;
+            _postUnitOfWork = postUnitOfWork;
             _currentUserService = currentUserService;
         }
         public async Task<(IList<Category> Items, int Total, int TotalFilter)> GetAllAsync(
@@ -28,7 +28,7 @@ namespace BlogProject_Devskill.Framework.Services.CategoryServices
                 ["postCount"] = v => v.PostCount
             };
 
-            var result = await _blogUnitOfWork.CategoryRepository.GetAsync<Category>(
+            var result = await _postUnitOfWork.CategoryRepository.GetAsync<Category>(
                 x => x, x => x.Name.Contains(searchText),
                 x => x.ApplyOrdering(columnsMap, orderBy), null,
                 pageIndex, pageSize, true);
@@ -36,44 +36,61 @@ namespace BlogProject_Devskill.Framework.Services.CategoryServices
             return (result.Items, result.Total, result.TotalFilter);
         }
 
+        public IList<Category> GetAllCategory()
+        {
+            var result = _postUnitOfWork.CategoryRepository.GetAll();
+            return result;
+        }
         public async Task<Category> GetByIdAsync(int id)
         {
-            return await _blogUnitOfWork.CategoryRepository.GetByIdAsync(id);
+            return await _postUnitOfWork.CategoryRepository.GetByIdAsync(id);
         }
 
         public async Task AddAsync(Category entity)
         {
-            var isExists = await _blogUnitOfWork.CategoryRepository.IsExistsAsync(x => x.Name == entity.Name && x.Id != entity.Id);
+            var isExists = await _postUnitOfWork.CategoryRepository.IsExistsAsync(x => x.Name == entity.Name && x.Id != entity.Id);
             if (isExists)
                 throw new DuplicationException(nameof(entity.Name));
 
-            await _blogUnitOfWork.CategoryRepository.AddAsync(entity);
-            await _blogUnitOfWork.SaveChangesAsync();
+            await _postUnitOfWork.CategoryRepository.AddAsync(entity);
+            await _postUnitOfWork.SaveChangesAsync();
         }
 
         public async Task UpdateAsync(Category entity)
         {
-            var isExists = await _blogUnitOfWork.CategoryRepository.IsExistsAsync(x => x.Name == entity.Name && x.Id != entity.Id);
+            var isExists = await _postUnitOfWork.CategoryRepository.IsExistsAsync(x => x.Name == entity.Name && x.Id != entity.Id);
             if (isExists)
                 throw new DuplicationException(nameof(entity.Name));
 
             var updateEntity = await GetByIdAsync(entity.Id);
             updateEntity.Name = entity.Name;
-            await _blogUnitOfWork.CategoryRepository.UpdateAsync(updateEntity);
-            await _blogUnitOfWork.SaveChangesAsync();
+            await _postUnitOfWork.CategoryRepository.UpdateAsync(updateEntity);
+            await _postUnitOfWork.SaveChangesAsync();
         }
 
+        public async Task UpdateCountAsync(Category entity)
+        {
+            var updateEntity = await GetByIdAsync(entity.Id);
+            updateEntity.Id = entity.Id;
+            updateEntity.PostCount += 1;
+            await _postUnitOfWork.CategoryRepository.UpdateAsync(updateEntity);
+            await _postUnitOfWork.SaveChangesAsync();
+        }
         public async Task<Category> DeleteAsync(int id)
         {
             var category = await GetByIdAsync(id);
-            await _blogUnitOfWork.CategoryRepository.DeleteAsync(id);
-            await _blogUnitOfWork.SaveChangesAsync();
+            if(category == null)
+            {
+                throw new NotFoundException("Category Not Found",nameof(category));
+            }
+            await _postUnitOfWork.CategoryRepository.DeleteAsync(id);
+            await _postUnitOfWork.SaveChangesAsync();
             return category;
         }
 
         public void Dispose()
         {
-            _blogUnitOfWork?.Dispose();
+            _postUnitOfWork?.Dispose();
         }
     }
 }

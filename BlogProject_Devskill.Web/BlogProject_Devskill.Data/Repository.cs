@@ -55,6 +55,17 @@ namespace BlogProject_Devskill.Data
             return result;
         }
 
+        public virtual IList<TEntity> Get(Expression<Func<TEntity, bool>> filter)
+        {
+            IQueryable<TEntity> query = _dbSet;
+
+            if (filter != null)
+            {
+                query = query.Where(filter);
+            }
+
+            return query.ToList();
+        }
         public virtual async Task<(IList<TResult> Items, int Total, int TotalFilter)> GetAsync<TResult>(Expression<Func<TEntity, TResult>> selector,
                             Expression<Func<TEntity, bool>> predicate = null,
                             Func<IQueryable<TEntity>, IOrderedQueryable<TEntity>> orderBy = null,
@@ -86,13 +97,27 @@ namespace BlogProject_Devskill.Data
 
             return (result, total, totalFilter);
         }
-        public virtual IList<TEntity> GetAll()
+        public virtual async Task<IList<TResult>> GetAllAsync<TResult>(Expression<Func<TEntity, TResult>> selector, Expression<Func<TEntity, bool>> predicate = null,
+             Func<IQueryable<TEntity>, IIncludableQueryable<TEntity, object>> include = null)
         {
-            IQueryable<TEntity> query = _dbSet;
-            var result= query.ToList();
+            IQueryable<TEntity> query = _dbSet.AsQueryable();
+            if (include != null)
+                query = include(query);
+
+            if (predicate != null)
+            {
+                query = query.Where(predicate);
+            }
+            var result = await query.Select(selector).ToListAsync();
             return result;
         }
 
+        public virtual IList<TEntity> GetAll()
+        {
+            IQueryable<TEntity> query = _dbSet;
+            var result = query.ToList();
+            return result;
+        }
         public virtual async Task<(IList<TResult> Items, int Total, int TotalFilter)> GetAsync<TResult>(Expression<Func<TEntity, TResult>> selector,
                             Expression<Func<TEntity, bool>> predicate = null,
                             Func<IQueryable<TEntity>, IOrderedQueryable<TEntity>> orderBy = null,

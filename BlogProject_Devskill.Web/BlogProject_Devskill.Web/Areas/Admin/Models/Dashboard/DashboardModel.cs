@@ -7,6 +7,6 @@ namespace BlogProject_Devskill.Web.Areas.Admin.Models.Dashboard
 {
     public class DashboardModel : AdminBaseModel
     {
-
+            public DashboardModel() : base() { }
     }
 }

@@ -16,7 +16,9 @@ namespace BlogProject_Devskill.Framework.Services.CategoryServices
 
         Task<Category> GetByIdAsync(int id);
         Task AddAsync(Category entity);
+        public IList<Category> GetAllCategory();
         Task UpdateAsync(Category entity);
+        Task UpdateCountAsync(Category entity);
         Task<Category> DeleteAsync(int id);
     }
 }

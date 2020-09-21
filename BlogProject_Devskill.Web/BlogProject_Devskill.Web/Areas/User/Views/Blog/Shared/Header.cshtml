@@ -1,0 +1,64 @@
+﻿<!-- Preloader -->
+<div class="preloader d-flex align-items-center justify-content-center">
+    <div class="lds-ellipsis">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+</div>
+
+<!-- ##### Header Area Start ##### -->
+<header class="header-area">
+   
+
+    <!-- Navbar Area -->
+    <div class="vizew-main-menu" id="sticker">
+        <div class="classy-nav-container breakpoint-off">
+            <div class="container">
+
+                <!-- Menu -->
+                <nav class="classy-navbar justify-content-between" id="vizewNav">
+
+                    <!-- Nav brand -->
+                    <a href="~/user/blog/Index" class="nav-brand"><img src="/CoverImages/defaultIcon.jpg" height="30" width="100" class="rounded-circle" alt=""></a>
+
+                    <!-- Navbar Toggler -->
+                    <div class="classy-navbar-toggler">
+                        <span class="navbarToggler"><span></span><span></span><span></span></span>
+                    </div>
+
+                    <div class="classy-menu">
+
+                        <!-- Close Button -->
+                        <div class="classycloseIcon">
+                            <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
+                        </div>
+
+                        <!-- Nav Start -->
+                        <div class="classynav">
+                            <ul>
+                                <li><a href="~/">Home</a></li>
+                                <li class="active"><a href="~/User/blog">Blog</a></li>
+                                <li>
+                                    <div class="top-search-area">
+                                        <form asp-controller="Blog" asp-area="User" asp-action="Search" method="post">
+                                            <input type="search" id="term" name="term" placeholder="Search...">
+                                            <button type="submit" class="btn"><i class="fa fa-search" aria-hidden="true"></i></button>
+                                        </form>
+                                    </div>
+                                </li>
+                               <li>
+                                   <a href="~/Admin/Dashboard/" class="login-btn"><i class="fa fa-user" aria-hidden="true"> Admin Panel</i></a>
+                               </li>
+                                <!-- Login -->
+                                
+                            </ul>
+                        </div>
+                        <!-- Nav End -->
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+</header>

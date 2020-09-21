@@ -1,0 +1,170 @@
+﻿@model BlogProject_Devskill.Web.Areas.User.Models.SinglePostModel
+@{
+    ViewData["Title"] = "BlogInformations";
+}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" href="~/themes/vizew/img/core-img/favicon.ico">
+    <link rel="stylesheet" href="~/themes/vizew/css/prism.css">
+    <link rel="stylesheet" href="~/themes/vizew/style.css">
+    <link rel="stylesheet" href="~/themes/vizew/css/inputbox.css">
+</head>
+
+<body>
+    <partial name="~/Areas/User/Views/Blog/Shared/Header.cshtml" />
+    <!-- ##### Header Area End ##### -->
+    <!-- ##### Breadcrumb Area Start ##### -->
+    <div class="vizew-breadcrumb">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="~/blog">Blog</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">@Model.Title</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ##### Breadcrumb Area End ##### -->
+    <!-- ##### Pager Area Start ##### -->
+    <div class="vizew-pager-area">
+    </div>
+    <!-- ##### Pager Area End ##### -->
+    <!-- ##### Post Details Area Start ##### -->
+    <section class="post-details-area mb-80">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="post-details-thumb mb-50 justify-content-center">
+                        <img src="/CoverImages/@Model.CoverImageUrl" height="700" width="900" alt="" style="border-radius:8px">
+                    </div>
+                </div>
+            </div>
+
+            <div class="row justify-content-center">
+                <!-- Post Details Content Area -->
+                <div class="col-12 col-lg-8 col-xl-7">
+                    <div class="post-details-content">
+                        <!-- Blog Content -->
+                        <div class="blog-content">
+
+                            <!-- Post Content -->
+                            <div class="post-content mt-0">
+                                <a href="/User/Blog/SingleBlog/@Model.Id" class="post-title mb-2">@Model.Title</a>
+
+                                <div class="d-flex justify-content-between mb-30">
+                                    <div class="post-meta d-flex align-items-center">
+                                        <span class="post-author">By @Model.AuthorName</span>
+                                        <i class="fa fa-circle" aria-hidden="true"></i>
+                                        <img class="rounded-circle author-avatar small-box"  height="100" width="90" src="/ProfileImages/@Model.AuthorImageUrl" style="margin:5px"/>
+                                        <span class="post-date"> ---Posted on @Model.PublicationTime.ToString()</span>
+                                    </div>
+                                    <div class="post-meta d-flex">
+                                        <span><i class="fa fa-eye" aria-hidden="true"></i> </span>
+                                    </div>
+                                </div>
+                            </div>
+                            @Html.Raw(Model.Description)
+
+                            @{
+                                <div class="post-tags mt-30">
+                                    <ul>
+                                        @if (Model.BlogCategories != null)
+                                        {
+                                            foreach (var cat in Model.BlogCategories)
+                                            {
+                                                <li><a href="#">@cat</a></li>
+                                            }
+                                        }
+                                    </ul>
+                                </div>
+                            }
+
+                            <!-- Post Tags -->
+                            <!-- Comment Area Start -->
+
+                            <div class="pb-3">
+                                <h6 class="d-inline">Comments</h6>
+                                <a href="" class="btn btn-primary float-right" data-toggle="modal" data-target="#comments"> <i class="icon-plus-circle2"></i> Post a comment</a>
+                            </div>
+                            <div id="disqus_thread">
+                                <div class="timeline ">
+                                    @{
+                                        foreach (var comment in Model.Comments)
+                                        {
+                                            <div class="media" style="border-style:solid;border-color:black;border-width:thin;padding:5px; margin:5px;border-radius:10px;">
+                                                <div class="media-left">
+                                                    <img src="/themes/vizew/img/anonymous.jpg" class="rounded-circle author-avatar" height="50" width="50"/>
+                                                </div>
+                                                <div class="media-body">
+                                                    <h6 class="media-heading" style="color:blanchedalmond">@comment.Name </h6><small><i>Commented on @comment.CommentTime</i></small>
+                                                    <p style="color:white;font-size:14px">@comment.Description</p>
+                                                </div>
+                                            </div>
+                                        }
+                                    }
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sidebar Widget -->
+                <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                    <div class="sidebar-area">
+
+                        <!-- ***** Single Widget ***** -->
+                        <!-- ***** Single Widget ***** -->
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="modal fade" id="comments" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content" style="background-color:black; color:white;">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel" style="color:darkred;font-weight:bold;font-style:oblique;">Make Your Comment Here!!!</h5>
+                   
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <form asp-area="User" asp-controller="Blog" asp-action="AddComment" method="post">
+                    <div class="modal-body">
+                        <input type="hidden" asp-for="@Model.Id" />
+                        <div class="form-group">
+                            <label asp-for="@Model.CommenterName"> Name </label>
+                            <input class="form-control bg-light" asp-for="@Model.CommenterName" id="" placeholder="Enter Name" required>
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="@Model.CommenterEmail"> Email </label>
+                            <input class="form-control bg-light" asp-for="@Model.CommenterEmail" id="" placeholder="Enter Email" required>
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="@Model.CommentDescription"> Comment </label>
+                            <textarea class="form-control bg-light text-black" asp-for="@Model.CommentDescription" id="commentDescription" placeholder="Comment" required></textarea>
+                        </div>
+                    </div>
+                    <h6 class="modal-title" id="exampleModalLabel" style="color:darkred;font-weight:bold;font-style:oblique;align-self:center">Submit the comment and wait for admin response</h6>
+                    <div class="form-group modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal"> <i class="icon-cancel-circle2"></i> Cancel</button>
+                        <button type="submit" class="btn bg-primary"> <i class="icon-file-check2"></i> Save</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- ##### Post Details Area End ##### -->
+    <partial name="~/Areas/User/Views/Blog/Shared/Footer.cshtml" />
+</body>
+</html>

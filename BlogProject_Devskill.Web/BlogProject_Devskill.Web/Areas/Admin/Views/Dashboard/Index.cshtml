@@ -8,30 +8,65 @@
     <div class="user_welcome">
         <h3 class="user_welcome_title">Dashboard</h3>
     </div>
-    <div class="content-main">
-
-        <div class="row">
-            <div class="col-12">
-                <div class="card text-center card-box-shadow">
-                    <div class="card-body">
-                        <i class="icon-users4 icon-2x text-primary border-primary border-3 rounded-round p-3 mb-3"></i>
-                        <a asp-controller="Admin" asp-action="Index" asp-area="Admin" class="btn bg-success-400"><i class="icon-eye"></i> <b>View Current Admins</b></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col-12">
-                <div class="card text-center card-box-shadow">
-                    <div class="card-body">
-                        <i class="icon-users4 icon-2x text-primary border-primary border-3 rounded-round p-3 mb-3"></i>
-                        <a asp-controller="Admin" asp-action="AddAdmin" asp-area="Admin" class="btn bg-success-400"><i class="icon-eye"></i> <b>Add New Admin</b></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-    </div>
-</div>
 <!-- /content area -->
+<div class="content">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="card card-primary card-outline p-3 mb-2 bg-dark text-white">
+                    <div class="card-header">
+                        <h5 class="card-title m-0 text-maroon">Admin Panel</h5>
+                    </div>
+                    <div class="card-body">
+                        <h6 class="card-title">Admin List</h6>
+
+                        <p class="card-text">Check out our current admins</p>
+                        <a asp-controller="Admin" asp-action="Index" asp-area="Admin" class="btn bg-success-400 text-blue"><i class="icon-eye"></i> <b>View Current Admins</b></a>
+                    </div>
+                </div>
+
+                <div class="card card-primary card-outline p-3 mb-2 bg-dark text-white">
+                    <div class="card-header">
+                        <h5 class="card-title m-0 text-maroon">Admin Panel</h5>
+                    </div>
+                    <div class="card-body">
+                        <h6 class="card-title">Add New Admin</h6>
+
+                        <p class="card-text">Add a new admin.</p>
+                        <a asp-controller="Admin" asp-action="AddAdmin" asp-area="Admin" class="btn bg-success-400 text-blue"><i class="icon-eye"></i> <b>Add New Admin</b></a>
+                    </div>
+                </div>
+            </div>
+            <!-- /.col-md-6 -->
+            <div class="col-lg-6">
+                <div class="card card-primary card-outline p-3 mb-2 bg-info text-black">
+                    <div class="card-header">
+                        <h5 class="card-title m-0 text-maroon">Blog Panel</h5>
+                    </div>
+                    <div class="card-body">
+                        <h6 class="card-title">Post List</h6>
+
+                        <p class="card-text">Check out posted blogs.</p>
+                        <a asp-controller="BlogPost" asp-action="Index" asp-area="Admin" class="btn bg-success-400 text-gray-dark"><i class="icon-eye"></i> <b>View Current Posts</b></a>
+                    </div>
+                </div>
+
+                <div class="card card-primary card-outline p-3 mb-2 bg-info text-black">
+                    <div class="card-header">
+                        <h5 class="card-title m-0 text-maroon">Blog Panel</h5>
+                    </div>
+                    <div class="card-body">
+                        <h6 class="card-title">Post Blog</h6>
+
+                        <p class="card-text">Post a new blog.</p>
+                        <a asp-controller="BlogPost" asp-action="AddBlog" asp-area="Admin" class="btn bg-success-400 text-gray-dark"><i class="icon-eye"></i> <b>Add New Post</b></a>
+                    </div>
+                </div>
+            </div>
+            <!-- /.col-md-6 -->
+        </div>
+        <!-- /.row -->
+    </div><!-- /.container-fluid -->
+</div>
+<!-- /.content -->
+</div>
