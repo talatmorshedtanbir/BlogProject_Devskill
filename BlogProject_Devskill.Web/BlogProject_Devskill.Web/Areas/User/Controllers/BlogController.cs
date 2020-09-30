@@ -75,7 +75,8 @@ namespace BlogProject_Devskill.Web.Areas.User.Controllers
         [HttpPost]
         public IActionResult Search(string term)
         {
-            return Redirect($"/User/blog?searchString={term}");
+            return RedirectToAction("Index", "Blog", new { @searchString = term });
+           // return Redirect($"/User/blog?searchString={term}");
         }
     }
 }
