@@ -44,6 +44,7 @@ namespace BlogProject_Devskill.Web
                 .ConfigureWebHostDefaults(webBuilder =>
                 {
                     webBuilder.UseStartup<Startup>();
+                    webBuilder.UseUrls("http://*:80");
                 });
     }
 }
