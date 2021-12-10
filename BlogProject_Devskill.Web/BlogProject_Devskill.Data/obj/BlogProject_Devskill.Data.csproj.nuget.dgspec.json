@@ -1,34 +1,32 @@
 {
   "format": 1,
   "restore": {
-    "H:\\ASP COURSE\\Personal Project\\BlogProject_Devskill\\BlogProject_Devskill.Web\\BlogProject_Devskill.Data\\BlogProject_Devskill.Data.csproj": {}
+    "D:\\BlogProject_Devskill\\BlogProject_Devskill.Web\\BlogProject_Devskill.Data\\BlogProject_Devskill.Data.csproj": {}
   },
   "projects": {
-    "H:\\ASP COURSE\\Personal Project\\BlogProject_Devskill\\BlogProject_Devskill.Web\\BlogProject_Devskill.Data\\BlogProject_Devskill.Data.csproj": {
+    "D:\\BlogProject_Devskill\\BlogProject_Devskill.Web\\BlogProject_Devskill.Data\\BlogProject_Devskill.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "H:\\ASP COURSE\\Personal Project\\BlogProject_Devskill\\BlogProject_Devskill.Web\\BlogProject_Devskill.Data\\BlogProject_Devskill.Data.csproj",
+        "projectUniqueName": "D:\\BlogProject_Devskill\\BlogProject_Devskill.Web\\BlogProject_Devskill.Data\\BlogProject_Devskill.Data.csproj",
         "projectName": "BlogProject_Devskill.Data",
-        "projectPath": "H:\\ASP COURSE\\Personal Project\\BlogProject_Devskill\\BlogProject_Devskill.Web\\BlogProject_Devskill.Data\\BlogProject_Devskill.Data.csproj",
-        "packagesPath": "C:\\Users\\Tanbir\\.nuget\\packages\\",
-        "outputPath": "H:\\ASP COURSE\\Personal Project\\BlogProject_Devskill\\BlogProject_Devskill.Web\\BlogProject_Devskill.Data\\obj\\",
+        "projectPath": "D:\\BlogProject_Devskill\\BlogProject_Devskill.Web\\BlogProject_Devskill.Data\\BlogProject_Devskill.Data.csproj",
+        "packagesPath": "C:\\Users\\s3admin\\.nuget\\packages\\",
+        "outputPath": "D:\\BlogProject_Devskill\\BlogProject_Devskill.Web\\BlogProject_Devskill.Data\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Tanbir\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\s3admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "netcoreapp3.1"
+          "net6.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "netcoreapp3.1": {
+          "net6.0": {
+            "targetAlias": "net6.0",
             "projectReferences": {}
           }
         },
@@ -39,23 +37,24 @@
         }
       },
       "frameworks": {
-        "netcoreapp3.1": {
+        "net6.0": {
+          "targetAlias": "net6.0",
           "dependencies": {
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[3.1.7, )"
+              "version": "[6.0.0, )"
             },
             "Microsoft.EntityFrameworkCore.Relational": {
               "target": "Package",
-              "version": "[3.1.7, )"
+              "version": "[6.0.0, )"
             },
             "System.Data.SqlClient": {
               "target": "Package",
-              "version": "[4.8.2, )"
+              "version": "[4.8.3, )"
             },
             "System.Linq.Dynamic.Core": {
               "target": "Package",
-              "version": "[1.2.2, )"
+              "version": "[1.2.14, )"
             }
           },
           "imports": [
@@ -73,7 +72,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.302\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     }

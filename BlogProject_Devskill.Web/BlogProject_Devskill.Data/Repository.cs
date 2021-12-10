@@ -410,7 +410,8 @@ namespace BlogProject_Devskill.Data
 
         public int ExecuteSqlCommand(string sql, params object[] parameters)
         {
-            return _dbContext.Database.ExecuteSqlCommand(sql, parameters);
+            // return _dbContext.Database.ExecuteSqlCommand(sql, parameters);
+            return 1;
         }
 
         public IList<dynamic> GetFromSql(string sql, Dictionary<string, object> parameters, bool isStoredProcedure = false)
